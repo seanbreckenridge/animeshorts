@@ -1,6 +1,6 @@
 # animeshorts
 
-[animeshorts](http://animeshorts.pythonanywhere.com/) is a website I made, a successor to [this post](https://redd.it/5nsjw5) I made on /r/anime in 2016.
+[animeshorts](http://animeshorts.pythonanywhere.com/) is a website I made, a successor to [this post](https://redd.it/5nsjw5) I made on /r/anime in 2017.
 
 The code to generate the webpages is written in python3, using [yattag](http://www.yattag.org/) to [generate Bootstrap HTML templates](https://github.com/purplepinapples/animeshorts/tree/master/site/templates) to be rendered by [Flask](http://flask.pocoo.org/).
 
