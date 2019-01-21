@@ -1,0 +1,25 @@
+
+# Disallow all hidden config files present in pythonanywhere environment
+
+.bash_history
+.bashrc
+.cache/
+.gitconfig
+.local/
+.profile
+.python_history
+.pythonstartup.py
+.vimrc
+.virtualenvs/
+
+README.txt
+
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Project
+
+.DS_Store

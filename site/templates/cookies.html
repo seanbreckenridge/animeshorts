@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      AnimeShorts
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-4.1.0-dist/css/bootstrap.min.css')}}">
+    <!-- jQuery -->
+    <script src="{{url_for('static', filename='jquery-3.3.1.slim.min.js')}}"></script>
+    <style>body {
+  font-family: 'Lato', sans-serif;
+}
+
+.footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer:hover {
+  cursor: pointer;
+  background-color: #1f2225!important;
+}
+
+main.container {
+  padding-bottom: 4rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}
+
+</style>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top container">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_navbar_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand text-nowrap mr-3 my-2" href="/">
+        
+    Anime Shorts
+  
+      </a>
+      <div class="collapse navbar-collapse" id="collapse_navbar_target">
+        <ul class="navbar-nav nav-pills dark-blue">
+          <li class="nav-item">
+            <a class="nav-link px-2" style="" href="/">
+              
+          List
+        
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" style="" href="/people">
+              
+          People
+        
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item py-1">
+            <a class="mx-2" href="/cookies" style="font-variant: small-caps; color: white; position: relative; top: 0.1rem;">
+              
+          cookie policy
+        
+            </a>
+            <a href="https://github.com/purplepinapples/animeshorts" class="ml-1">
+              <img src="{{url_for('static', filename='images/GitHub-Mark-Light-64px.png')}}" alt="Source on Github" style="max-height: 32px; width: auto;" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form style="display: none;" id="choiceform" method="get" action="/">
+        <input type="hidden" id="sort" name="sort" />
+      </form>
+    </nav>
+    <!-- compliance note -->
+    <main class="container">
+      <div class="alert alert-dark m-1 mt-0" role="alert">
+        <p>
+          This subdomain of pythonanywhere (animeshorts) does not use or store cookies on your system, nor do I store any data about who you are.
+        </p>
+        <p>
+          However, pythonanywhere does use cookies for a variety of reasons, you can view their policy
+          <a href="https://www.pythonanywhere.com/privacy_v2/#cookies">
+            here
+          </a>
+          .
+        </p>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-dark footer">
+      <div class="container center">
+        <div class="row justify-content-center py-2">
+          <p class="mb-0">
+            © PurplePinapples
+          </p>
+        </div>
+      </div>
+      <a class="d-none" href="https://myanimelist.net/profile/purplepinapples"></a>
+    </footer>
+    <!-- javascript/popper.js -->
+    <script src="{{url_for('static', filename='bootstrap-4.1.0-dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script>
+// runs when document is loaded:
+document.addEventListener('DOMContentLoaded', function() {
+
+  // footer onclick
+  let footer = document.querySelector("footer.footer");
+  footer.onmouseup = function(a) { // when mouse is released
+    if (a.ctrlKey || a.metaKey || a.which == 2) {
+      a.preventDefault(); // prevent middle click from opening tab, so it doesnt open twice.
+      window.open($(footer).find('a').attr("href"));
+    } else {
+      window.location = $(footer).find('a').attr("href");
+    }
+  }
+
+  }, false);
+</script>
+  </body>
+</html>
