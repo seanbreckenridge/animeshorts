@@ -57,7 +57,7 @@ p {
             with tag('main', klass='container'):
                 with tag("div", ('class', "alert alert-dark m-1 mt-0"), ("role", "alert")):
                     with tag('p'):
-                        text("This subdomain of pythonanywhere (animeshorts) does not use or store cookies on your system, nor do I store any data about who you are.")
+                        text("This subdomain of pythonanywhere (animeshorts) does not use or store any identifiable cookies on your system, nor do I store any data about who you are.")
                     with tag('p'):
                         text("However, pythonanywhere does use cookies for a variety of reasons, you can view their policy")
                         with tag('a', href="https://www.pythonanywhere.com/privacy_v2/#cookies"):
