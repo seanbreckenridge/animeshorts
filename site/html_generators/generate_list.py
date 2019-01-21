@@ -257,7 +257,7 @@ main#main-container {
                                     # tags
                                     for t in sorted(s['tags']):
                                         if t.lower() in ['anthology', 'arthouse', 'commercial', 'film', 'music video', 'series']:
-                                            with tag('span', klass='badge tag {}'.format(t.lower())):
+                                            with tag('span', klass='badge tag {}'.format(t.lower().strip().replace(" ", "-"))):
                                                 text(t.capitalize())
                                         else:
                                             print("Warning, Unknown tag:", t)
