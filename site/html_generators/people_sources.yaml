@@ -114,6 +114,12 @@
   name: "Tadanari Okamoto"
   image: "okamoto.jpg"
 -
+  mal: 41283
+  name: "ShiShi Yamazaki"
+  image: "yamazaki.jpg"
+  website: "http://shishiyamazaki.com"
+  vimeo: "shishi"
+-
   mal: 23623
   name: "Kato Ryu"
   image: "ryu.jpg"
@@ -123,6 +129,7 @@
   name: "Taku Furukawa"
   image: "furukawa.jpg"
 -
+  mal: 48892
   name: "Itou Takashi"
   image: "ito.jpg"
   website: "http://www.imageforum.co.jp/ito/"

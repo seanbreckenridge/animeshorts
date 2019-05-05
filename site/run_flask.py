@@ -9,7 +9,7 @@ def index():
     if not request.args:
         return render_template('index_rec.html')
     else:
-        if request.args['sort'] == "Date Added":
+        if 'sort' in request.args and request.args['sort'] == "Date Added":
             return render_template('index_newest.html')
         else:
             return render_template('index_rec.html')

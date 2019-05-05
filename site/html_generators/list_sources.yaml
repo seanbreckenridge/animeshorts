@@ -246,6 +246,21 @@
 -
   cc: false
   database:
+    -
+      mal: 39185
+  date: "2019-02-03"
+  duration: 5.0
+  episodes: 1
+  extra_info: ~
+  name: "Tatakau Mono-tachi e Ai wo Komete"
+  streaming:
+    -
+        youtube: "uSFdckpwXQc"
+  tags:
+    - "Music Video"
+-
+  cc: false
+  database:
     - mal:
         37531
   date: "2017-01-13"
@@ -1120,7 +1135,9 @@
   episodes: 1
   extra_info: ~
   name: Anima
-  streaming: ~
+  streaming:
+    -
+      youtube: "q91ceXsdXzM"
   tags:
     - Arthouse
 -
@@ -1222,6 +1239,21 @@
       youtube: "npiEBAiRBHI"
   tags:
     - Arthouse
+-
+  cc: false
+  database:
+    -
+      mal: 38290
+  date: "2017-01-13"
+  duration: 4.67
+  episodes: 1
+  extra_info: ~
+  name: "Tokyo Cosmo"
+  streaming:
+    -
+      youtube: 3SEXokSxZBI
+  tags:
+    - Film
 -
   cc: false
   database:
@@ -1328,6 +1360,21 @@
   streaming:
     -
       youtube: 0AUfrjdBEog
+  tags:
+    - "Music Video"
+-
+  cc: true
+  database:
+    -
+      mal: 39065
+  date: "2019-01-27"
+  duration: 5
+  episodes: 1
+  extra_info: ~
+  name: "Bokura Mada Underground"
+  streaming:
+    -
+      youtube: "nBteO-bU78Y"
   tags:
     - "Music Video"
 -
@@ -1858,6 +1905,21 @@
   tags:
     - Anthology
     - Arthouse
+-
+  cc: true
+  database:
+    -
+      mal: 39165
+  date: "2019-02-03"
+  duration: 4.13
+  episodes: 1
+  extra_info: ~
+  name: "Oki ni Mesu mama"
+  streaming:
+    -
+      youtube: nROvY9uiYYk
+  tags:
+    - "Music Video"
 -
   cc: false
   database:
@@ -2637,6 +2699,21 @@
   tags:
     - Arthouse
 -
+  cc: true
+  database:
+    -
+      mal: 38968
+  date: "2019-01-24"
+  duration: 3.25
+  episodes: 1
+  extra_info: ~
+  name: "Love In Ruins"
+  streaming:
+    -
+      youtube: 3iFRox1gTlc
+  tags:
+    - "Music Video"
+-
   cc: false
   database:
     -
@@ -2722,6 +2799,21 @@
       youtube: vtYA6rUZcKs
   tags:
     - Arthouse
+-
+  cc: false
+  database:
+    -
+      mal: 39171
+  date: "2019-02-03"
+  duration: 4
+  episodes: 1
+  extra_info: ~
+  name: "Sect"
+  streaming:
+    -
+      youtube: Qwo7KPfxr8Q
+  tags:
+    - "Music Video"
 -
   cc: false
   database:
@@ -2845,19 +2937,6 @@
   streaming:
     -
       youtube: VNCP9167n88
-  tags:
-    - Film
--
-  cc: false
-  database: ~
-  date: "2017-01-13"
-  duration: 4.67
-  episodes: 1
-  extra_info: ~
-  name: "Tokyo Cosmo"
-  streaming:
-    -
-      youtube: 3SEXokSxZBI
   tags:
     - Film
 -
@@ -3611,6 +3690,21 @@
   cc: false
   database:
     -
+      mal: 39088
+  date: "2019-01-31"
+  duration: 1.5
+  episodes: 1
+  extra_info: ~
+  name: Birthday
+  streaming:
+    -
+        vimeo: 124937629
+  tags:
+    - Arthouse
+-
+  cc: false
+  database:
+    -
       mal: 7415
   date: "2017-01-13"
   duration: 5.0
@@ -3905,6 +3999,21 @@
   cc: false
   database:
     -
+      mal: 38424
+  date: "2019-01-27"
+  duration: 7.56
+  episodes: 1
+  extra_info: ~
+  name: "Controller of Controller"
+  streaming:
+    -
+      vimeo: 167089601
+  tags:
+    - Film
+-
+  cc: false
+  database:
+    -
       mal: 3914
   date: "2017-01-13"
   duration: 24.0
@@ -3938,6 +4047,21 @@
   extra_info: ~
   name: "Pet-etre toi"
   streaming: ~
+  tags:
+    - "Music Video"
+-
+  cc: false
+  database:
+    -
+      mal: 38974
+  date: "2019-01-20"
+  duration: 4.3
+  episodes: 1
+  extra_info: ~
+  name: "Bouen no March"
+  streaming:
+    -
+      youtube: Fk4sgvvHyeI
   tags:
     - "Music Video"
 -
@@ -4010,6 +4134,20 @@
   streaming: ~
   tags:
     - Series
+-
+  cc: false
+  database:
+    -
+      mal: 39290
+  date: "2019-02-15"
+  duration: 4.08
+  episodes: 1
+  extra_info: ~
+  name: "Children"
+  streaming:
+    - youtube: "BE4oz2u6OHY"
+  tags:
+    - Arthouse
 -
   cc: false
   database:
@@ -4181,11 +4319,26 @@
   duration: 1.0
   episodes: 15
   extra_info: ~
-  name: Ani*Kuri15
+  name: "Ani*Kuri15"
   streaming: ~
   tags:
     - Anthology
     - Arthouse
+-
+  cc: true
+  database:
+    -
+      mal: 39174
+  date: "2019-02-03"
+  duration: 4.05
+  episodes: 1
+  extra_info: ~
+  name: "Sister"
+  streaming:
+    -
+      youtube: JhoK7chbpZ0
+  tags:
+    - "Music Video"
 -
   cc: false
   database:

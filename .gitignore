@@ -11,6 +11,8 @@
 .pythonstartup.py
 .vimrc
 .virtualenvs/
+.ssh
+.viminfo
 
 README.txt
 
