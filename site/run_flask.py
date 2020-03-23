@@ -1,8 +1,6 @@
 from flask import Flask, render_template, redirect, request
 
-templates_dir = "templates"
-
-app = Flask(__name__, template_folder=templates_dir)
+app = Flask(__name__)
 
 
 @app.route("/", methods=["GET"])
