@@ -42,7 +42,9 @@ def create_people_page(sources):
             doc.asis(
                 """<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">"""
             )
-            doc.asis('''<link rel="stylesheet" href="{{url_for('static', filename='css/people.css')}}">''')
+            doc.asis(
+                """<link rel="stylesheet" href="{{url_for('static', filename='css/people.css')}}">"""
+            )
             doc.asis("<!-- Fonts -->")
             doc.asis(
                 '<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">'
