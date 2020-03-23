@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CUR_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 cd "$CUR_DIR/site/html_generators"
