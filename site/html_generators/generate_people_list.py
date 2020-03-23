@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 def main():
     # Read in YAML Sources
     with open(constants.PEOPLE_SOURCES) as yaml_src:
-        sources = yaml.load(yaml_src)
+        sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
     # write out html file
     with open('../templates/people.html', 'w') as write_html_file:
         write_html_file.write(create_people_page(sources))

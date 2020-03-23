@@ -5,6 +5,7 @@ from itertools import chain
 import operator
 import datetime
 import argparse
+from hashlib import sha256
 
 import yaml
 import json
@@ -94,7 +95,7 @@ def create_youtube(id):
 
 def create_id(name, octothorpe):
     name = re.sub('[^\w]', '', name)  # remove problematic characters
-    return '{}{}{}'.format("#" if octothorpe else "", str(name), str(hash(name))[:10])
+    return '{}{}{}'.format("#" if octothorpe else "", str(name), sha256(name.encode()).hexdigest()[:10])
 
 
 def sort_list(sources, list_order):
@@ -463,7 +464,7 @@ def main(opt):
     download_names = opt
     # Read in YAML Sources
     with open(constants.SOURCES) as yaml_src:
-        sources = yaml.load(yaml_src)
+        sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
     # write out html file - ordered by reccomendation
     with open('../templates/index_rec.html', 'w') as write_html_file:
         write_html_file.write(create_page(sources, constants.order.REC))
