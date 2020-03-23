@@ -10,8 +10,7 @@ PyYaml = "*"
 flask = "*"
 yattag = "*"
 pillow = "*"
-requests = "*"
-bs4 = "*"
+jikanpy = "*"
 
 [requires]
 python_version = "3.7"

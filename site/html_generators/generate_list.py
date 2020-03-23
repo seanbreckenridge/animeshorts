@@ -37,14 +37,10 @@ class cache:
         with open(self.jsonpath, "w") as f:
             json.dump(self.items, f)
 
-    def _mal_crawl_name(self, id):
+    def _mal_crawl_name(self, mal_id):
         """Downloads the name of the MAL id"""
-        # print("[Cache][Crawler] Downloading name for MAL ID {}".format(id))
-        return (
-            self.crawler.get_soup(join_urls("https://myanimelist.net", "anime", id))
-            .find("h1")
-            .text.strip()
-        )
+        print("[Cache][Crawler] Downloading name for MAL ID {}".format(mal_id))
+        return self.crawler.get_anime(mal_id)["title"]
 
     def download_name(self, id):
         self.write_to_cache_periodically -= 1
