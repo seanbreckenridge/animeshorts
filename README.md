@@ -14,5 +14,3 @@ pipenv shell
 ./generate.sh # to generate HTML files
 python3 site/run_flask.py # server
 ```
-
-`
