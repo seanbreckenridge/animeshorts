@@ -39,7 +39,7 @@ class cache:
 
     def _mal_crawl_name(self, id):
         """Downloads the name of the MAL id"""
-        #print("[Cache][Crawler] Downloading name for MAL ID {}".format(id))
+        # print("[Cache][Crawler] Downloading name for MAL ID {}".format(id))
         return (
             self.crawler.get_soup(join_urls("https://myanimelist.net", "anime", id))
             .find("h1")
@@ -59,7 +59,7 @@ class cache:
 
     def get(self, id):
         if self.__contains__(id):
-            #print("[Cache] Found name for id {} in cache".format(id))
+            # print("[Cache] Found name for id {} in cache".format(id))
             return self.items[str(id)]
         else:
             self.items[str(id)] = self.download_name(id)
@@ -859,7 +859,7 @@ def main(opt):
     global download_names
     download_names = opt
     # Read in YAML Sources
-    with open(constants.SOURCES) as yaml_src:
+    with open(constants.LIST_SOURCES) as yaml_src:
         sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
     # write out html file - ordered by reccomendation
     with open("../templates/index_rec.html", "w") as write_html_file:

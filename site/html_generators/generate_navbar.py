@@ -1,9 +1,5 @@
 from yattag import Doc, indent
-import yaml
 import constants
-
-with open(constants.SOURCES) as yaml_src:
-    sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
 
 # generates the navbar, and forms for the top of the page.
 

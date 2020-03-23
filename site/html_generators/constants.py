@@ -1,13 +1,14 @@
+import os
+
 # Filenames
 LIST_REC_LINK = "index_rec.html"
 LIST_DATE_LINK = "index_newest.html"
 PEOPLE_LINK = "people.html"
-SOURCES = "list_sources.yaml"
-PEOPLE_SOURCES = "people_sources.yaml"
+SOURCES_DIR = "../sources"
+LIST_SOURCES = os.path.join(SOURCES_DIR, "list_sources.yaml")
+PEOPLE_SOURCES = os.path.join(SOURCES_DIR, "people_sources.yaml")
 LIST_CSS = "list.css"
 PEOPLE_CSS = "people.css"
-LIST_JS = "list.js"
-PEOPLE_JS = "people.js"
 
 # Strings
 FULL_NAME = "Anime Shorts"
