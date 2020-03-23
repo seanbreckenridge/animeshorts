@@ -43,8 +43,8 @@ def navbar(active, **kwargs):
                                 text('Date Added')
                             with tag('span', ('style', 'color: white; position: relative; top: 0.3rem;'), ('class', 'mx-2 badge ordernote'), ('data-toggle', "tooltip"), ('data-original-title', "Recommendation lists better entries near the top. Date Added lists entries I added to the list recently at the top.")):
                                 text('?')
-                    with tag('a', ('href', "https://github.com/seanbreckenridge/animeshorts"), ('class', 'ml-1')):
-                        doc.stag('img', ('src', """{{url_for('static', filename='images/GitHub-Mark-Light-64px.png')}}"""), ('alt', 'Source on Github'), ('style', 'max-height: 32px; width: auto;'))
+                            with tag('a', ('href', "https://github.com/seanbreckenridge/animeshorts"), ('class', 'ml-1')):
+                                doc.stag('img', ('src', """{{url_for('static', filename='images/GitHub-Mark-Light-64px.png')}}"""), ('alt', 'Source on Github'), ('style', 'max-height: 32px; width: auto;'))
         with tag('form', ('style', 'display: none;'), ('id', 'choiceform'), ('method', 'get'), ('action', '/')):
             doc.stag('input', ('type', 'hidden'), ('id', 'sort'), ('name', 'sort'))
 
