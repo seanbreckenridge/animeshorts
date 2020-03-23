@@ -22,6 +22,11 @@
   website: "https://www.onohana.com/"
   image: "onohana.jpg"
 -
+  mal: 6910
+  name: "Tomoyasu Murata"
+  website: "https://www.tomoyasu.net/"
+  image: "murata.jpg"
+-
   mal: 28807
   name: "Tanaami Keiichi"
   image: "tanaami.jpg"
@@ -44,8 +49,9 @@
   image: "ryosiro.png"
 -
   mal: 40575
-  name: "Masanobu Hiroka"
+  name: "Masanobu Hiraoka"
   image: "hiroka.jpg"
+  website: "https://twitter.com/budou_mochi"
 -
   mal: 40135
   name: "Rapparu"

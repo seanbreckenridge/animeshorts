@@ -3481,7 +3481,9 @@
     - Series
 -
   cc: false
-  database: ~
+  database:
+    -
+      mal: 39872
   date: "2017-01-13"
   duration: 8.6
   episodes: 1
