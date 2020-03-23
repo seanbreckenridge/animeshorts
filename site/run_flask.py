@@ -22,9 +22,5 @@ def people():
 def route_to_list():
     return redirect("/", code=302)
 
-@app.route("/cookies")
-def cookies():
-    return render_template('cookies.html')
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
