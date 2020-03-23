@@ -21,7 +21,7 @@ class cache:
     """class to manage caching API requests for MAL names"""
 
     def __init__(self, crawler):
-        self.jsonpath = "mal_name_cache.json"
+        self.jsonpath = "../mal_name_cache.json"
         self.write_to_cache_const = 5
         self.write_to_cache_periodically = self.write_to_cache_const
         self.crawler = crawler
