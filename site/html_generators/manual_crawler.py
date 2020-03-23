@@ -38,7 +38,7 @@ class crawl:
                         "Non-standard issue connecting to "
                         + f"{url}: {response.status_code}."
                     )
-            except requests.exceptions.RequestException as e:
+            except requests.exceptions.RequestException:
                 pass
             count += 1
 
