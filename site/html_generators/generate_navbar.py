@@ -115,7 +115,7 @@ def navbar(active, **kwargs):
                                     "style",
                                     "color: white; position: relative; top: 0.3rem;",
                                 ),
-                                ("class", "mx-2 badge ordernote"),
+                                ("class", "ml-2 badge ordernote"),
                                 ("data-toggle", "tooltip"),
                                 (
                                     "data-original-title",
@@ -123,30 +123,33 @@ def navbar(active, **kwargs):
                                 ),
                             ):
                                 text("?")
-                            with tag(
-                                "a",
+            with tag('ul', klass="navbar-nav"):
+                with tag("li", klass="nav-item pl-3"):
+                    with tag(
+                            "a",
+                            (
+                                "href",
+                                "https://github.com/seanbreckenridge/animeshorts",
+                            )
+                        ):
+                        doc.stag(
+                                "img",
                                 (
-                                    "href",
-                                    "https://github.com/seanbreckenridge/animeshorts",
+                                    "src",
+                                    """{{url_for('static', filename='images/GitHub-Mark-Light-64px.png')}}""",
                                 ),
-                                ("class", "ml-1"),
-                            ):
-                                doc.stag(
-                                    "img",
-                                    (
-                                        "src",
-                                        """{{url_for('static', filename='images/GitHub-Mark-Light-64px.png')}}""",
-                                    ),
-                                    ("alt", "Source on Github"),
-                                    ("style", "max-height: 32px; width: auto;"),
-                                )
-        with tag(
+                                ("alt", "Source on Github"),
+                                ("style", "max-height: 32px; width: auto;"),
+                            )
+
+        if active == constants.LIST_TAB:
+            with tag(
             "form",
             ("style", "display: none;"),
             ("id", "choiceform"),
             ("method", "get"),
             ("action", "/"),
-        ):
-            doc.stag("input", ("type", "hidden"), ("id", "sort"), ("name", "sort"))
+            ):
+                doc.stag("input", ("type", "hidden"), ("id", "sort"), ("name", "sort"))
 
     return indent(doc.getvalue(), indent_text=True)
