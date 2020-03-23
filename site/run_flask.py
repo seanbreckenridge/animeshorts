@@ -20,7 +20,7 @@ def people():
 
 @app.route("/list")
 def route_to_list():
-    return redirect("/", code=302)
+    return redirect("./", code=302)
 
 if __name__ == "__main__":
     app.run(debug=False)
