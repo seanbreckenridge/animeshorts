@@ -35,9 +35,7 @@ def create_people_page(sources):
             doc.asis('<meta charset="utf-8">')
             doc.asis('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">')
             doc.asis('<!-- bootstrap CSS -->')
-            doc.asis('''<link rel="stylesheet" href="{{url_for('static', filename='bootstrap-4.1.0-dist/css/bootstrap.min.css')}}">''')
-            doc.asis('<!-- jQuery -->')
-            doc.asis('''<script src="{{url_for('static', filename='jquery-3.3.1.slim.min.js')}}"></script>''')
+            doc.asis("""<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">""")
             with tag('style'):
                 doc.asis("""body {
   font-family: 'Lato', sans-serif;
@@ -170,7 +168,9 @@ main.container {
                 with tag('a', klass="d-none", href=constants.user_link):
                     pass
             doc.asis('<!-- javascript/popper.js -->')
-            doc.asis('''<script src="{{url_for('static', filename='bootstrap-4.1.0-dist/js/bootstrap.bundle.min.js')}}"></script>''')
+            doc.asis("""<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>""")
             with tag('script'):
                 doc.asis("""
 // runs when document is loaded:
