@@ -10,7 +10,6 @@ class crawl:
             wait: time between requests
             retry_max: number of times to retry
     """
-
     def __init__(self, wait, retry_max):
         self.wait = wait
         self.jikan = jikanpy.Jikan()
@@ -28,7 +27,8 @@ class crawl:
     def get_anime(self, mal_id: int):
         count = 0
         while count < self.retry_max:
-            time.sleep(self.wait * count)  # sleep for successively longer times
+            # sleep for successively longer times
+            time.sleep(self.wait * count)
             try:
                 self.wait_till()
                 response = self.jikan.anime(mal_id)

@@ -2,6 +2,7 @@
 # Disallow all hidden config files present in pythonanywhere environment
 
 site/templates/*
+/output
 tags*
 .bash_history
 .bashrc

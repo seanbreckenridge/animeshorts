@@ -10,7 +10,7 @@ from generate_list import join_urls
 
 
 def image_path(filename):
-    return """{{url_for('static', filename='images/people/""" + filename + """')}}"""
+    return "./images/people/" + filename
 
 
 def get_ratio_image_from_relative_path(filename):
@@ -23,7 +23,7 @@ def get_ratio_image_from_relative_path(filename):
 def chunk_list(l, chunk_size):
     """Return chunk_size'd lists from the large list."""
     for i in range(0, len(l), chunk_size):
-        yield l[i : i + chunk_size]
+        yield l[i:i + chunk_size]
 
 
 def create_people_page(sources):
@@ -42,9 +42,7 @@ def create_people_page(sources):
             doc.asis(
                 """<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">"""
             )
-            doc.asis(
-                """<link rel="stylesheet" href="{{url_for('static', filename='css/people.css')}}">"""
-            )
+            doc.asis("""<link rel="stylesheet" href="./css/people.css">""")
             doc.asis("<!-- Fonts -->")
             doc.asis(
                 '<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">'
@@ -53,9 +51,8 @@ def create_people_page(sources):
             doc.asis("<!-- navbar -->")
             doc.asis(generate_navbar.navbar(active=constants.PEOPLE_TAB))
             doc.asis("<!-- note -->")
-            with tag(
-                "div", ("class", "container rounded-bottom py-3 mb-2"), ("id", "note")
-            ):
+            with tag("div", ("class", "container rounded-bottom py-3 mb-2"),
+                     ("id", "note")):
                 with tag("p", ("class", "text-center mb-0")):
                     text("People I feel are worth checking out:")
             doc.asis("<!-- list -->")
@@ -64,17 +61,13 @@ def create_people_page(sources):
                     for c in sources:
                         with tag("div", klass="card"):
                             with tag(
-                                "div",
+                                    "div",
                                 ("class", "image-container"),
                                 (
                                     "style",
-                                    (
-                                        "padding-bottom:{};".format(
-                                            get_ratio_image_from_relative_path(
-                                                c["image"]
-                                            )
-                                        )
-                                    ),
+                                    ("padding-bottom:{};".format(
+                                        get_ratio_image_from_relative_path(
+                                            c["image"]))),
                                 ),
                             ):
                                 doc.stag(
@@ -88,58 +81,64 @@ def create_people_page(sources):
                                     text(c["name"])
                                 with tag("div", klass="card-text"):
                                     for other_link in sorted(
-                                        list(
-                                            {
+                                            list({
                                                 k: c[k]
                                                 for k, v in c.items()
                                                 if k not in ["name", "image"]
-                                            }
-                                        )
-                                    ):
+                                            })):
                                         if other_link == "mal":
                                             with tag(
-                                                "a",
-                                                klass="badge badge-pill person-link badge-secondary",
-                                                href=join_urls(
-                                                    "https://myanimelist.net",
-                                                    "people",
-                                                    c[other_link],
-                                                ),
+                                                    "a",
+                                                    klass=
+                                                    "badge badge-pill person-link badge-secondary",
+                                                    href=join_urls(
+                                                        "https://myanimelist.net",
+                                                        "people",
+                                                        c[other_link],
+                                                    ),
                                             ):
-                                                with tag("span", klass="moveup"):
+                                                with tag("span",
+                                                         klass="moveup"):
                                                     text("mal")
                                         elif other_link == "website":
                                             with tag(
-                                                "a",
-                                                klass="badge badge-pill person-link badge-secondary movetext",
-                                                href=c[other_link],
+                                                    "a",
+                                                    klass=
+                                                    "badge badge-pill person-link badge-secondary movetext",
+                                                    href=c[other_link],
                                             ):
-                                                with tag("span", klass="moveup"):
+                                                with tag("span",
+                                                         klass="moveup"):
                                                     text("website")
                                         elif other_link == "vimeo":
                                             with tag(
-                                                "a",
-                                                klass="badge badge-pill person-link badge-secondary movetext",
-                                                href=join_urls(
-                                                    "https://vimeo.com", c[other_link]
-                                                ),
+                                                    "a",
+                                                    klass=
+                                                    "badge badge-pill person-link badge-secondary movetext",
+                                                    href=join_urls(
+                                                        "https://vimeo.com",
+                                                        c[other_link]),
                                             ):
-                                                with tag("span", klass="moveup"):
+                                                with tag("span",
+                                                         klass="moveup"):
                                                     text("vimeo")
                                         elif other_link == "youtube":
                                             with tag(
-                                                "a",
-                                                klass="badge badge-pill person-link badge-secondary movetext",
-                                                href=join_urls(
-                                                    "https://www.youtube.com",
-                                                    "user",
-                                                    c[other_link],
-                                                ),
+                                                    "a",
+                                                    klass=
+                                                    "badge badge-pill person-link badge-secondary movetext",
+                                                    href=join_urls(
+                                                        "https://www.youtube.com",
+                                                        "user",
+                                                        c[other_link],
+                                                    ),
                                             ):
-                                                with tag("span", klass="moveup"):
+                                                with tag("span",
+                                                         klass="moveup"):
                                                     text("youtube")
                                         else:
-                                            print("Unknown tag: {}".format(other_link))
+                                            print("Unknown tag: {}".format(
+                                                other_link))
             doc.asis("<!-- footer -->")
             with tag("footer", ("class", "bg-dark footer")):
                 with tag("div", klass="container center"):
@@ -155,8 +154,7 @@ def create_people_page(sources):
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>"""
             )
             with tag("script"):
-                doc.asis(
-                    """
+                doc.asis("""
 // runs when document is loaded:
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -172,8 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   }, false);
-"""
-                )
+""")
     return indent(doc.getvalue(), indent_text=True)
 
 
@@ -182,7 +179,8 @@ def main():
     with open(constants.PEOPLE_SOURCES) as yaml_src:
         sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
     # write out html file
-    with open("../templates/people.html", "w") as write_html_file:
+    with open(f"{constants.OUTPUT_DIR}/people.html", "w") as write_html_file:
+        print("Generated people.html")
         write_html_file.write(create_people_page(sources))
 
 
