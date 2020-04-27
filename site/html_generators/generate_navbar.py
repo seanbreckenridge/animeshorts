@@ -133,13 +133,4 @@ def navbar(active, **kwargs):
                             ("style", "max-height: 32px; width: auto;"),
                         )
 
-        if active == constants.LIST_TAB:
-            with tag(
-                    "form",
-                ("style", "display: none;"),
-                ("id", "choiceform"),
-            ):
-                doc.stag("input", ("type", "hidden"), ("id", "sort"),
-                         ("name", "sort"))
-
     return indent(doc.getvalue(), indent_text=True)
