@@ -5,10 +5,12 @@ app = Flask(__name__)
 # redirect from old flask server
 # to my new site
 
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def redirect_to_new_site(path):
     return redirect("https://seanbr.com/animeshorts", code=302)
+
 
 """
 @app.route("/", methods=["GET"])
