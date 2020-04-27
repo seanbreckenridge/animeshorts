@@ -2,7 +2,15 @@ from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__)
 
+# redirect from old flask server
+# to my new site
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def redirect_to_new_site(path):
+    return redirect("https://seanbr.com/animeshorts", code=302)
+
+"""
 @app.route("/", methods=["GET"])
 def index():
     if not request.args:
@@ -22,7 +30,7 @@ def people():
 @app.route("/list")
 def route_to_list():
     return redirect("./", code=302)
-
+"""
 
 if __name__ == "__main__":
     app.run(debug=False)

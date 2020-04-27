@@ -81,7 +81,7 @@ def navbar(active, **kwargs):
                             ("class", "btn-group ml-1"),
                             ("role", "group"),
                         ):
-                            with tag("form", ('action', './')):
+                            with tag("form", ('action', './'), ('class', 'btn-group')):
                                 with tag(
                                         "button",
                                     (
@@ -92,7 +92,7 @@ def navbar(active, **kwargs):
                                     ),
                                 ):
                                     text("Recommendation")
-                            with tag("form", ('action', './newest')):
+                            with tag("form", ('action', './newest'), ('class', 'btn-group')):
                                 with tag(
                                         "button",
                                     (

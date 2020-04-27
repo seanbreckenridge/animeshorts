@@ -9,3 +9,16 @@ Currently, the site only links to MAL, but I left the [yaml](https://github.com/
 Feel free to make a [PR](https://github.com/seanbreckenridge/animeshorts/pulls) if you wish to contribute in general. Final say on what goes on the list is up to me, but I'm glad to take suggestions.
 
 Run `./generate.html` to generate the site.
+
+Served with `nginx` like:
+
+```
+  location /animeshorts {
+    if ($request_uri ~ ^/(.*)\.html$) {
+      return 302 /$1;
+    }
+    try_files $uri $uri.html $uri/ =404;
+  }
+```
+
+to remove the `.html` from the URI.
