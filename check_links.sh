@@ -30,7 +30,7 @@ VALID_IDS="$(curl --silent "$ANIME_IDS" | jq -r '.sfw | .[]')"
 for unknown in "$MAL_IDS"; do
   unknown_id=$(echo "$unknown" | sed -e "s|^.*anime/||g")
   if ! grep -xq "$unknown_id" <<<"$VALID_IDS"; then
-    echo "$unknown not in MAL ID CACHE"
+    echo "$unknown not in MAL ID CACHE" >> "$BROKEN_LOG"
   fi
 done
 
@@ -58,4 +58,5 @@ while read -r url; do
     printf "%s not valid\n" "$url" >> "$BROKEN_LOG"
   fi
   sleep 3
-done <<<"${VIMEO_LINKS}\n${YOUTUBE_LINKS}"
+done <<<"${VIMEO_LINKS}
+${YOUTUBE_LINKS}"
