@@ -37,9 +37,7 @@
   episodes: 1
   extra_info: ~
   name: "Little Witch Academia"
-  streaming:
-    -
-      netflix: 80079082
+  streaming: ~
   tags:
     - Film
 -
@@ -298,15 +296,7 @@
   episodes: 6
   extra_info: ~
   name: "Batman: Gotham Knight"
-  streaming:
-    -
-      youtube:
-        - gP4bxXZ3rXc
-        - vrmtB-1crJI
-        - DWRvIrQR7Tg
-        - l21HLncmHGU
-        - asEQeCfaEgE
-        - sGx_vqLsYLU
+  streaming: ~
   tags:
     - Film
     - Anthology
@@ -1200,7 +1190,7 @@
   cc: false
   database:
     -
-      mal: Land
+      mal: 38970
   date: "2017-01-13"
   duration: 3.5
   episodes: 1
@@ -1584,8 +1574,6 @@
   streaming:
     -
         youtube: "w11l6f28FiM"
-    -
-        vimeo: "ondemand/chainsawbunny"
   tags:
     - Arthouse
 -
@@ -1666,7 +1654,7 @@
   name: "Akuma no Kimuraa-hen"
   streaming:
     -
-      youtube: RsGGQAJ3Bb8
+      twitter: "https://twitter.com/nissin_hiyoko/status/982151140253945856"
   tags:
     - Commercial
 -
@@ -1803,7 +1791,7 @@
   name: Calm
   streaming:
     -
-      youtube: tzuNxR5U1o
+      youtube: tzuNxR5U1ok
   tags:
     - Arthouse
 -

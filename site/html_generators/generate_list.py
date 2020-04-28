@@ -86,7 +86,10 @@ def join_urls(*parts_url):
     if len(parts_url) == 2:
         url = urljoin(parts_url[0], parts_url[1])
     else:
-        url = parts_url
+        if isinstance(parts_url, tuple) or isinstance(parts_url, list):
+            return parts_url[0]
+        else:
+            url = parts_url
     return url
 
 
@@ -552,6 +555,26 @@ def create_page(sources, list_order):
                                                     (
                                                         "alt",
                                                         "{} (Hidive)".format(
+                                                            s["name"]),
+                                                    ),
+                                                    ("class",
+                                                     "rounded-circle"),
+                                                )
+
+                                        elif "twitter" in vid:
+                                            with tag(
+                                                    "a",
+                                                    href=join_urls(vid["twitter"]),
+                                            ):
+                                                doc.stag(
+                                                    "img",
+                                                    (
+                                                        "src",
+                                                        "./images/twitter.svg",
+                                                    ),
+                                                    (
+                                                        "alt",
+                                                        "{} (Twitter)".format(
                                                             s["name"]),
                                                     ),
                                                     ("class",
