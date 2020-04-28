@@ -1,0 +1,61 @@
+#!/bin/bash
+# check the external URLs on the website to make sure none of them
+# have been deleted
+# stderr is logs, stdout is errors
+
+# requires: curl, jq, youtube-dl
+
+# cd to current dir
+THIS_DIR="$(dirname "${BASH_SOURCE[0]}")"
+cd "$THIS_DIR"
+
+BROKEN_LOG="${THIS_DIR}/broken.log"
+echo > "$BROKEN_LOG" # delete file
+
+# list of all current mal ids maintained by me
+ANIME_IDS="https://raw.githubusercontent.com/seanbreckenridge/mal-id-cache/master/cache/anime_cache.json"
+
+# grep for all urls starting with https
+CHECK_URLS="$(find ./output/ -name "*.html" -exec grep -Po '(?<=href=")[^"]*(?=")' {} \; | grep '^https' | sort | uniq)"
+
+# grep for mal anime urls
+MAL_IDS=$(grep "myanimelist.net/anime/" <<<"$CHECK_URLS")
+# remove mal anime urls from leftover URLs
+CHECK_URLS=$(grep -v "myanimelist.net/anime/" <<<"$CHECK_URLS")
+
+# make sure all the anime IDs were valid
+VALID_IDS="$(curl --silent "$ANIME_IDS" | jq -r '.sfw | .[]')"
+
+# loop through and make sure each ID is in the list of valid IDs
+for unknown in "$MAL_IDS"; do
+  unknown_id=$(echo "$unknown" | sed -e "s|^.*anime/||g")
+  if ! grep -xq "$unknown_id" <<<"$VALID_IDS"; then
+    echo "$unknown not in MAL ID CACHE"
+  fi
+done
+
+# use youtube-dl to check items that match vimeo/youtube
+YOUTUBE_LINKS=$(grep "youtu" <<<"$CHECK_URLS")
+VIMEO_LINKS=$(grep "vimeo" <<<"$CHECK_URLS")
+
+# remove those URLs from urls left to check
+CHECK_URLS=$(echo "$CHECK_URLS" | grep -v "youtu" | grep -v "vimeo")
+
+# check anything that doesnt match myanimelist.net/anime/ or youtube.com/vimeo by requesting directly and checking the HTTP status
+while read -r url; do
+  http_code=$(curl --write-out %{http_code} --silent --output /dev/null "$url")
+  printf "checking %s\n" "$url" 2>&1
+  if [ "$http_code" -gt 399 ]; then
+    printf "%s not valid\n" "$url" >> "$BROKEN_LOG"
+  fi
+  sleep 3
+done<<<"${CHECK_URLS}"
+
+# check video urls by downloading
+while read -r url; do
+  printf "checking %s\n" "$url" 2>&1
+  if ! youtube-dl --skip-download "$url" >/dev/null 1>&2; then
+    printf "%s not valid\n" "$url" >> "$BROKEN_LOG"
+  fi
+  sleep 3
+done <<<"${VIMEO_LINKS}\n${YOUTUBE_LINKS}"

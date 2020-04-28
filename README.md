@@ -20,3 +20,5 @@ Served with `nginx` like:
 ```
 
 to remove the `.html` from the URI.
+
+The `check_links.sh` script checks the external URLs (all the videos/databases) this links to to make sure they're all still valid.
