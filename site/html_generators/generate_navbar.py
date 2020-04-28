@@ -1,4 +1,5 @@
 from yattag import Doc, indent
+
 import constants
 
 # generates the navbar, and forms for the top of the page.

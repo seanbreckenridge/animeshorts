@@ -1,14 +1,14 @@
-from os import path
-from urllib.parse import urljoin
 import re
-from itertools import chain
+import json
 import operator
 import datetime
 import argparse
+from itertools import chain
 from hashlib import sha256
+from os import path
+from urllib.parse import urljoin
 
 import yaml
-import json
 from yattag import Doc, indent
 from requests import Request
 

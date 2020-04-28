@@ -1,6 +1,6 @@
 import time
-import requests
 
+import requests
 import jikanpy
 
 
