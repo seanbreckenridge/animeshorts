@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* background-color: #eaeaea; */
@@ -11,7 +11,9 @@ body {
 }
 
 /* more info buttons */
-.more-info-expand, .more-info-expand:link, .more-info-expand:visited {
+.more-info-expand,
+.more-info-expand:link,
+.more-info-expand:visited {
   cursor: pointer;
   color: #d01212;
   /* fix positioning so it's inline with name/badges */
@@ -25,7 +27,8 @@ body {
 }
 
 /* more info hover (darkened) color */
-.more-info-expand:hover, .more-info-expand:active {
+.more-info-expand:hover,
+.more-info-expand:active {
   color: #560808;
 }
 
@@ -45,12 +48,12 @@ body {
 .circular-buttons-container a {
   float: right !important;
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
 
 .tag {
   background-color: lightgrey;
-  margin-left: .5em;
+  margin-left: 0.5em;
   white-space: nowrap;
 }
 
@@ -59,12 +62,11 @@ span.badge.cc {
   position: absolute;
   background: darkgrey;
   color: white;
-  font-size:0.8rem;
+  font-size: 0.8rem;
 
   /* put in top right */
   top: -4px;
   right: -1px;
-
 }
 
 .time {
@@ -91,18 +93,25 @@ div#main-container > div.anime-row-container:nth-child(odd) > div.anime-row {
 
 footer:hover {
   cursor: pointer;
-  background-color: #1f2225!important;
+  background-color: #1f2225 !important;
 }
 
 #note {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 /* make sure list items are below footer */
-.list-group-item, .list-group-item:hover{
+.list-group-item,
+.list-group-item:hover {
   z-index: auto;
 }
 
 main#main-container {
   padding-bottom: 6rem;
+}
+
+.navbar-nav .nav-item {
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
 }

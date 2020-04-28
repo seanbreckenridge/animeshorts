@@ -119,7 +119,7 @@ def navbar(active, **kwargs):
                                 ),
                             ):
                                 text("?")
-            with tag("ul", klass="navbar-nav"):
+            with tag("ul", klass="navbar-nav p-2"):
                 with tag("li", klass="nav-item pl-3"):
                     with tag(
                             "a",
