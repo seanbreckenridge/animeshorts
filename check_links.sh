@@ -10,7 +10,7 @@ THIS_DIR="$(dirname "${BASH_SOURCE[0]}")"
 cd "$THIS_DIR"
 
 BROKEN_LOG="${THIS_DIR}/broken.log"
-echo > "$BROKEN_LOG" # delete file
+echo >"$BROKEN_LOG" # delete file
 
 # list of all current mal ids maintained by me
 ANIME_IDS="https://raw.githubusercontent.com/seanbreckenridge/mal-id-cache/master/cache/anime_cache.json"
@@ -28,10 +28,10 @@ VALID_IDS="$(curl --silent "$ANIME_IDS" | jq -r '.sfw | .[]')"
 
 # loop through and make sure each ID is in the list of valid IDs
 for unknown in "$MAL_IDS"; do
-  unknown_id=$(echo "$unknown" | sed -e "s|^.*anime/||g")
-  if ! grep -xq "$unknown_id" <<<"$VALID_IDS"; then
-    echo "$unknown not in MAL ID CACHE" >> "$BROKEN_LOG"
-  fi
+	unknown_id=$(echo "$unknown" | sed -e "s|^.*anime/||g")
+	if ! grep -xq "$unknown_id" <<<"$VALID_IDS"; then
+		echo "$unknown not in MAL ID CACHE" >>"$BROKEN_LOG"
+	fi
 done
 
 # use youtube-dl to check items that match vimeo/youtube
@@ -43,20 +43,20 @@ CHECK_URLS=$(echo "$CHECK_URLS" | grep -v "youtu" | grep -v "vimeo")
 
 # check anything that doesnt match myanimelist.net/anime/ or youtube.com/vimeo by requesting directly and checking the HTTP status
 while read -r url; do
-  http_code=$(curl --write-out %{http_code} --silent --output /dev/null "$url")
-  printf "checking %s\n" "$url" 2>&1
-  if [ "$http_code" -gt 399 ]; then
-    printf "%s not valid\n" "$url" >> "$BROKEN_LOG"
-  fi
-  sleep 3
-done<<<"${CHECK_URLS}"
+	http_code=$(curl --write-out %{http_code} --silent --output /dev/null "$url")
+	printf "checking %s\n" "$url" 2>&1
+	if [ "$http_code" -gt 399 ]; then
+		printf "%s not valid\n" "$url" >>"$BROKEN_LOG"
+	fi
+	sleep 3
+done <<<"${CHECK_URLS}"
 
 # check video urls by downloading
 while read -r url; do
-  printf "checking %s\n" "$url" 2>&1
-  if ! youtube-dl --skip-download "$url" >/dev/null 1>&2; then
-    printf "%s not valid\n" "$url" >> "$BROKEN_LOG"
-  fi
-  sleep 3
+	printf "checking %s\n" "$url" 2>&1
+	if ! youtube-dl --skip-download "$url" >/dev/null 1>&2; then
+		printf "%s not valid\n" "$url" >>"$BROKEN_LOG"
+	fi
+	sleep 3
 done <<<"${VIMEO_LINKS}
 ${YOUTUBE_LINKS}"

@@ -4,7 +4,7 @@ CUR_DIR="$(dirname "${BASH_SOURCE[0]}")"
 
 OUTPUT_DIR="${CUR_DIR}/output"
 if [ -d "$OUTPUT_DIR" ]; then
-  rm -rf "$OUTPUT_DIR"
+	rm -rf "$OUTPUT_DIR"
 fi
 
 mkdir "$OUTPUT_DIR"
