@@ -3400,7 +3400,8 @@
     - Film
 -
   cc: false
-  database: ~
+  database:
+    - mal: 39290
   date: "2017-01-13"
   duration: 4.08
   episodes: 1
