@@ -174,6 +174,22 @@
     - Arthouse
 -
   cc: false
+  database:
+    -
+      mal: 40312
+  date: "2019-10-27"
+  duration: 1.8
+  episodes: 1
+  extra_info: ~
+  name: "Southpaw"
+  streaming:
+    -
+      youtube: 51_lchSJhO4
+  tags:
+    - Arthouse
+    - "Music Video"
+-
+  cc: false
   database: ~
   date: "2017-01-13"
   duration: 6.97
@@ -1019,6 +1035,19 @@
       youtube: wyHYb7LdrF0
   tags:
     - "Music Video"
+-
+  cc: false
+  database:
+    -
+      mal: 39495
+  date: "2019-10-28"
+  duration: 10
+  episodes: 1
+  extra_info: ~
+  name: "Totsukuni no Shoujo"
+  streaming: ~
+  tags:
+    - Film
 -
   cc: false
   database:
@@ -2469,6 +2498,20 @@
   cc: false
   database:
     -
+      mal: 39513
+  date: "2019-05-04"
+  duration: 4.0
+  episodes: 1
+  extra_info: ~
+  name: "Tenuto"
+  streaming:
+    - youtube: cjSkAYn7dt4
+  tags:
+    - "Music Video"
+-
+  cc: false
+  database:
+    -
       mal: 3507
   date: "2017-01-13"
   duration: 4.0
@@ -3222,6 +3265,20 @@
       hidive: this-boy-can-fight-aliens
   tags:
     - Film
+-
+  cc: false
+  database:
+    -
+      mal: 39475
+  date: "2019-04-04"
+  duration: 4.0
+  episodes: 1
+  extra_info: ~
+  name: "Jack Nicholson"
+  streaming:
+    - vimeo: 40732406
+  tags:
+    - "Music Video"
 -
   cc: false
   database:
