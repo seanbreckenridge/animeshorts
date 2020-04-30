@@ -112,6 +112,8 @@ main#main-container {
 
 .navbar-nav .nav-item {
   text-align: center;
-  padding-left: auto;
-  padding-right: auto;
+}
+
+.navbar-nav.nav-pills .nav-item:hover {
+  background-color: #686868;
 }
