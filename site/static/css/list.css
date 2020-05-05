@@ -117,3 +117,7 @@ main#main-container {
 .navbar-nav.nav-pills .nav-item:hover {
   background-color: #686868;
 }
+
+.badge.badge-info {
+  margin-left: 5px;
+}
