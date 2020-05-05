@@ -184,6 +184,10 @@ def create_page(sources, list_order):
                                                 text(t.capitalize())
                                         else:
                                             print("Warning, Unknown tag:", t)
+                                    if list_order == constants.order.DATE:
+                                        with tag("span",
+                                                 klass="badge badge-info"):
+                                            text(str(s["date"]))
                                     # if this has extra info
                                     if s["extra_info"] is not None:
                                         with tag(
@@ -564,7 +568,8 @@ def create_page(sources, list_order):
                                         elif "twitter" in vid:
                                             with tag(
                                                     "a",
-                                                    href=join_urls(vid["twitter"]),
+                                                    href=join_urls(
+                                                        vid["twitter"]),
                                             ):
                                                 doc.stag(
                                                     "img",
