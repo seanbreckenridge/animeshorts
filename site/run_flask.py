@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def redirect_to_new_site(path):
-    return redirect("https://sean.fish/animeshorts", code=302)
+    return redirect("https://sean.fish/animeshorts/", code=302)
 
 
 """
