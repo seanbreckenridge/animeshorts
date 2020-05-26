@@ -305,17 +305,6 @@ def create_page(sources, list_order):
                                             print(
                                                 "Warning, found unknown database:",
                                                 db)
-                                # spacer so that streaming links line up.
-                                else:
-                                    with tag("a", klass="d.none"):
-                                        doc.stag(
-                                            "img",
-                                            (
-                                                "src",
-                                                "./images/transparent.png",
-                                            ),
-                                            ("alt", ""),
-                                        )
 
                                 # streaming
                                 if s["streaming"] is not None:

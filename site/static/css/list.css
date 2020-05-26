@@ -1,9 +1,8 @@
 body {
   font-family: "Lato", sans-serif;
+  background-color: #1b262c;
+  color: white;
 }
-
-/* background-color: #eaeaea; */
-/* background-color: #f2f2f2; */
 
 .anime-row {
   padding-top: 5px;
@@ -53,6 +52,7 @@ body {
 
 .tag {
   background-color: lightgrey;
+  color: black;
   margin-left: 0.5em;
   white-space: nowrap;
 }
@@ -86,8 +86,6 @@ div#main-container > div.anime-row-container:nth-child(odd) > div.anime-row {
 
 .footer {
   color: white;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
@@ -97,7 +95,8 @@ footer:hover {
 }
 
 #note {
-  background-color: lightgrey;
+  background-color: #444;
+  color: white;
 }
 
 /* make sure list items are below footer */
@@ -107,7 +106,7 @@ footer:hover {
 }
 
 main#main-container {
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 
 .navbar-nav .nav-item {

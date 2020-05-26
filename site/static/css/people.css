@@ -1,5 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
+  background-color: #1b262c;
+  color: white;
 }
 
 .image-container {
@@ -22,7 +24,9 @@ body {
   text-rendering: auto; /* chrome compliance for small-caps font */
   font-variant: small-caps;
 }
-
+.card {
+  background-color: #1c1c1c;
+}
 .card-text {
   margin-bottom: 0.5rem !important;
 }
@@ -55,7 +59,8 @@ body {
 }
 
 #note {
-  background-color: lightgrey;
+  background-color: #444;
+  color: white;
 }
 
 .moveup {
@@ -65,8 +70,6 @@ body {
 
 .footer {
   color: white;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
