@@ -9,7 +9,7 @@ verify_ssl = true
 PyYaml = "*"
 yattag = "*"
 pillow = "*"
-jikanpy = "*"
+jikanpy = ">=4.1.0"
 
 [requires]
 python_version = "3.7"
