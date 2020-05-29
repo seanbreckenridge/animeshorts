@@ -126,14 +126,14 @@ def navbar(active, **kwargs):
                             "a",
                         (
                             "href",
-                            "https://github.com/seanbreckenridge/animeshorts",
+                            "https://gitlab.com/seanbreckenridge/animeshorts",
                         ),
                     ):
                         doc.stag(
                             "img",
-                            ("src", """./images/GitHub-Mark-Light-64px.png"""),
-                            ("alt", "Source on Github"),
-                            ("style", "max-height: 32px; width: auto;"),
+                            ("src", """./images/gitlab-icon-1-color-black-rgb.png"""),
+                            ("alt", "Source on Gitlab"),
+                            ("style", "max-height: 40px; width: auto; invert(80);"),
                         )
 
     return indent(doc.getvalue(), indent_text=True)
