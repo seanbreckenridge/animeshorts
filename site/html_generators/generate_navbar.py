@@ -68,7 +68,7 @@ def navbar(active, **kwargs):
                     ):
                         text(constants.PEOPLE_TAB)
             if active == constants.LIST_TAB:
-                with tag("ul", klass="navbar-nav pr-3"):
+                with tag("ul", klass="navbar-nav pr-2"):
                     with tag("li", klass="nav-item"):
                         with tag(
                                 "a",

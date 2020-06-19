@@ -175,13 +175,20 @@ def create_page(sources, list_order):
                                                 "music video",
                                                 "series",
                                         ]:
+                                            tag_slug = t.lower().strip().replace(" ", "-")
                                             with tag(
                                                     "span",
                                                     klass="badge tag {}".
-                                                    format(t.lower().strip().
-                                                           replace(" ", "-")),
+                                                    format(tag_slug),
                                             ):
-                                                text(t.capitalize())
+                                                with tag(
+                                                    "a",
+                                                    ("href", "javascript:void(0)"),
+                                                    ("class", "badge-link"),
+                                                    ("data-toggle", "tooltip"),
+                                                    ("data-original-title", "filter page to shorts tagged '{}'".format(t.strip().lower())),
+                                                    ("onclick", "filterBadge('{}', this)".format(tag_slug))):
+                                                        text(t.capitalize())
                                         else:
                                             print("Warning, Unknown tag:", t)
                                     if list_order == constants.order.DATE:
@@ -753,7 +760,6 @@ def create_page(sources, list_order):
                 doc.asis("""
 // runs when document is loaded:
 document.addEventListener('DOMContentLoaded', function() {
-
   // activate CC tooltips
   $('span.cc').tooltip({
     placement: "top"
@@ -763,6 +769,11 @@ document.addEventListener('DOMContentLoaded', function() {
   $('span.ordernote').tooltip({
     placement: "bottom"
   });
+
+  // activate tooltip for badge link filters
+  $('.badge-link').tooltip({
+    placement: "top"
+  })
 
   // sort by rec order/date added
   $('#orderchoice button').click(function() {
@@ -781,6 +792,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 }, false);
+
+// function to filter the list page to include only particular badges
+function filterBadge(badgeSlug, clickedTooltip) {
+    document.querySelectorAll(".anime-row-container").forEach((anime) => {
+        // set display property accordingly if the tag the user clicked on is included in this entry
+        anime.style.display = (anime.querySelector(`span.badge.${badgeSlug}`) === null) ? 'none': '';
+    });
+    // disable/re-enable tooltip to fix visual display bug
+    $(clickedTooltip).tooltip("dispose")
+    $(clickedTooltip).tooltip({
+        placement: "top"
+    });
+}
 """)
     return indent(doc.getvalue(), indent_text=True)
 

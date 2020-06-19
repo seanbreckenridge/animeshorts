@@ -7,6 +7,8 @@ if [ -d "$OUTPUT_DIR" ]; then
 	rm -rf "$OUTPUT_DIR"
 fi
 
+pipenv install
+
 mkdir "$OUTPUT_DIR"
 
 echo "Copying static directories..."

@@ -120,3 +120,13 @@ main#main-container {
 .badge.badge-info {
   margin-left: 5px;
 }
+
+a.badge-link {
+  text-decoration: none;
+  color: black;
+}
+
+a.badge-link:hover {
+  color: #23333b;
+}
+
