@@ -126,13 +126,13 @@ def navbar(active, **kwargs):
                             "a",
                         (
                             "href",
-                            "https://gitlab.com/seanbreckenridge/animeshorts",
+                            "https://github.com/seanbreckenridge/animeshorts",
                         ),
                     ):
                         doc.stag(
                             "img",
-                            ("src", """./images/gitlab-icon-1-color-black-rgb.png"""),
-                            ("alt", "Source on Gitlab"),
+                            ("src", """./images/github.png"""),
+                            ("alt", "Source on Github"),
                             ("style", "max-height: 40px; width: auto; invert(80);"),
                         )
 
