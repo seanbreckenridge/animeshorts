@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-PyYaml = "*"
+PyYaml = ">=5.4"
 yattag = "*"
-pillow = "*"
+pillow = ">=8.1.1"
 jikanpy = ">=4.1.0"
