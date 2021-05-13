@@ -761,9 +761,7 @@
   episodes: 1
   extra_info: ~
   name: "Golden Time"
-  streaming:
-    -
-      netflix: 80205563
+  streaming: ~
   tags:
     - Film
 -
@@ -2874,12 +2872,7 @@
   episodes: 3
   extra_info: ~
   name: "Choujuu Giga"
-  streaming:
-    -
-      youtube:
-        - dqDcb7Q9kSI
-        - IAIZVNXsgCM
-        - Au4QE--uijY
+  streaming: ~
   tags:
     - Series
 -
