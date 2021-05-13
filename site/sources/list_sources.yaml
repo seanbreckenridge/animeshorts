@@ -2436,6 +2436,21 @@
   cc: false
   database:
     -
+      mal: 42584
+  date: "2021-05-13"
+  duration: 4.36
+  episodes: 1
+  extra_info: ~
+  name: "Showtime"
+  streaming:
+    -
+      youtube: "_vJf38Lp5CI"
+  tags:
+    - "Music Video"
+-
+  cc: false
+  database:
+    -
       mal: 17635
   date: "2017-01-13"
   duration: 7.0
