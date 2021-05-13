@@ -54,7 +54,10 @@ def create_people_page(sources):
             with tag("div", ("class", "container rounded-bottom py-3 mb-2"),
                      ("id", "note")):
                 with tag("p", ("class", "text-center mb-0")):
-                    text("People I feel are worth checking out:")
+                    text("People I feel are worth checking out. For more, check out the ")
+                    with tag("a", href="https://myanimelist.net/clubs.php?cid=76651"):
+                        text("Short Directors Project")
+                    text(" on MAL")
             doc.asis("<!-- list -->")
             with tag("main", klass="container"):
                 with tag("div", klass="card-columns"):

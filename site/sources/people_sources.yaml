@@ -10,7 +10,7 @@
   image: "kouji.jpg"
 -
   mal: 6065
-  name: Koji Yamamura
+  name: "Koji Yamamura"
   image: "koji.jpg"
 -
   mal: 23325
@@ -182,7 +182,65 @@
   mal: 35325
   name: "Isamu Hirabayashi"
   image: "hirabayashi.jpg"
+  website: "https://www.hirabayashiisamu.com/"
 -
   mal: 50427
   name: "mareykrap"
   image: "mareykrap.jpg"
+-
+  mal: 40460
+  name: "Yoko Kuno"
+  image: "yoko.jpg"
+  website: "https://kunoyoko.tumblr.com/"
+-
+  mal: 20609
+  name: "Wataru Uekusa"
+  image: "wataru.jpg"
+  website: "https://bansoukou.org/"
+-
+  mal: 48991
+  name: "Waboku"
+  image: "waboku.jpg"
+  vimeo: "https://vimeo.com/user16730486"
+-
+  mal: 6675
+  name: "Kunio Katou"
+  image: "katou.jpg"
+-
+  mal: 36988
+  name: "Kouji Nanke"
+  image: "nanke.jpg"
+-
+  mal: 8222
+  name: "Kihachiro Kawamoto"
+  image: "kawamoto.jpg"
+-
+  mal: 23461
+  name: "fantasista utamaro"
+  image: "uta.jpg"
+  website: "https://www.fantasistautamaro.com/"
+-
+  mal: 48894
+  name: "Nobuhiro Aihara"
+  image: "nobuhiro.jpg"
+-
+  mal: 46398
+  name: "Densuke28"
+  image: "densuke28.jpg"
+-
+  mal: 53255
+  name: "Takeshi Yashiro"
+  image: "yashiro.jpg"
+-
+  mal: 48034
+  name: "Takashi Ohashi"
+  image: "ohashi.jpg"
+  website: "https://takashiohashi.com/"
+-
+  mal: 26975
+  name: "Tekken"
+  image: "tekken.jpg"
+-
+  mal: 50955
+  name: "AC-bu"
+  image: "ac.jpg"
