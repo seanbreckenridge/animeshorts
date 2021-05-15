@@ -810,7 +810,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // check url to filter by tag onload
   if (window.location.hash.slice(1)) {
-    filterBadge(window.location.hash.slice(1))
+    filterBadge(window.location.hash.slice(1), null)
   }
 }, false);
 
