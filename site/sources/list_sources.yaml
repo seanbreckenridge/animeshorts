@@ -418,6 +418,21 @@
   tags:
     - Film
 -
+  cc: true
+  database:
+    -
+      mal: 42488
+  date: "2021-05-15"
+  duration: 13.35
+  episodes: 1
+  extra_info: ~
+  name: "Wasureta Furi wo Shite (Pretending to Forget)"
+  streaming:
+    -
+      vimeo: 435734827
+  tags:
+    - Arthouse
+-
   cc: false
   database:
     -
