@@ -758,6 +758,22 @@ def create_page(sources, list_order):
             )
             with tag("script"):
                 doc.asis("""
+// function to filter the list page to include only particular badges
+function filterBadge(badgeSlug, clickedTooltip) {
+    document.querySelectorAll(".anime-row-container").forEach((anime) => {
+        // set display property accordingly if the tag the user clicked on is included in this entry
+        anime.style.display = (anime.querySelector(`span.badge.${badgeSlug}`) === null) ? 'none': '';
+    });
+    // disable/re-enable tooltip to fix visual display bug
+    if (typeof clickedTooltip !== null) {
+        $(clickedTooltip).tooltip("dispose")
+        $(clickedTooltip).tooltip({
+            placement: "top"
+        });
+    }
+    window.location.hash = badgeSlug
+}
+
 // runs when document is loaded:
 document.addEventListener('DOMContentLoaded', function() {
   // activate CC tooltips
@@ -791,20 +807,13 @@ document.addEventListener('DOMContentLoaded', function() {
       window.location = $(footer).find('a').attr("href");
     }
   }
+
+  // check url to filter by tag onload
+  if (window.location.hash.slice(1)) {
+    filterBadge(window.location.hash.slice(1))
+  }
 }, false);
 
-// function to filter the list page to include only particular badges
-function filterBadge(badgeSlug, clickedTooltip) {
-    document.querySelectorAll(".anime-row-container").forEach((anime) => {
-        // set display property accordingly if the tag the user clicked on is included in this entry
-        anime.style.display = (anime.querySelector(`span.badge.${badgeSlug}`) === null) ? 'none': '';
-    });
-    // disable/re-enable tooltip to fix visual display bug
-    $(clickedTooltip).tooltip("dispose")
-    $(clickedTooltip).tooltip({
-        placement: "top"
-    });
-}
 """)
     return indent(doc.getvalue(), indent_text=True)
 
