@@ -1,246 +1,192 @@
 ---
--
-  mal: 1938
+- mal: 1938
   name: "Osamu Tezuka"
   website: "http://tezukaosamu.net/en/"
   image: "tezuka.png"
--
-  mal: 5066
+- mal: 5066
   name: "Kouji Morimoto"
   image: "kouji.jpg"
--
-  mal: 6065
+- mal: 6065
   name: "Koji Yamamura"
   image: "koji.jpg"
--
-  mal: 23325
+- mal: 23325
   name: "Mirai Mizue"
   image: "mizue.png"
--
-  mal: 41796
+- mal: 41796
   name: "Onohana"
   website: "https://www.onohana.com/"
   image: "onohana.jpg"
--
-  mal: 6910
+- mal: 6910
   name: "Tomoyasu Murata"
   website: "https://www.tomoyasu.net/"
   image: "murata.jpg"
--
-  mal: 28807
+- mal: 28807
   name: "Tanaami Keiichi"
   image: "tanaami.jpg"
--
-  mal: 36897
+- mal: 36897
   name: "Oofuji Noburou"
   image: "noburou.jpg"
--
-  mal: 41284
+- mal: 41284
   name: "Takashi Taniguchi"
   image: "takashi.jpg"
--
-  mal: 36107
+- mal: 36107
   name: "Yoriko Mizushiri"
   image: "yoriko.jpg"
--
-  mal: 48842
+- mal: 48842
   vimeo: "user12253813"
   name: "Ryosuke Oshiro"
   image: "ryosiro.png"
--
-  mal: 40575
+- mal: 40575
   name: "Masanobu Hiraoka"
   image: "hiroka.jpg"
   website: "https://twitter.com/budou_mochi"
--
-  mal: 40135
+- mal: 40135
   name: "Rapparu"
   image: "rapparu.png"
   website: "http://www.rapparu.org/"
--
-  mal: 24949
+- mal: 24949
   name: "Atsushi Wada"
   image: "wada.jpg"
   website: "http://kankaku.jp/en-index.html"
--
-  mal: 36803
+- mal: 36803
   name: "Yutaro Kubo"
   image: "kubo.jpg"
   website: "http://yutarokubo.com/"
   vimeo: "yutarokubo"
--
-  mal: 8545
+- mal: 8545
   name: "Yoji Kuri"
   image: "yoji.jpg"
 
--
-  mal: 35803
+- mal: 35803
   name: "Rabbit MACHINE"
   image: "rabbit.png"
   website: "http://www.rabbit-machine.com/"
--
-  mal: 40633
+- mal: 40633
   name: "Asami Ike"
   image: "asami.jpg"
   website: "http://www.liltasm.com/"
--
-  mal: 6133
+- mal: 6133
   name: "Kojirou Shishido"
   image: "kojirou.jpg"
--
-  name: TOCHKA
+- name: TOCHKA
   website: "http://tochka.jp/"
   image: "TOCHKA.jpg"
--
-  name: "Kousuke Sugimoto"
+- name: "Kousuke Sugimoto"
   mal: 10541
   image: "sugimoto.jpg"
   website: "http://sugimotokousuke.net/"
--
-  mal: 14009
+- mal: 14009
   name: "Takena Nagao"
   image: "nagao.jpg"
--
-  mal: 42897
+- mal: 42897
   name: "Sawako Kabuki"
   image: "kabuki.jpg"
--
-  mal: 36804
+- mal: 36804
   name: "Masaki Okuda"
   image: "okuda.jpg"
   website: "http://masakiokuda.com/"
   vimeo: user15836262
--
-  mal: 44026
+- mal: 44026
   name: "Miyo Sato"
   image: "sato.jpg"
   website: "http://satomiyo.com/"
--
-  mal: 12441
+- mal: 12441
   name: "Tadanari Okamoto"
   image: "okamoto.jpg"
--
-  mal: 41283
+- mal: 41283
   name: "ShiShi Yamazaki"
   image: "yamazaki.jpg"
   website: "http://shishiyamazaki.com"
   vimeo: "shishi"
--
-  mal: 23623
+- mal: 23623
   name: "Kato Ryu"
   image: "ryu.jpg"
   website: "http://ryukato.net/index.html"
--
-  mal: 30611
+- mal: 30611
   name: "Taku Furukawa"
   image: "furukawa.jpg"
--
-  mal: 48892
+- mal: 48892
   name: "Itou Takashi"
   image: "ito.jpg"
   website: "http://www.imageforum.co.jp/ito/"
--
-  mal: 16459
+- mal: 16459
   name: "Kazuhiro Hotchi"
   image: "hotchi.jpg"
   website: "http://hotchi.main.jp/HOME/animation/index.html"
--
-  mal: 10917
+- mal: 10917
   name: "Tsuji Naoyuki"
   image: "naoyuki.jpg"
--
-  mal: 33543
+- mal: 33543
   name: "Saori Shiroki"
   image: "shiroki.jpg"
--
-  mal: 18261
+- mal: 18261
   name: "Kurosaka Keita"
   image: "keita.jpg"
--
-  mal: 6072
+- mal: 6072
   name: "Yasuhiro Yoshiura"
   image: "yoshiura.jpg"
--
-  mal: 36665
+- mal: 36665
   name: "Kei Oyama"
   image: "oyama.jpg"
--
-  mal: 39308
+- mal: 39308
   name: "Tomomi Komazaki"
   image: "komazaki.jpg"
--
-  website: "http://tannokojo.com/"
+- website: "http://tannokojo.com/"
   name: "Kojo Tanno"
   image: "kojo.png"
   youtube: tannokojo
--
-  mal: 9084
+- mal: 9084
   name: "Masaoka Kenzou"
   image: "masaoka.jpg"
   website: "http://www.hirabayashiisamu.com/"
--
-  mal: 35325
+- mal: 35325
   name: "Isamu Hirabayashi"
   image: "hirabayashi.jpg"
   website: "https://www.hirabayashiisamu.com/"
--
-  mal: 50427
+- mal: 50427
   name: "mareykrap"
   image: "mareykrap.jpg"
--
-  mal: 40460
+- mal: 40460
   name: "Yoko Kuno"
   image: "yoko.jpg"
   website: "https://kunoyoko.tumblr.com/"
--
-  mal: 20609
+- mal: 20609
   name: "Wataru Uekusa"
   image: "wataru.jpg"
   website: "https://bansoukou.org/"
--
-  mal: 48991
+- mal: 48991
   name: "Waboku"
   image: "waboku.jpg"
   vimeo: "https://vimeo.com/user16730486"
--
-  mal: 6675
+- mal: 6675
   name: "Kunio Katou"
   image: "katou.jpg"
--
-  mal: 36988
+- mal: 36988
   name: "Kouji Nanke"
   image: "nanke.jpg"
--
-  mal: 8222
+- mal: 8222
   name: "Kihachiro Kawamoto"
   image: "kawamoto.jpg"
--
-  mal: 23461
+- mal: 23461
   name: "fantasista utamaro"
   image: "uta.jpg"
   website: "https://www.fantasistautamaro.com/"
--
-  mal: 48894
+- mal: 48894
   name: "Nobuhiro Aihara"
   image: "nobuhiro.jpg"
--
-  mal: 46398
+- mal: 46398
   name: "Densuke28"
   image: "densuke28.jpg"
--
-  mal: 53255
+- mal: 53255
   name: "Takeshi Yashiro"
   image: "yashiro.jpg"
--
-  mal: 48034
+- mal: 48034
   name: "Takashi Ohashi"
   image: "ohashi.jpg"
   website: "https://takashiohashi.com/"
--
-  mal: 26975
+- mal: 26975
   name: "Tekken"
   image: "tekken.jpg"
--
-  mal: 50955
+- mal: 50955
   name: "AC-bu"
   image: "ac.jpg"

@@ -6,10 +6,11 @@ import jikanpy
 
 class crawl:
     """Keep track of time between scrape requests.
-        args:
-            wait: time between requests
-            retry_max: number of times to retry
+    args:
+        wait: time between requests
+        retry_max: number of times to retry
     """
+
     def __init__(self, wait, retry_max):
         self.wait = wait
         self.jikan = jikanpy.Jikan()

@@ -13,13 +13,12 @@ def navbar(active, **kwargs):
         sorttab = kwargs["sorttab"]
     doc, tag, text = Doc().tagtext()
     with tag(
-            "nav",
-            klass=
-            "navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top container",
+        "nav",
+        klass="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top container",
     ):
         # hamburger menu
         with tag(
-                "button",
+            "button",
             ("class", "navbar-toggler"),
             ("data-toggle", "collapse"),
             ("data-target", "#collapse_navbar_target"),
@@ -30,39 +29,44 @@ def navbar(active, **kwargs):
         with tag("a", klass="navbar-brand text-nowrap mr-3 my-2", href="./"):
             text(constants.FULL_NAME)
         # collapsable page links
-        with tag("div",
-                 klass="collapse navbar-collapse",
-                 id="collapse_navbar_target"):
+        with tag("div", klass="collapse navbar-collapse", id="collapse_navbar_target"):
             with tag("ul", klass="navbar-nav nav-pills dark-blue"):
                 with tag(
-                        "li",
-                        klass="nav-item{}".format(" active" if active ==
-                                                  constants.LIST_TAB else ""),
+                    "li",
+                    klass="nav-item{}".format(
+                        " active" if active == constants.LIST_TAB else ""
+                    ),
                 ):
                     with tag(
-                            "a",
+                        "a",
                         ("class", "nav-link px-2"),
                         (
                             "style",
-                            "{}".format("background-color: #385289;" if active
-                                        == constants.LIST_TAB else ""),
+                            "{}".format(
+                                "background-color: #385289;"
+                                if active == constants.LIST_TAB
+                                else ""
+                            ),
                         ),
                         ("href", "./"),
                     ):
                         text(constants.LIST_TAB)
                 with tag(
-                        "li",
-                        klass="nav-item{}".format(
-                            " active" if active ==
-                            constants.PEOPLE_TAB else ""),
+                    "li",
+                    klass="nav-item{}".format(
+                        " active" if active == constants.PEOPLE_TAB else ""
+                    ),
                 ):
                     with tag(
-                            "a",
+                        "a",
                         ("class", "nav-link px-2"),
                         (
                             "style",
-                            "{}".format("background-color: #385289;" if active
-                                        == constants.PEOPLE_TAB else ""),
+                            "{}".format(
+                                "background-color: #385289;"
+                                if active == constants.PEOPLE_TAB
+                                else ""
+                            ),
                         ),
                         ("href", "./people"),
                     ):
@@ -71,43 +75,46 @@ def navbar(active, **kwargs):
                 with tag("ul", klass="navbar-nav pr-2"):
                     with tag("li", klass="nav-item"):
                         with tag(
-                                "a",
-                                klass="mx-2",
-                                style=
-                                "color: white; position: relative; top: 0.1rem;",
+                            "a",
+                            klass="mx-2",
+                            style="color: white; position: relative; top: 0.1rem;",
                         ):
                             text("Order By:")
                         with tag(
-                                "div",
+                            "div",
                             ("class", "btn-group ml-1"),
                             ("role", "group"),
                         ):
-                            with tag("form", ('action', './'),
-                                     ('class', 'btn-group')):
+                            with tag("form", ("action", "./"), ("class", "btn-group")):
                                 with tag(
-                                        "button",
+                                    "button",
                                     (
                                         "class",
                                         "btn btn-secondary{}".format(
-                                            " active" if sorttab ==
-                                            constants.order.REC else ""),
+                                            " active"
+                                            if sorttab == constants.order.REC
+                                            else ""
+                                        ),
                                     ),
                                 ):
                                     text("Recommendation")
-                            with tag("form", ('action', './newest'),
-                                     ('class', 'btn-group')):
+                            with tag(
+                                "form", ("action", "./newest"), ("class", "btn-group")
+                            ):
                                 with tag(
-                                        "button",
+                                    "button",
                                     (
                                         "class",
                                         "btn btn-secondary{}".format(
-                                            " active" if sorttab ==
-                                            constants.order.DATE else ""),
+                                            " active"
+                                            if sorttab == constants.order.DATE
+                                            else ""
+                                        ),
                                     ),
                                 ):
                                     text("Date Added")
                             with tag(
-                                    "span",
+                                "span",
                                 (
                                     "style",
                                     "color: white; position: relative; top: 0.3rem;",
@@ -123,7 +130,7 @@ def navbar(active, **kwargs):
             with tag("ul", klass="navbar-nav p-2"):
                 with tag("li", klass="nav-item"):
                     with tag(
-                            "a",
+                        "a",
                         (
                             "href",
                             "https://github.com/seanbreckenridge/animeshorts",

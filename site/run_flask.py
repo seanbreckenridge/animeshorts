@@ -6,8 +6,8 @@ app = Flask(__name__)
 # to my new site
 
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+@app.route("/", defaults={"path": ""})
+@app.route("/<path:path>")
 def redirect_to_new_site(path):
     return redirect("https://sean.fish/animeshorts/", code=302)
 

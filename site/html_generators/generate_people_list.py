@@ -23,7 +23,7 @@ def get_ratio_image_from_relative_path(filename):
 def chunk_list(l, chunk_size):
     """Return chunk_size'd lists from the large list."""
     for i in range(0, len(l), chunk_size):
-        yield l[i:i + chunk_size]
+        yield l[i : i + chunk_size]
 
 
 def create_people_page(sources):
@@ -51,10 +51,13 @@ def create_people_page(sources):
             doc.asis("<!-- navbar -->")
             doc.asis(generate_navbar.navbar(active=constants.PEOPLE_TAB))
             doc.asis("<!-- note -->")
-            with tag("div", ("class", "container rounded-bottom py-3 mb-2"),
-                     ("id", "note")):
+            with tag(
+                "div", ("class", "container rounded-bottom py-3 mb-2"), ("id", "note")
+            ):
                 with tag("p", ("class", "text-center mb-0")):
-                    text("People I feel are worth checking out. For more, check out the ")
+                    text(
+                        "People I feel are worth checking out. For more, check out the "
+                    )
                     with tag("a", href="https://myanimelist.net/clubs.php?cid=76651"):
                         text("Short Directors Project")
                     text(" on MAL")
@@ -64,13 +67,17 @@ def create_people_page(sources):
                     for c in sources:
                         with tag("div", klass="card"):
                             with tag(
-                                    "div",
+                                "div",
                                 ("class", "image-container"),
                                 (
                                     "style",
-                                    ("padding-bottom:{};".format(
-                                        get_ratio_image_from_relative_path(
-                                            c["image"]))),
+                                    (
+                                        "padding-bottom:{};".format(
+                                            get_ratio_image_from_relative_path(
+                                                c["image"]
+                                            )
+                                        )
+                                    ),
                                 ),
                             ):
                                 doc.stag(
@@ -84,64 +91,58 @@ def create_people_page(sources):
                                     text(c["name"])
                                 with tag("div", klass="card-text"):
                                     for other_link in sorted(
-                                            list({
+                                        list(
+                                            {
                                                 k: c[k]
                                                 for k, v in c.items()
                                                 if k not in ["name", "image"]
-                                            })):
+                                            }
+                                        )
+                                    ):
                                         if other_link == "mal":
                                             with tag(
-                                                    "a",
-                                                    klass=
-                                                    "badge badge-pill person-link badge-secondary",
-                                                    href=join_urls(
-                                                        "https://myanimelist.net",
-                                                        "people",
-                                                        c[other_link],
-                                                    ),
+                                                "a",
+                                                klass="badge badge-pill person-link badge-secondary",
+                                                href=join_urls(
+                                                    "https://myanimelist.net",
+                                                    "people",
+                                                    c[other_link],
+                                                ),
                                             ):
-                                                with tag("span",
-                                                         klass="moveup"):
+                                                with tag("span", klass="moveup"):
                                                     text("mal")
                                         elif other_link == "website":
                                             with tag(
-                                                    "a",
-                                                    klass=
-                                                    "badge badge-pill person-link badge-secondary movetext",
-                                                    href=c[other_link],
+                                                "a",
+                                                klass="badge badge-pill person-link badge-secondary movetext",
+                                                href=c[other_link],
                                             ):
-                                                with tag("span",
-                                                         klass="moveup"):
+                                                with tag("span", klass="moveup"):
                                                     text("website")
                                         elif other_link == "vimeo":
                                             with tag(
-                                                    "a",
-                                                    klass=
-                                                    "badge badge-pill person-link badge-secondary movetext",
-                                                    href=join_urls(
-                                                        "https://vimeo.com",
-                                                        c[other_link]),
+                                                "a",
+                                                klass="badge badge-pill person-link badge-secondary movetext",
+                                                href=join_urls(
+                                                    "https://vimeo.com", c[other_link]
+                                                ),
                                             ):
-                                                with tag("span",
-                                                         klass="moveup"):
+                                                with tag("span", klass="moveup"):
                                                     text("vimeo")
                                         elif other_link == "youtube":
                                             with tag(
-                                                    "a",
-                                                    klass=
-                                                    "badge badge-pill person-link badge-secondary movetext",
-                                                    href=join_urls(
-                                                        "https://www.youtube.com",
-                                                        "user",
-                                                        c[other_link],
-                                                    ),
+                                                "a",
+                                                klass="badge badge-pill person-link badge-secondary movetext",
+                                                href=join_urls(
+                                                    "https://www.youtube.com",
+                                                    "user",
+                                                    c[other_link],
+                                                ),
                                             ):
-                                                with tag("span",
-                                                         klass="moveup"):
+                                                with tag("span", klass="moveup"):
                                                     text("youtube")
                                         else:
-                                            print("Unknown tag: {}".format(
-                                                other_link))
+                                            print("Unknown tag: {}".format(other_link))
             doc.asis("<!-- footer -->")
             with tag("footer", ("class", "bg-dark footer")):
                 with tag("div", klass="container center"):
@@ -157,7 +158,8 @@ def create_people_page(sources):
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>"""
             )
             with tag("script"):
-                doc.asis("""
+                doc.asis(
+                    """
 // runs when document is loaded:
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -173,7 +175,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   }, false);
-""")
+"""
+                )
     return indent(doc.getvalue(), indent_text=True)
 
 
