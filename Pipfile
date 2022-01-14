@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 PyYaml = ">=5.4"
-yattag = "*"
-pillow = ">=8.1.1"
+yattag = "==1.14.0"
+pillow = ">=9.0.0"
 jikanpy = ">=4.1.0"
+
+[requires]
+python_version = "3.7"
