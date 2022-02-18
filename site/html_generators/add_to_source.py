@@ -5,9 +5,8 @@ import click
 import io
 from typing import List, Any
 from datetime import date
-from .constants import LIST_SOURCES, PEOPLE_SOURCES
+from .constants import LIST_SOURCES
 from .generate_list import Source
-from .generate_people_list import Person
 
 from pydantic.error_wrappers import ValidationError as PydanticValidationError
 
