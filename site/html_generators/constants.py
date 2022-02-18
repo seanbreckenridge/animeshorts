@@ -1,11 +1,12 @@
 import os
+from enum import Enum
 
 # Filenames
 LIST_REC_LINK = "index_rec.html"
 LIST_DATE_LINK = "index_newest.html"
 PEOPLE_LINK = "people.html"
-SOURCES_DIR = "../sources"
-OUTPUT_DIR = "../../output"
+SOURCES_DIR = "sources"
+OUTPUT_DIR = "../output"
 LIST_SOURCES = os.path.join(SOURCES_DIR, "list_sources.yaml")
 PEOPLE_SOURCES = os.path.join(SOURCES_DIR, "people_sources.yaml")
 LIST_CSS = "list.css"
@@ -18,7 +19,7 @@ LIST_TAB = "List"
 PEOPLE_TAB = "People"
 
 
-class order:
+class Order(Enum):
     REC = 1
     DATE = 2
 

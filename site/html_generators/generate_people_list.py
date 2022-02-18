@@ -1,32 +1,49 @@
 from os import path
+from pathlib import Path
+from typing import TypeVar, List, Iterator, Optional
+
 
 import yaml
-from yattag import Doc, indent
-from PIL import Image
+from pydantic import BaseModel
+from yattag import Doc, indent  # type: ignore[import]
+from PIL import Image  # type: ignore[import]
 
-import constants
-import generate_navbar
-from generate_list import join_urls
-
-
-def image_path(filename):
-    return "./images/people/" + filename
+from . import constants
+from . import generate_navbar
+from .generate_list import join_urls
 
 
-def get_ratio_image_from_relative_path(filename):
+class Person(BaseModel):
+    name: str
+    image: str
+    mal: Optional[int]
+    website: Optional[str]
+    youtube: Optional[str]
+
+
+def image_path(filename: str) -> str:
+    return path.join("./images/people", filename)
+
+
+def get_ratio_image_from_relative_path(filename: str) -> str:
     """from the html_generators directory, gets the ratio of height/width for an image in the people directory"""
-    with Image.open(path.join("../static/images/people/", filename)) as img:
+    p = Path(__file__).parent.parent / "static/images/people" / filename
+    assert p.exists(), str(p)
+    with Image.open(p) as img:
         width, height = img.size
         return "{}%".format(height / width * 100)
 
 
-def chunk_list(l, chunk_size):
+T = TypeVar("T")
+
+
+def chunk_list(l: List[T], chunk_size: int) -> Iterator[List[T]]:
     """Return chunk_size'd lists from the large list."""
     for i in range(0, len(l), chunk_size):
         yield l[i : i + chunk_size]
 
 
-def create_people_page(sources):
+def create_people_page(sources: List[Person]) -> str:
     doc, tag, text = Doc().tagtext()
     doc.asis("<!DOCTYPE html>")
     with tag("html", ("lang", "en")):
@@ -73,9 +90,7 @@ def create_people_page(sources):
                                     "style",
                                     (
                                         "padding-bottom:{};".format(
-                                            get_ratio_image_from_relative_path(
-                                                c["image"]
-                                            )
+                                            get_ratio_image_from_relative_path(c.image)
                                         )
                                     ),
                                 ),
@@ -83,22 +98,24 @@ def create_people_page(sources):
                                 doc.stag(
                                     "img",
                                     ("class", "card-img-top img-fluid"),
-                                    ("src", image_path(c["image"])),
-                                    alt=c["name"],
+                                    ("src", image_path(c.image)),
+                                    alt=c.name,
                                 )
                             with tag("div", klass="card-block"):
                                 with tag("h4", klass="card-title"):
-                                    text(c["name"])
+                                    text(c.name)
                                 with tag("div", klass="card-text"):
                                     for other_link in sorted(
                                         list(
                                             {
-                                                k: c[k]
-                                                for k, v in c.items()
-                                                if k not in ["name", "image"]
+                                                k: getattr(c, k)
+                                                for k, v in c.dict().items()
+                                                if k not in ["name", "image"] and v is not None
                                             }
                                         )
                                     ):
+                                        o_link = getattr(c, other_link)
+                                        assert o_link is not None, str(c) + f"using {other_link}"
                                         if other_link == "mal":
                                             with tag(
                                                 "a",
@@ -106,7 +123,7 @@ def create_people_page(sources):
                                                 href=join_urls(
                                                     "https://myanimelist.net",
                                                     "people",
-                                                    c[other_link],
+                                                    o_link,
                                                 ),
                                             ):
                                                 with tag("span", klass="moveup"):
@@ -115,7 +132,7 @@ def create_people_page(sources):
                                             with tag(
                                                 "a",
                                                 klass="badge badge-pill person-link badge-secondary movetext",
-                                                href=c[other_link],
+                                                href=o_link,
                                             ):
                                                 with tag("span", klass="moveup"):
                                                     text("website")
@@ -124,7 +141,8 @@ def create_people_page(sources):
                                                 "a",
                                                 klass="badge badge-pill person-link badge-secondary movetext",
                                                 href=join_urls(
-                                                    "https://vimeo.com", c[other_link]
+                                                    "https://vimeo.com",
+                                                    o_link,
                                                 ),
                                             ):
                                                 with tag("span", klass="moveup"):
@@ -136,7 +154,7 @@ def create_people_page(sources):
                                                 href=join_urls(
                                                     "https://www.youtube.com",
                                                     "user",
-                                                    c[other_link],
+                                                    o_link,
                                                 ),
                                             ):
                                                 with tag("span", klass="moveup"):
@@ -177,17 +195,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }, false);
 """
                 )
-    return indent(doc.getvalue(), indent_text=True)
+    return str(indent(doc.getvalue(), indent_text=True))
 
 
-def main():
+def main() -> None:
     # Read in YAML Sources
     with open(constants.PEOPLE_SOURCES) as yaml_src:
-        sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
+        raw_sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
+    sources = [Person.parse_obj(p) for p in raw_sources]
     # write out html file
     with open(f"{constants.OUTPUT_DIR}/people.html", "w") as write_html_file:
         print("Generated people.html")
-        write_html_file.write(create_people_page(sources))
+        write_html_file.write(str(create_people_page(sources)))
 
 
 if __name__ == "__main__":

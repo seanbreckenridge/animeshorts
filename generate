@@ -15,7 +15,7 @@ echo "Copying static directories..."
 cp -R "${CUR_DIR}/site/static/css" "$OUTPUT_DIR"
 cp -R "${CUR_DIR}/site/static/images" "$OUTPUT_DIR"
 
+cd "${CUR_DIR}" || exit $?
 echo "Generating html..."
-cd "$CUR_DIR/site/html_generators"
-pipenv run python3 generate_list.py -d
-pipenv run python3 generate_people_list.py
+cd ./site || exit $?
+pipenv run python3 generate.py

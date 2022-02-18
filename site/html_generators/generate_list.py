@@ -1,59 +1,61 @@
 import re
 import json
-import operator
 import datetime
 import argparse
 from itertools import chain
 from hashlib import sha256
 from os import path
 from urllib.parse import urljoin
+from typing import Iterator, Dict, Sequence, Tuple, Union, List, Optional
 
 import yaml
-from yattag import Doc, indent
+from pydantic import BaseModel
+from yattag import Doc, indent  # type: ignore[import]
 from requests import Request
 
-import constants
-import generate_navbar
-from manual_crawler import crawl
+from . import constants
+from . import generate_navbar
+from .manual_crawler import Crawl
 
 
-class cache:
+class Cache:
     """class to manage caching API requests for MAL names"""
 
-    def __init__(self, crawler):
-        self.jsonpath = "../mal_name_cache.json"
+    def __init__(self, crawler: Crawl):
+        self.jsonpath = "mal_name_cache.json"
         self.write_to_cache_const = 5
         self.write_to_cache_periodically = self.write_to_cache_const
         self.crawler = crawler
+        self.items: Dict[str, str] = {}
         if not path.exists(self.jsonpath):
             open(self.jsonpath, "a").close()
         with open(self.jsonpath, "r") as js_f:
             try:
                 self.items = json.load(js_f)
             except json.JSONDecodeError:  # file is empty or broken
-                self.items = {}
+                pass
 
-    def update_json_file(self):
+    def update_json_file(self) -> None:
         with open(self.jsonpath, "w") as f:
             json.dump(self.items, f)
 
-    def _mal_crawl_name(self, mal_id):
+    def _mal_crawl_name(self, mal_id: int) -> str:
         """Downloads the name of the MAL id"""
         print("[Cache][Crawler] Downloading name for MAL ID {}".format(mal_id))
-        return self.crawler.get_anime(mal_id)["title"]
+        return str(self.crawler.get_anime(mal_id)["title"])
 
-    def download_name(self, id):
+    def download_name(self, id: int) -> str:
         self.write_to_cache_periodically -= 1
         if self.write_to_cache_periodically < 0:
             self.write_to_cache_periodically = self.write_to_cache_const
             self.update_json_file()
         return self._mal_crawl_name(id)
 
-    def __contains__(self, id):
+    def __contains__(self, id: int) -> bool:
         """defines the 'in' keyword on cache."""
         return str(id) in self.items
 
-    def get(self, id):
+    def get(self, id: int) -> str:
         if self.__contains__(id):
             # print("[Cache] Found name for id {} in cache".format(id))
             return self.items[str(id)]
@@ -61,16 +63,30 @@ class cache:
             self.items[str(id)] = self.download_name(id)
             return self.items[str(id)]
 
-    def __iter__(self):
+    def __iter__(self) -> Iterator[str]:
         return self.items.__iter__()
 
 
-crawler = crawl(wait=5, retry_max=3)
+crawler = Crawl(wait=5, retry_max=3)
 download_names = False
-mal_cache = cache(crawler)
+mal_cache = Cache(crawler)
+
+IdType = Union[int, str]
 
 
-def format_duration(dur):
+class Source(BaseModel):
+    cc: bool
+    database: Optional[List[Dict[str, Union[List[IdType], IdType]]]]
+    date: datetime.date
+    duration: Optional[float]
+    episodes: int
+    extra_info: Optional[str]
+    name: str
+    streaming: Optional[List[Dict[str, Union[List[IdType], IdType]]]]
+    tags: List[str]
+
+
+def format_duration(dur: float) -> str:
     """Formats duration (from minutes) into a readable format"""
     if float(dur) >= 1.0:
         return "{} min".format(int(dur))
@@ -78,9 +94,9 @@ def format_duration(dur):
         return "{} sec".format(round(dur * 60))
 
 
-def join_urls(*parts_url):
+def join_urls(*parts: Union[Tuple[str, ...], Sequence[str]]) -> str:
     """joins a variable argument urlpath to a url"""
-    parts_url = list(map(str, parts_url))  # convert to strings
+    parts_url: list[str] = list(map(str, parts))  # convert to strings
     while len(parts_url) > 2:
         parts_url = list(
             chain([urljoin(parts_url[0], parts_url[1]) + "/"], parts_url[2:])
@@ -88,38 +104,34 @@ def join_urls(*parts_url):
     if len(parts_url) == 2:
         url = urljoin(parts_url[0], parts_url[1])
     else:
-        if isinstance(parts_url, tuple) or isinstance(parts_url, list):
+        if isinstance(parts_url, list) or isinstance(parts_url, tuple):
             return parts_url[0]
-        else:
-            url = parts_url
     return url
 
 
 # not needed, youtu.be/<video_id> forwards to correct video.
-def create_youtube(id):
+def create_youtube(id: str) -> str:
     """Turns a youtube video id to a link."""
     base_url = join_urls("https://youtu.be", "watch")
     return str(Request("GET", base_url, params={"v": str(id)}).prepare().url)
 
 
-def create_id(name, octothorpe):
+def create_id(name: str, octothorpe: bool) -> str:
     name = re.sub(r"[^\w]", "", name)  # remove problematic characters
     return "{}{}{}".format(
         "#" if octothorpe else "", str(name), sha256(name.encode()).hexdigest()[:10]
     )
 
 
-def sort_list(sources, list_order):
-    if list_order == constants.order.REC:
+def sort_list(sources: List[Source], list_order: constants.Order) -> List[Source]:
+    if list_order == constants.Order.REC:
         return sources
     else:
-        for c in sources:
-            if isinstance(c["date"], str):
-                c["date"] = datetime.datetime.strptime(c["date"], "%Y-%m-%d").date()
-        return sorted(sources, key=operator.itemgetter("date"), reverse=True)
+        sources.sort(key=lambda s: s.date, reverse=True)
+        return sources
 
 
-def create_page(sources, list_order):
+def create_page(sources: List[Source], list_order: constants.Order) -> str:
     """Creates the table from YAML"""
     global download_names
     doc, tag, text = Doc().tagtext()
@@ -163,9 +175,9 @@ def create_page(sources, list_order):
                             with tag("div", klass="col-sm"):
                                 # name
                                 with tag("h6"):
-                                    text(str(s["name"]))
+                                    text(str(s.name))
                                     # tags
-                                    for t in sorted(s["tags"]):
+                                    for t in sorted(s.tags):
                                         if t.lower() in [
                                             "anthology",
                                             "arthouse",
@@ -202,11 +214,11 @@ def create_page(sources, list_order):
                                                     text(t.capitalize())
                                         else:
                                             print("Warning, Unknown tag:", t)
-                                    if list_order == constants.order.DATE:
+                                    if list_order == constants.Order.DATE:
                                         with tag("span", klass="badge badge-info"):
-                                            text(str(s["date"]))
+                                            text(str(s.date))
                                     # if this has extra info
-                                    if s["extra_info"] is not None:
+                                    if s.extra_info is not None:
                                         with tag(
                                             "a",
                                             ("role", "button"),
@@ -214,9 +226,7 @@ def create_page(sources, list_order):
                                             (
                                                 "href",
                                                 create_id(
-                                                    name="{}-extra-info".format(
-                                                        s["name"]
-                                                    ),
+                                                    name="{}-extra-info".format(s.name),
                                                     octothorpe=True,
                                                 ),
                                             ),
@@ -226,8 +236,8 @@ def create_page(sources, list_order):
                                             text("ⓘ")
 
                             # time (durations/episodes)
-                            if s["duration"] is not None and s["episodes"] is not None:
-                                dur, eps = s["duration"], s["episodes"]
+                            if s.duration is not None and s.episodes is not None:
+                                dur, eps = s.duration, s.episodes
                                 with tag("div", ("class", "time col-md-1")):
                                     if eps == 1:
                                         with tag("span", klass="badge"):
@@ -255,8 +265,8 @@ def create_page(sources, list_order):
                                 klass="circular-buttons-container col-md-4 col-lg-3 col-xl-3",
                             ):
                                 # databases
-                                if s["database"] is not None:
-                                    for db in s["database"]:
+                                if s.database is not None:
+                                    for db in s.database:
                                         # MAL
                                         if "mal" in db:
                                             # if multiple entries
@@ -264,7 +274,7 @@ def create_page(sources, list_order):
                                                 # place button
                                                 list_hash_id = create_id(
                                                     name="{}{}".format(
-                                                        str(s["name"]),
+                                                        str(s.name),
                                                         "".join(
                                                             list(map(str, db["mal"]))
                                                         ),
@@ -286,9 +296,7 @@ def create_page(sources, list_order):
                                                         ),
                                                         (
                                                             "alt",
-                                                            "{} (MyAnimeList)".format(
-                                                                s["name"]
-                                                            ),
+                                                            f"{s.name} (MyAnimeList)",
                                                         ),
                                                         ("class", "rounded-circle"),
                                                     )
@@ -298,7 +306,7 @@ def create_page(sources, list_order):
                                                 mal_url = join_urls(
                                                     "https://myanimelist.net",
                                                     "anime",
-                                                    db["mal"],
+                                                    str(db["mal"]),
                                                 )
                                                 with tag("a", href=mal_url):
                                                     doc.stag(
@@ -309,9 +317,7 @@ def create_page(sources, list_order):
                                                         ),
                                                         (
                                                             "alt",
-                                                            "{} (MyAnimeList)".format(
-                                                                s["name"]
-                                                            ),
+                                                            f"{s.name} (MyAnimeList)",
                                                         ),
                                                         ("class", "rounded-circle"),
                                                     )
@@ -323,15 +329,15 @@ def create_page(sources, list_order):
                                             )
 
                                 # streaming
-                                if s["streaming"] is not None:
-                                    for vid in s["streaming"]:
+                                if s.streaming is not None:
+                                    for vid in s.streaming:
                                         if "youtube" in vid:
                                             # if list of videos
                                             if isinstance(vid["youtube"], list):
                                                 # print("Creating list for", s['name'])
                                                 list_hash_id = create_id(
                                                     name="{}{}".format(
-                                                        str(s["name"]),
+                                                        str(s.name),
                                                         "".join(
                                                             list(
                                                                 map(str, vid["youtube"])
@@ -353,15 +359,10 @@ def create_page(sources, list_order):
                                                             "src",
                                                             "./images/yt_icon.png",
                                                         ),
-                                                        (
-                                                            "alt",
-                                                            "{} (Youtube)".format(
-                                                                s["name"]
-                                                            ),
-                                                        ),
+                                                        ("alt", f"{s.name} (Youtube)"),
                                                         ("class", "rounded-circle"),
                                                     )
-                                                    if s["cc"]:
+                                                    if s.cc:
                                                         with tag(
                                                             "span",
                                                             ("class", "badge cc"),
@@ -379,9 +380,9 @@ def create_page(sources, list_order):
                                                     href=join_urls(
                                                         "https://youtu.be"
                                                         if "playlist"
-                                                        not in vid["youtube"]
+                                                        not in str(vid["youtube"])
                                                         else "https://youtube.com",
-                                                        vid["youtube"],
+                                                        str(vid["youtube"]),
                                                     ),
                                                 ):
                                                     doc.stag(
@@ -390,15 +391,10 @@ def create_page(sources, list_order):
                                                             "src",
                                                             "./images/yt_icon.png",
                                                         ),
-                                                        (
-                                                            "alt",
-                                                            "{} (Youtube)".format(
-                                                                s["name"]
-                                                            ),
-                                                        ),
+                                                        ("alt", f"{s.name} (Youtube)"),
                                                         ("class", "rounded-circle"),
                                                     )
-                                                    if s["cc"]:
+                                                    if s.cc:
                                                         with tag(
                                                             "span",
                                                             ("class", "badge cc"),
@@ -415,7 +411,7 @@ def create_page(sources, list_order):
                                             if isinstance(vid["vimeo"], list):
                                                 list_hash_id = create_id(
                                                     name="{}{}".format(
-                                                        str(s["name"]),
+                                                        str(s.name),
                                                         "".join(
                                                             list(map(str, vid["vimeo"]))
                                                         ),
@@ -437,9 +433,7 @@ def create_page(sources, list_order):
                                                         ),
                                                         (
                                                             "alt",
-                                                            "{} (Vimeo)".format(
-                                                                s["name"]
-                                                            ),
+                                                            f"{s.name} (Vimeo)",
                                                         ),
                                                         ("class", "rounded-circle"),
                                                     )
@@ -449,7 +443,7 @@ def create_page(sources, list_order):
                                                     "a",
                                                     href=join_urls(
                                                         "https://vimeo.com",
-                                                        vid["vimeo"],
+                                                        str(vid["vimeo"]),
                                                     ),
                                                 ):
                                                     doc.stag(
@@ -458,12 +452,7 @@ def create_page(sources, list_order):
                                                             "src",
                                                             "./images/vimeo_icon.png",
                                                         ),
-                                                        (
-                                                            "alt",
-                                                            "{} (Vimeo)".format(
-                                                                s["name"]
-                                                            ),
-                                                        ),
+                                                        ("alt", f"{s.name} (Vimeo)"),
                                                         ("class", "rounded-circle"),
                                                     )
                                         elif "crunchyroll" in vid:
@@ -471,7 +460,7 @@ def create_page(sources, list_order):
                                                 "a",
                                                 href=join_urls(
                                                     "http://www.crunchyroll.com",
-                                                    vid["crunchyroll"],
+                                                    str(vid["crunchyroll"]),
                                                 ),
                                             ):
                                                 doc.stag(
@@ -480,12 +469,7 @@ def create_page(sources, list_order):
                                                         "src",
                                                         "./images/cr_icon.png",
                                                     ),
-                                                    (
-                                                        "alt",
-                                                        "{} (Crunchyroll)".format(
-                                                            s["name"]
-                                                        ),
-                                                    ),
+                                                    ("alt", f"{s.name} (Crunchyroll)"),
                                                     ("class", "rounded-circle"),
                                                 )
                                         elif "netflix" in vid:
@@ -494,7 +478,7 @@ def create_page(sources, list_order):
                                                 href=join_urls(
                                                     "https://www.netflix.com",
                                                     "title",
-                                                    vid["netflix"],
+                                                    str(vid["netflix"]),
                                                 ),
                                             ):
                                                 doc.stag(
@@ -503,12 +487,7 @@ def create_page(sources, list_order):
                                                         "src",
                                                         "./images/netflix_icon.png",
                                                     ),
-                                                    (
-                                                        "alt",
-                                                        "{} (Netflix)".format(
-                                                            s["name"]
-                                                        ),
-                                                    ),
+                                                    ("alt", f"{s.name} (Netflix)"),
                                                     ("class", "rounded-circle"),
                                                 )
                                         elif "funimation" in vid:
@@ -517,7 +496,7 @@ def create_page(sources, list_order):
                                                 href=join_urls(
                                                     "https://www.funimation.com",
                                                     "shows",
-                                                    vid["funimation"],
+                                                    str(vid["funimation"]),
                                                 ),
                                             ):
                                                 doc.stag(
@@ -526,12 +505,7 @@ def create_page(sources, list_order):
                                                         "src",
                                                         "./images/fn_icon.png",
                                                     ),
-                                                    (
-                                                        "alt",
-                                                        "{} (Funimation)".format(
-                                                            s["name"]
-                                                        ),
-                                                    ),
+                                                    ("alt", f"{s.name} (Funimation)"),
                                                     ("class", "rounded-circle"),
                                                 )
                                         elif "hidive" in vid:
@@ -549,17 +523,14 @@ def create_page(sources, list_order):
                                                         "src",
                                                         "./images/hidive_icon.png",
                                                     ),
-                                                    (
-                                                        "alt",
-                                                        "{} (Hidive)".format(s["name"]),
-                                                    ),
+                                                    ("alt", f"{s.name} (Hidive)"),
                                                     ("class", "rounded-circle"),
                                                 )
 
                                         elif "twitter" in vid:
                                             with tag(
                                                 "a",
-                                                href=join_urls(vid["twitter"]),
+                                                href=join_urls(str(vid["twitter"])),
                                             ):
                                                 doc.stag(
                                                     "img",
@@ -567,16 +538,14 @@ def create_page(sources, list_order):
                                                         "src",
                                                         "./images/twitter.svg",
                                                     ),
-                                                    (
-                                                        "alt",
-                                                        "{} (Twitter)".format(
-                                                            s["name"]
-                                                        ),
-                                                    ),
+                                                    ("alt", f"{s.name} (Twitter)"),
                                                     ("class", "rounded-circle"),
                                                 )
                                         elif "website" in vid:
-                                            if "attraction-lemanga" in vid["website"]:
+                                            assert isinstance(vid, dict)
+                                            if "attraction-lemanga" in str(
+                                                vid["website"]
+                                            ):
                                                 with tag("a", href=vid["website"]):
                                                     doc.stag(
                                                         "img",
@@ -603,25 +572,25 @@ def create_page(sources, list_order):
 
                         # HIDDEN ROWS
                         # insert hidden row for extra info if ⓘ exists
-                        if s["extra_info"] is not None:
+                        if s.extra_info is not None:
                             with tag(
                                 "div",
                                 klass="collapse border rounded-bottom border-top-0 mb-1",
                                 id=create_id(
-                                    name="{}-extra-info".format(s["name"]),
+                                    name="{}-extra-info".format(s.name),
                                     octothorpe=False,
                                 ),
                             ):
                                 with tag("p", klass="pl-2 mb-0"):
-                                    text(str(s["extra_info"]))
+                                    text(str(s.extra_info))
 
                         # insert hidden row for databases
-                        if s["database"] is not None:
-                            for db in s["database"]:
+                        if s.database is not None:
+                            for db in s.database:
                                 if "mal" in db and isinstance(db["mal"], list):
                                     list_hash_id = create_id(
                                         name="{}{}".format(
-                                            str(s["name"]),
+                                            str(s.name),
                                             "".join(list(map(str, db["mal"]))),
                                         ),
                                         octothorpe=False,
@@ -639,23 +608,23 @@ def create_page(sources, list_order):
                                                     href=join_urls(
                                                         "https://myanimelist.net",
                                                         "anime",
-                                                        entry,
+                                                        str(entry),
                                                     ),
                                                 ):
                                                     if download_names:
-                                                        text(mal_cache.get(entry))
+                                                        text(mal_cache.get(int(entry)))
                                                     else:
                                                         text(entry)
                             # insert hidden rows for youtube/vimeo
-                        if s["streaming"] is not None:
-                            for vid in s["streaming"]:
+                        if s.streaming is not None:
+                            for vid in s.streaming:
                                 # multiple youtube videos
                                 if "youtube" in vid and isinstance(
                                     vid["youtube"], list
                                 ):
                                     list_hash_id = create_id(
                                         name="{}{}".format(
-                                            str(s["name"]),
+                                            str(s.name),
                                             "".join(list(map(str, vid["youtube"]))),
                                         ),
                                         octothorpe=False,
@@ -668,7 +637,8 @@ def create_page(sources, list_order):
                                         with tag("div", klass="list-group"):
                                             # check if episodes have names [
                                             # correlates to MAL entries 1-1 ]
-                                            for db in s["database"]:
+                                            assert s.database is not None
+                                            for db in s.database:
                                                 if "mal" in db and isinstance(
                                                     db["mal"], list
                                                 ):
@@ -679,10 +649,15 @@ def create_page(sources, list_order):
                                                             "a",
                                                             klass="list-group-item list-group-item-action",
                                                             href=join_urls(
-                                                                "https://youtu.be", v
+                                                                "https://youtu.be",
+                                                                str(v),
                                                             ),
                                                         ):
-                                                            text(mal_cache.get(mal_id))
+                                                            text(
+                                                                mal_cache.get(
+                                                                    int(mal_id)
+                                                                )
+                                                            )
                                                 else:  # else use 'episode 1,2,3' as link text
                                                     for i, v in enumerate(
                                                         vid["youtube"], 1
@@ -691,7 +666,8 @@ def create_page(sources, list_order):
                                                             "a",
                                                             klass="list-group-item list-group-item-action",
                                                             href=join_urls(
-                                                                "https://youtu.be", v
+                                                                "https://youtu.be",
+                                                                str(v),
                                                             ),
                                                         ):
                                                             text("Episode {}".format(i))
@@ -699,7 +675,7 @@ def create_page(sources, list_order):
                                 elif "vimeo" in vid and isinstance(vid["vimeo"], list):
                                     list_hash_id = create_id(
                                         name="{}{}".format(
-                                            str(s["name"]),
+                                            str(s.name),
                                             "".join(list(map(str, vid["vimeo"]))),
                                         ),
                                         octothorpe=False,
@@ -715,7 +691,7 @@ def create_page(sources, list_order):
                                                     "a",
                                                     klass="list-group-item list-group-item-action",
                                                     href=join_urls(
-                                                        "https://vimeo.com", v
+                                                        "https://vimeo.com", str(v)
                                                     ),
                                                 ):
                                                     text("Episode {}".format(i))
@@ -795,23 +771,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 """
                 )
-    return indent(doc.getvalue(), indent_text=True)
+    return str(indent(doc.getvalue(), indent_text=True))
 
 
-def main(opt):
+def main(do_download_names: bool = True) -> None:
     global download_names
-    download_names = opt
+    download_names = do_download_names
     # Read in YAML Sources
     with open(constants.LIST_SOURCES) as yaml_src:
-        sources = yaml.load(yaml_src, Loader=yaml.FullLoader)
+        sources_raw = yaml.load(yaml_src, Loader=yaml.FullLoader)
+    sources: List[Source] = [Source.parse_obj(s) for s in sources_raw]
     # write out html file - ordered by reccomendation
     with open(f"{constants.OUTPUT_DIR}/index.html", "w") as write_html_file:
         print("Generated index.html")
-        write_html_file.write(create_page(sources, constants.order.REC))
+        write_html_file.write(create_page(sources, constants.Order.REC))
     # write out html file - ordered by date
     with open(f"{constants.OUTPUT_DIR}/newest.html", "w") as write_newest_html:
         print("Generated newest.html")
-        write_newest_html.write(create_page(sources, constants.order.DATE))
+        write_newest_html.write(create_page(sources, constants.Order.DATE))
 
 
 if __name__ == "__main__":

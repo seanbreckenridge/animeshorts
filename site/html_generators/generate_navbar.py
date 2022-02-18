@@ -1,11 +1,12 @@
-from yattag import Doc, indent
+from typing import Any
 
-import constants
+from yattag import Doc, indent  # type: ignore[import]
+from . import constants
 
 # generates the navbar, and forms for the top of the page.
 
 
-def navbar(active, **kwargs):
+def navbar(active: str, **kwargs: Any) -> str:
     """'active' determines which tab is highlighted"""
     if not kwargs:
         sorttab = None
@@ -92,7 +93,7 @@ def navbar(active, **kwargs):
                                         "class",
                                         "btn btn-secondary{}".format(
                                             " active"
-                                            if sorttab == constants.order.REC
+                                            if sorttab == constants.Order.REC
                                             else ""
                                         ),
                                     ),
@@ -107,7 +108,7 @@ def navbar(active, **kwargs):
                                         "class",
                                         "btn btn-secondary{}".format(
                                             " active"
-                                            if sorttab == constants.order.DATE
+                                            if sorttab == constants.Order.DATE
                                             else ""
                                         ),
                                     ),
@@ -143,4 +144,4 @@ def navbar(active, **kwargs):
                             ("style", "max-height: 40px; width: auto; invert(80);"),
                         )
 
-    return indent(doc.getvalue(), indent_text=True)
+    return str(indent(doc.getvalue(), indent_text=True))

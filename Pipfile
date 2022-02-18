@@ -4,6 +4,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+types-pyyaml = "*"
+types-requests = "*"
+mypy = "*"
+pydantic = "*"
+ipdb = "*"
 
 [packages]
 PyYaml = ">=5.4"
@@ -12,4 +17,4 @@ pillow = ">=9.0.0"
 jikanpy = ">=4.1.0"
 
 [requires]
-python_version = "3.7"
+python_version = "3.10"
