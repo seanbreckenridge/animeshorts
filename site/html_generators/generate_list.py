@@ -206,7 +206,7 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     f"filterBadge('{tag_slug}', this)",
                                                 ),
                                             ):
-                                                text(t.value.capitalize())
+                                                text(t.value)
                                     if list_order == constants.Order.DATE:
                                         with tag("span", klass="badge badge-info"):
                                             text(str(s.date))

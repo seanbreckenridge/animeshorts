@@ -61,7 +61,7 @@ class SourceValidator(Validator):
 
 def prompt_source() -> Source:
     text = prompt(
-        "New Source:\n",
+        "New Source (Esc+Enter when youre done)\n",
         default=list_template,
         validator=SourceValidator(),
         multiline=True,
@@ -80,11 +80,11 @@ def add_source_to_file() -> None:
     click.echo(f"Source item count: {len(sources_raw)}")
     index = -1
     while index < 0:
-        itxt: int = click.prompt("Insert at index: ", type=int)
+        itxt: int = click.prompt("Insert at index", type=int)
         if itxt > 0 and itxt < len(sources_raw):
             index = itxt
 
-    sources_raw.insert(index, obj.dict())
+    sources_raw.insert(index, json.loads(obj.json()))
 
     dataf = io.StringIO()
     yaml.dump(sources_raw, dataf)
