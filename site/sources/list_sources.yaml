@@ -1,17 +1,5 @@
 - cc: false
   database:
-  - mal: 13629
-  date: '2017-01-13'
-  duration: 3.0
-  episodes: 1
-  extra_info: null
-  name: Furiko
-  streaming:
-  - youtube: d1lmCdabZws
-  tags:
-  - Film
-- cc: false
-  database:
   - mal: 5365
   date: '2017-01-13'
   duration: 12.0
@@ -131,6 +119,18 @@
   streaming: null
   tags:
   - Arthouse
+- cc: false
+  database:
+  - mal: 13629
+  date: '2017-01-13'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: Furiko
+  streaming:
+  - youtube: d1lmCdabZws
+  tags:
+  - Film
 - cc: false
   database:
   - mal: 40312
