@@ -62,19 +62,6 @@
   - Series
 - cc: false
   database:
-  - mal: 18139
-  date: '2017-01-13'
-  duration: 7.0
-  episodes: 21
-  extra_info: null
-  name: Tonari no Seki-kun
-  streaming:
-  - crunchyroll: tonari-no-seki-kun-the-master-of-killing-time
-  - hidive: tonari-no-seki-kun-the-master-of-killing-time
-  tags:
-  - Series
-- cc: false
-  database:
   - mal: 2235
   date: '2017-01-13'
   duration: 9.0
@@ -358,6 +345,18 @@
   - Arthouse
 - cc: false
   database:
+  - mal: 39875
+  date: '2021-09-27'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Umi no Yuurei
+  streaming:
+  - youtube: 1s84rIhPuhk
+  tags:
+  - Music Video
+- cc: false
+  database:
   - mal: 28761
   date: '2017-01-13'
   duration: 5.0
@@ -482,6 +481,23 @@
   streaming: null
   tags:
   - Film
+- cc: true
+  database:
+  - mal: 48727
+  date: '2021-10-20'
+  duration: 8.0
+  episodes: 3
+  extra_info: null
+  name: Yoru no Kuni
+  streaming:
+  - youtube:
+    - g_M9yDqMBoI
+    - xUuxTf8Dom8
+    - hSuNOvI7iys
+  tags:
+  - Film
+  - Music Video
+  - Series
 - cc: false
   database:
   - mal: 29944
@@ -550,6 +566,19 @@
   - Music Video
 - cc: false
   database:
+  - mal: 18139
+  date: '2017-01-13'
+  duration: 7.0
+  episodes: 21
+  extra_info: null
+  name: Tonari no Seki-kun
+  streaming:
+  - crunchyroll: tonari-no-seki-kun-the-master-of-killing-time
+  - hidive: tonari-no-seki-kun-the-master-of-killing-time
+  tags:
+  - Series
+- cc: false
+  database:
   - mal: 1981
   date: '2017-01-13'
   duration: 30.0
@@ -605,17 +634,6 @@
   episodes: 1
   extra_info: null
   name: Wonder
-  streaming: null
-  tags:
-  - Arthouse
-- cc: false
-  database:
-  - mal: 6305
-  date: '2017-01-13'
-  duration: 4.0
-  episodes: 1
-  extra_info: null
-  name: Life no Color
   streaming: null
   tags:
   - Arthouse
@@ -721,6 +739,18 @@
   extra_info: null
   name: On Your Mark
   streaming: null
+  tags:
+  - Music Video
+- cc: true
+  database:
+  - mal: 43919
+  date: '2021-10-20'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: Obenkyou Shitoite yo
+  streaming:
+  - youtube: Atvsg_zogxo
   tags:
   - Music Video
 - cc: false
@@ -841,6 +871,18 @@
   tags:
   - Music Video
   - Arthouse
+- cc: true
+  database:
+  - mal: 45053
+  date: 2021-10-21
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Phillip
+  streaming:
+  - youtube: zSq80izsCZk
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 38702
@@ -865,6 +907,18 @@
   - vimeo: 39758142
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 44084
+  date: '2021-09-27'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Hunch Gray
+  streaming:
+  - youtube: ugpywe34_30
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 36050
@@ -1151,6 +1205,18 @@
   streaming: null
   tags:
   - Commercial
+- cc: false
+  database:
+  - mal: 44086
+  date: '2021-10-10'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: Prayer X
+  streaming:
+  - youtube: L-Bzhpm8h0o
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 19235
@@ -1612,6 +1678,18 @@
   tags:
   - Anthology
   - Arthouse
+- cc: false
+  database:
+  - mal: 45643
+  date: '2021-09-27'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: With All Our Hearts
+  streaming:
+  - youtube: zncJoGX1Nk0
+  tags:
+  - Film
 - cc: true
   database:
   - mal: 39165
@@ -1922,6 +2000,17 @@
   - Arthouse
 - cc: false
   database:
+  - mal: 6305
+  date: '2017-01-13'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Life no Color
+  streaming: null
+  tags:
+  - Arthouse
+- cc: false
+  database:
   - mal: 19841
   date: '2017-01-13'
   duration: 4.0
@@ -2109,6 +2198,18 @@
   - youtube: cjSkAYn7dt4
   tags:
   - Music Video
+- cc: false
+  database:
+  - mal: 40202
+  date: '2021-09-23'
+  duration: 8.0
+  episodes: 1
+  extra_info: null
+  name: I Like Ducks
+  streaming:
+  - youtube: 48-RA4BNXVc
+  tags:
+  - Arthouse
 - cc: false
   database:
   - mal: 3507
