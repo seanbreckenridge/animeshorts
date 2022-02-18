@@ -1,3756 +1,3776 @@
----
 - cc: false
   database:
-    - mal: 13629
-  date: "2017-01-13"
+  - mal: 13629
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Furiko
   streaming:
-    - youtube: d1lmCdabZws
+  - youtube: d1lmCdabZws
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 5365
-  date: "2017-01-13"
+  - mal: 5365
+  date: '2017-01-13'
   duration: 12.0
   episodes: 1
-  extra_info: ~
-  name: "The House of Small Cubes"
-  streaming: ~
+  extra_info: null
+  name: The House of Small Cubes
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 14349
-  date: "2017-01-13"
+  - mal: 14349
+  date: '2017-01-13'
   duration: 26.0
   episodes: 1
-  extra_info: ~
-  name: "Little Witch Academia"
-  streaming: ~
+  extra_info: null
+  name: Little Witch Academia
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 42104
-  date: "2017-01-13"
+  - mal: 42104
+  date: '2017-01-13'
   duration: 2.58
   episodes: 1
-  extra_info: ~
-  name: "Moses Supposes"
+  extra_info: null
+  name: Moses Supposes
   streaming:
-    - youtube: byAfC5yW_hw
+  - youtube: byAfC5yW_hw
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 32681
-  date: "2017-01-13"
+  - mal: 32681
+  date: '2017-01-13'
   duration: 7.0
   episodes: 13
-  extra_info: "Though its not necessary, watching specific shows (all made by Studio Trigger) before watching Space Patrol Luluco can enhance the experience. The shows being Kill la Kill, Inferno Cop, Little Witch Academia, and SEX&VIOLENCE with MACHSPEED (Episode 14 of the Japanese Animator Expo) "
-  name: "Space Patrol Luluco"
+  extra_info: 'Though its not necessary, watching specific shows (all made by Studio
+    Trigger) before watching Space Patrol Luluco can enhance the experience. The shows
+    being Kill la Kill, Inferno Cop, Little Witch Academia, and SEX&VIOLENCE with
+    MACHSPEED (Episode 14 of the Japanese Animator Expo) '
+  name: Space Patrol Luluco
   streaming:
-    - crunchyroll: space-patrol-luluco
-    - funimation: space-patrol-luluco
+  - crunchyroll: space-patrol-luluco
+  - funimation: space-patrol-luluco
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 18139
-  date: "2017-01-13"
+  - mal: 18139
+  date: '2017-01-13'
   duration: 7.0
   episodes: 21
-  extra_info: ~
-  name: "Tonari no Seki-kun"
+  extra_info: null
+  name: Tonari no Seki-kun
   streaming:
-    - crunchyroll: tonari-no-seki-kun-the-master-of-killing-time
-    - hidive: tonari-no-seki-kun-the-master-of-killing-time
+  - crunchyroll: tonari-no-seki-kun-the-master-of-killing-time
+  - hidive: tonari-no-seki-kun-the-master-of-killing-time
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 2235
-  date: "2017-01-13"
+  - mal: 2235
+  date: '2017-01-13'
   duration: 9.0
   episodes: 1
-  extra_info: ~
-  name: "Mizu no Kotoba"
+  extra_info: null
+  name: Mizu no Kotoba
   streaming:
-    - crunchyroll: mizu-no-kotoba
+  - crunchyroll: mizu-no-kotoba
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 33241
-  date: "2017-01-13"
+  - mal: 33241
+  date: '2017-01-13'
   duration: 2.0
   episodes: 10
-  extra_info: ~
-  name: "Honobono Log"
-  streaming: ~
+  extra_info: null
+  name: Honobono Log
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 20671
-  date: "2017-01-13"
+  - mal: 20671
+  date: '2017-01-13'
   duration: 16.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Shashinkan
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 32287
-  date: "2017-01-13"
+  - mal: 32287
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Kanamewo
   streaming:
-    - youtube: 1RzNDZFQllA
+  - youtube: 1RzNDZFQllA
   tags:
-    - "Music Video"
-    - Arthouse
+  - Music Video
+  - Arthouse
 - cc: false
   database:
-    - mal: 28149
-  date: "2017-01-13"
+  - mal: 28149
+  date: '2017-01-13'
   duration: 7.0
   episodes: 35
-  extra_info: ~
-  name: "Japan Animator Expo"
-  streaming: ~
+  extra_info: null
+  name: Japan Animator Expo
+  streaming: null
   tags:
-    - Film
-    - Anthology
-    - "Music Video"
+  - Film
+  - Anthology
+  - Music Video
 - cc: false
   database:
-    - mal: 34849
+  - mal: 34849
   date: 2018-05-06
   duration: 11.0
   episodes: 1
-  extra_info: ~
-  name: "Konohana no Sakuya Mori"
-  streaming: ~
+  extra_info: null
+  name: Konohana no Sakuya Mori
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 40312
-  date: "2019-10-27"
+  - mal: 40312
+  date: '2019-10-27'
   duration: 1.8
   episodes: 1
-  extra_info: ~
-  name: "Southpaw"
+  extra_info: null
+  name: Southpaw
   streaming:
-    - youtube: 51_lchSJhO4
+  - youtube: 51_lchSJhO4
   tags:
-    - Arthouse
-    - "Music Video"
+  - Arthouse
+  - Music Video
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 6.97
   episodes: 1
-  extra_info: ~
-  name: "Growth Factor"
+  extra_info: null
+  name: Growth Factor
   streaming:
-    - vimeo: 120239460
+  - vimeo: 120239460
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 3326
-  date: "2017-01-13"
+  - mal: 3326
+  date: '2017-01-13'
   duration: 21.0
   episodes: 1
-  extra_info: ~
-  name: "Inaka Isha"
-  streaming: ~
+  extra_info: null
+  name: Inaka Isha
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 17121
-  date: "2017-01-13"
+  - mal: 17121
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "Dareka no Manazashi"
-  streaming: ~
+  extra_info: null
+  name: Dareka no Manazashi
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 33777
-  date: "2017-01-13"
+  - mal: 33777
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Yodomi no Sakagi"
+  extra_info: null
+  name: Yodomi no Sakagi
   streaming:
-    - youtube: s7rNuhpBi6A
+  - youtube: s7rNuhpBi6A
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 32491
-  date: "2017-01-13"
+  - mal: 32491
+  date: '2017-01-13'
   duration: 7.0
   episodes: 4
-  extra_info: ~
-  name: "She and Her Cat: Everything Flows"
+  extra_info: null
+  name: 'She and Her Cat: Everything Flows'
   streaming:
-    - crunchyroll: she-and-her-cat-everything-flows-
+  - crunchyroll: she-and-her-cat-everything-flows-
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 39185
-  date: "2019-02-03"
+  - mal: 39185
+  date: '2019-02-03'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Tatakau Mono-tachi e Ai wo Komete"
+  extra_info: null
+  name: Tatakau Mono-tachi e Ai wo Komete
   streaming:
-    - youtube: "uSFdckpwXQc"
+  - youtube: uSFdckpwXQc
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 37531
-  date: "2017-01-13"
+  - mal: 37531
+  date: '2017-01-13'
   duration: 4.17
   episodes: 1
-  extra_info: ~
-  name: "The Ballad of Suicide"
+  extra_info: null
+  name: The Ballad of Suicide
   streaming:
-    - youtube: IBZyTX22THA
+  - youtube: IBZyTX22THA
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 10448
-  date: "2017-01-13"
+  - mal: 10448
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Rain Town"
+  extra_info: null
+  name: Rain Town
   streaming:
-    - youtube: RLAfM1RXwRs
+  - youtube: RLAfM1RXwRs
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 4094
-  date: "2017-01-13"
+  - mal: 4094
+  date: '2017-01-13'
   duration: 12.0
   episodes: 6
-  extra_info: ~
-  name: "Batman: Gotham Knight"
-  streaming: ~
+  extra_info: null
+  name: 'Batman: Gotham Knight'
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 36308
+  - mal: 36308
   date: 2018-05-06
   duration: 15.0
   episodes: 1
-  extra_info: ~
-  name: "Blade Runner: Black Out 2022"
+  extra_info: null
+  name: 'Blade Runner: Black Out 2022'
   streaming:
-    - crunchyroll: blade-runner-black-out-2022
+  - crunchyroll: blade-runner-black-out-2022
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13175
-  date: "2017-01-13"
+  - mal: 13175
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Shiranpuri
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 6094
-  date: "2017-01-13"
+  - mal: 6094
+  date: '2017-01-13'
   duration: 5.0
   episodes: 15
-  extra_info: ~
-  name: "A Piece of Phantasmagoria"
-  streaming: ~
+  extra_info: null
+  name: A Piece of Phantasmagoria
+  streaming: null
   tags:
-    - Series
-    - Arthouse
+  - Series
+  - Arthouse
 - cc: false
   database:
-    - mal: 21861
-  date: "2017-01-13"
+  - mal: 21861
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Airy Me"
+  extra_info: null
+  name: Airy Me
   streaming:
-    - youtube: VJ5QvrGxTnQ
+  - youtube: VJ5QvrGxTnQ
   tags:
-    - "Music Video"
-    - Arthouse
+  - Music Video
+  - Arthouse
 - cc: false
   database:
-    - mal: 26349
-  date: "2017-01-13"
+  - mal: 26349
+  date: '2017-01-13'
   duration: 3.0
   episodes: 13
-  extra_info: ~
-  name: "I Can't Understand What My Husband Is Saying"
+  extra_info: null
+  name: I Can't Understand What My Husband Is Saying
   streaming:
-    - crunchyroll: i-cant-understand-what-my-husband-is-saying
+  - crunchyroll: i-cant-understand-what-my-husband-is-saying
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 3087
-  date: "2017-01-13"
+  - mal: 3087
+  date: '2017-01-13'
   duration: 26.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Cencoroll
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 9423
-  date: "2017-01-13"
+  - mal: 9423
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Koko ni Iru"
-  streaming: ~
+  extra_info: null
+  name: Koko ni Iru
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: true
   database:
-    - mal: 42488
-  date: "2021-05-15"
+  - mal: 42488
+  date: '2021-05-15'
   duration: 13.35
   episodes: 1
-  extra_info: ~
-  name: "Wasureta Furi wo Shite (Pretending to Forget)"
+  extra_info: null
+  name: Wasureta Furi wo Shite (Pretending to Forget)
   streaming:
-    - vimeo: 435734827
+  - vimeo: 435734827
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 28761
-  date: "2017-01-13"
+  - mal: 28761
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "00:08"
+  extra_info: null
+  name: 00:08
   streaming:
-    - vimeo: 149121640
+  - vimeo: 149121640
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 29943
-  date: "2017-01-13"
+  - mal: 29943
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Crazy for It"
+  extra_info: null
+  name: Crazy for It
   streaming:
-    - vimeo: 63905345
+  - vimeo: 63905345
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 10178
-  date: "2017-01-13"
+  - mal: 10178
+  date: '2017-01-13'
   duration: 25.0
   episodes: 4
-  extra_info: ~
-  name: "Otona Joshi no Anime Time"
-  streaming: ~
+  extra_info: null
+  name: Otona Joshi no Anime Time
+  streaming: null
   tags:
-    - Anthology
-    - Film
+  - Anthology
+  - Film
 - cc: false
   database:
-    - mal: 34240
-  date: "2017-01-13"
+  - mal: 34240
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Shelter
   streaming:
-    - youtube: fzQ6gRAEoy0
-    - crunchyroll: shelter
+  - youtube: fzQ6gRAEoy0
+  - crunchyroll: shelter
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 17082
-  date: "2017-01-13"
+  - mal: 17082
+  date: '2017-01-13'
   duration: 4.0
   episodes: 12
-  extra_info: ~
+  extra_info: null
   name: Aiura
   streaming:
-    - crunchyroll: aiura
+  - crunchyroll: aiura
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 10516
-  date: "2017-01-13"
+  - mal: 10516
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Anemone
   streaming:
-    - youtube: U7g4kG4qlhI
+  - youtube: U7g4kG4qlhI
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 1205
-  date: "2017-01-13"
+  - mal: 1205
+  date: '2017-01-13'
   duration: 3.0
   episodes: 6
-  extra_info: ~
-  name: "The Diary of Tortov Riddle"
-  streaming: ~
+  extra_info: null
+  name: The Diary of Tortov Riddle
+  streaming: null
   tags:
-    - Series
-    - Arthouse
+  - Series
+  - Arthouse
 - cc: false
   database:
-    - mal: 6505
-  date: "2017-01-13"
+  - mal: 6505
+  date: '2017-01-13'
   duration: 5.0
   episodes: 5
-  extra_info: ~
-  name: "There She Is!"
+  extra_info: null
+  name: There She Is!
   streaming:
-    - youtube:
-        - "-uqnKQwwcJo"
-        - q_ZUhJ33X80
-        - 5tUMeQrUXro
-        - B362vS6ivrM
-        - a3m-WwoBv-o
+  - youtube:
+    - -uqnKQwwcJo
+    - q_ZUhJ33X80
+    - 5tUMeQrUXro
+    - B362vS6ivrM
+    - a3m-WwoBv-o
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 35706
-  date: "2017-01-13"
+  - mal: 35706
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: playground
   streaming:
-    - vimeo: 112483572
+  - vimeo: 112483572
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 14353
-  date: "2017-01-13"
+  - mal: 14353
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: "Death Billiards was released prior to (and is what led to the creation of) Death Parade. You can watch it before or after Death Parade."
-  name: "Death Billiards"
-  streaming: ~
+  extra_info: Death Billiards was released prior to (and is what led to the creation
+    of) Death Parade. You can watch it before or after Death Parade.
+  name: Death Billiards
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 29944
-  date: "2017-01-13"
+  - mal: 29944
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "A Gum Boy"
+  extra_info: null
+  name: A Gum Boy
   streaming:
-    - vimeo: 57446210
+  - vimeo: 57446210
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 30088
-  date: "2017-01-13"
+  - mal: 30088
+  date: '2017-01-13'
   duration: 1.0
   episodes: 0
-  extra_info: ~
-  name: "Ryoutei no Aji"
+  extra_info: null
+  name: Ryoutei no Aji
   streaming:
-    - youtube:
-        - "-rouZ-TXuG4"
-        - SfxLGz9qBrA
-        - Ofe6isCufSo
-        - W4PM_l5yRF0
-        - 3uDDLXQu3ts
+  - youtube:
+    - -rouZ-TXuG4
+    - SfxLGz9qBrA
+    - Ofe6isCufSo
+    - W4PM_l5yRF0
+    - 3uDDLXQu3ts
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 36087
-  date: "2017-01-13"
+  - mal: 36087
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Nerenai!!!
   streaming:
-    - youtube: 7oMF9xlO93U
+  - youtube: 7oMF9xlO93U
   tags:
-    - Arthouse
-    - "Music Video"
+  - Arthouse
+  - Music Video
 - cc: false
   database:
-    - mal: 34039
-  date: "2017-01-13"
+  - mal: 34039
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "L’Œil du Cyclone"
+  extra_info: null
+  name: "L\u2019\u0152il du Cyclone"
   streaming:
-    - vimeo: 134832670
+  - vimeo: 134832670
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 9733
-  date: "2017-01-13"
+  - mal: 9733
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "The TV Show"
+  extra_info: null
+  name: The TV Show
   streaming:
-    - youtube: BQ9YtJC-Kd8
+  - youtube: BQ9YtJC-Kd8
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 1981
-  date: "2017-01-13"
+  - mal: 1981
+  date: '2017-01-13'
   duration: 30.0
   episodes: 2
-  extra_info: ~
-  name: "Twilight Q"
-  streaming: ~
+  extra_info: null
+  name: Twilight Q
+  streaming: null
   tags:
-    - Anthology
-    - Film
+  - Anthology
+  - Film
 - cc: false
   database:
-    - mal: 38811
-  date: "2017-01-13"
+  - mal: 38811
+  date: '2017-01-13'
   duration: 1.17
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: COPY
   streaming:
-    - vimeo: 17902560
+  - vimeo: 17902560
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38130
-  date: "2018-08-15"
+  - mal: 38130
+  date: '2018-08-15'
   duration: 16
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: A Branch of a Pine Is Tied Up
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 7511
+  - mal: 7511
   date: 2018-05-06
   duration: 11
   episodes: 2
-  extra_info: ~
+  extra_info: null
   name: Worku
   streaming:
-    - youtube:
-        - NFnobnRsEv0
-        - nMvQNcLuQE8
+  - youtube:
+    - NFnobnRsEv0
+    - nMvQNcLuQE8
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 28085
-  date: "2017-01-13"
+  - mal: 28085
+  date: '2017-01-13'
   duration: 8.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Wonder
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 6305
-  date: "2017-01-13"
+  - mal: 6305
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Life no Color"
-  streaming: ~
+  extra_info: null
+  name: Life no Color
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38106
-  date: "2018-08-13"
+  - mal: 38106
+  date: '2018-08-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Hotohashiru"
+  extra_info: null
+  name: Hotohashiru
   streaming:
-    - youtube: JyB2oODP3XI
+  - youtube: JyB2oODP3XI
   tags:
-    - Music Video
+  - Music Video
 - cc: false
   database:
-    - mal: 36789
+  - mal: 36789
   date: 2018-05-06
   duration: 21.0
   episodes: 1
-  extra_info: ~
-  name: "Golden Time"
-  streaming: ~
+  extra_info: null
+  name: Golden Time
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 34631
-  date: "2017-01-13"
+  - mal: 34631
+  date: '2017-01-13'
   duration: 11.0
   episodes: 1
-  extra_info: ~
-  name: "Aitata Bocchi"
+  extra_info: null
+  name: Aitata Bocchi
   streaming:
-    - vimeo: 152551578
+  - vimeo: 152551578
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 2724
-  date: "2017-01-13"
+  - mal: 2724
+  date: '2017-01-13'
   duration: 5.0
   episodes: 2
-  extra_info: ~
-  name: "Daicon Opening Animations"
-  streaming: ~
+  extra_info: null
+  name: Daicon Opening Animations
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 32461
-  date: "2017-01-13"
+  - mal: 32461
+  date: '2017-01-13'
   duration: 28.0
   episodes: 1
-  extra_info: ~
-  name: "Mitsuami no Kamisama"
-  streaming: ~
+  extra_info: null
+  name: Mitsuami no Kamisama
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 31370
-  date: "2017-01-13"
+  - mal: 31370
+  date: '2017-01-13'
   duration: 9.0
   episodes: 12
-  extra_info: ~
-  name: "Tonkatsu DJ Agetarou"
+  extra_info: null
+  name: Tonkatsu DJ Agetarou
   streaming:
-    - crunchyroll: tonkatsu-dj-agetaro
+  - crunchyroll: tonkatsu-dj-agetaro
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 1951
-  date: "2017-01-13"
+  - mal: 1951
+  date: '2017-01-13'
   duration: 16.0
   episodes: 3
-  extra_info: ~
-  name: "Manie-Manie: Meikyuu Monogatari"
-  streaming: ~
+  extra_info: null
+  name: 'Manie-Manie: Meikyuu Monogatari'
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 36368
-  date: "2017-01-13"
+  - mal: 36368
+  date: '2017-01-13'
   duration: 9.0
   episodes: 1
-  extra_info: ~
-  name: "Scutes on my mind"
+  extra_info: null
+  name: Scutes on my mind
   streaming:
-    - youtube: F9Ncp0dD73A
+  - youtube: F9Ncp0dD73A
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 1047
-  date: "2017-01-13"
+  - mal: 1047
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "On Your Mark"
-  streaming: ~
+  extra_info: null
+  name: On Your Mark
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 35554
+  - mal: 50110
+  date: 2022-02-12
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Kata no Ato
+  streaming:
+  - youtube: 7NgbuNlVm7Q
+  tags:
+  - Film
+  - Arthouse
+- cc: false
+  database:
+  - mal: 35554
   date: 2018-05-06
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Girl Electric"
+  extra_info: null
+  name: Girl Electric
   streaming:
-    - youtube: Idrkai4hfXM
+  - youtube: Idrkai4hfXM
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 9.47
   episodes: 1
-  extra_info: ~
-  name: "Way back to the Sea"
+  extra_info: null
+  name: Way back to the Sea
   streaming:
-    - youtube: TgZk6s0CaBU
+  - youtube: TgZk6s0CaBU
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 36088
+  - mal: 36088
   date: 2018-05-06
   duration: 1.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Kaijuu
   streaming:
-    - youtube: 3pRu9bYD4Q0
+  - youtube: 3pRu9bYD4Q0
   tags:
-    - "Music Video"
+  - Music Video
 - cc: true
   database:
-    - mal: 33734
-  date: "2017-01-13"
+  - mal: 33734
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
-  name: "Samurai Noodles: The Originator"
+  extra_info: null
+  name: 'Samurai Noodles: The Originator'
   streaming:
-    - youtube: WNbb9qixsRQ
+  - youtube: WNbb9qixsRQ
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 770
-  date: "2017-01-13"
+  - mal: 770
+  date: '2017-01-13'
   duration: 23.0
   episodes: 1
-  extra_info: ~
-  name: "Pale Cocoon"
-  streaming: ~
+  extra_info: null
+  name: Pale Cocoon
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 1004
-  date: "2017-01-13"
+  - mal: 1004
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "She and Her Cat"
-  streaming: ~
+  extra_info: null
+  name: She and Her Cat
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 33391
-  date: "2017-01-13"
+  - mal: 33391
+  date: '2017-01-13'
   duration: 23.0
   episodes: 1
-  extra_info: ~
-  name: "Red Ash: Gearworld"
-  streaming: ~
+  extra_info: null
+  name: 'Red Ash: Gearworld'
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 31310
-  date: "2017-01-13"
+  - mal: 31310
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Kicking Rocks"
+  extra_info: null
+  name: Kicking Rocks
   streaming:
-    - vimeo: 77555506
+  - vimeo: 77555506
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 25641
-  date: "2017-01-13"
+  - mal: 25641
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "Monotonous Purgatory"
+  extra_info: null
+  name: Monotonous Purgatory
   streaming:
-    - youtube: RaVu3IxxavA
+  - youtube: RaVu3IxxavA
   tags:
-    - "Music Video"
-    - Arthouse
+  - Music Video
+  - Arthouse
 - cc: false
   database:
-    - mal: 38702
-  date: "2019-01-20"
+  - mal: 38702
+  date: '2019-01-20'
   duration: 1.45
   episodes: 1
-  extra_info: ~
-  name: "Ya-Ne-Sen a Go Go"
+  extra_info: null
+  name: Ya-Ne-Sen a Go Go
   streaming:
-    - youtube: tN_62MmQBqQ
+  - youtube: tN_62MmQBqQ
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 21451
-  date: "2017-01-13"
+  - mal: 21451
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
-  name: "Nihonbashi Koukashita R Keikaku"
+  extra_info: null
+  name: Nihonbashi Koukashita R Keikaku
   streaming:
-    - vimeo: 39758142
+  - vimeo: 39758142
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 36050
-  date: "2017-01-13"
+  - mal: 36050
+  date: '2017-01-13'
   duration: 0.85
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Ikezu
   streaming:
-    - youtube: wyHYb7LdrF0
+  - youtube: wyHYb7LdrF0
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 39495
-  date: "2019-10-28"
+  - mal: 39495
+  date: '2019-10-28'
   duration: 10
   episodes: 1
-  extra_info: ~
-  name: "Totsukuni no Shoujo"
-  streaming: ~
+  extra_info: null
+  name: Totsukuni no Shoujo
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 38960
-  date: "2019-01-20"
+  - mal: 38960
+  date: '2019-01-20'
   duration: 1.1833
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Roto Spread
   streaming:
-    - youtube: cG5XOYzkq2w
+  - youtube: cG5XOYzkq2w
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 10688
-  date: "2017-01-13"
+  - mal: 10688
+  date: '2017-01-13'
   duration: 13.0
   episodes: 1
-  extra_info: ~
-  name: "Muybridge's Strings"
-  streaming: ~
+  extra_info: null
+  name: Muybridge's Strings
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 13755
-  date: "2017-01-13"
+  - mal: 13755
+  date: '2017-01-13'
   duration: 20.0
   episodes: 1
-  extra_info: ~
-  name: "Feeling from Mountain and Water"
-  streaming: ~
+  extra_info: null
+  name: Feeling from Mountain and Water
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 15005
-  date: "2017-01-13"
+  - mal: 15005
+  date: '2017-01-13'
   duration: 3.0
   episodes: 20
-  extra_info: ~
-  name: "Kyou no Asuka Show"
-  streaming: ~
+  extra_info: null
+  name: Kyou no Asuka Show
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 38969
-  date: "2017-01-13"
+  - mal: 38969
+  date: '2017-01-13'
   duration: 4.38
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: shake
   streaming:
-    - vimeo: 26671589
+  - vimeo: 26671589
   tags:
-    - "Music Video"
-    - Arthouse
+  - Music Video
+  - Arthouse
 - cc: false
   database:
-    - mal: 32600
-  date: "2017-01-13"
+  - mal: 32600
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Kanojo wa Zombie"
-  streaming: ~
+  extra_info: null
+  name: Kanojo wa Zombie
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 2047
-  date: "2017-01-13"
+  - mal: 2047
+  date: '2017-01-13'
   duration: 8.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Ningyo
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13513
-  date: "2017-01-13"
+  - mal: 13513
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Anima
   streaming:
-    - youtube: "q91ceXsdXzM"
+  - youtube: q91ceXsdXzM
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 4475
-  date: "2017-01-13"
+  - mal: 4475
+  date: '2017-01-13'
   duration: 13.0
   episodes: 1
-  extra_info: ~
-  name: "The Old Crocodile"
+  extra_info: null
+  name: The Old Crocodile
   streaming:
-    - youtube: ifhdsOiyPfw
+  - youtube: ifhdsOiyPfw
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 32013
-  date: "2017-01-13"
+  - mal: 32013
+  date: '2017-01-13'
   duration: 7.0
   episodes: 12
-  extra_info: ~
-  name: "Oshiete! Galko-chan"
+  extra_info: null
+  name: Oshiete! Galko-chan
   streaming:
-    - crunchyroll: please-tell-me-galko-chan
+  - crunchyroll: please-tell-me-galko-chan
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 1204
-  date: "2017-01-13"
+  - mal: 1204
+  date: '2017-01-13'
   duration: 22.0
   episodes: 1
-  extra_info: ~
-  name: "Kujira no Chouyaku"
-  streaming: ~
+  extra_info: null
+  name: Kujira no Chouyaku
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 19217
+  - mal: 19217
   date: 2018-05-06
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "And And"
-  streaming: ~
+  extra_info: null
+  name: And And
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38970
-  date: "2017-01-13"
+  - mal: 38970
+  date: '2017-01-13'
   duration: 3.5
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Land
   streaming:
-    - vimeo: 74114715
+  - vimeo: 74114715
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 10500
-  date: "2017-01-13"
+  - mal: 10500
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "Ojisan no Lamp"
-  streaming: ~
+  extra_info: null
+  name: Ojisan no Lamp
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 38727
-  date: "2019-01-20"
+  - mal: 38727
+  date: '2019-01-20'
   duration: 1.216
   episodes: 1
-  extra_info: ~
-  name: "Een"
+  extra_info: null
+  name: Een
   streaming:
-    - youtube: "npiEBAiRBHI"
+  - youtube: npiEBAiRBHI
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38290
-  date: "2017-01-13"
+  - mal: 38290
+  date: '2017-01-13'
   duration: 4.67
   episodes: 1
-  extra_info: ~
-  name: "Tokyo Cosmo"
+  extra_info: null
+  name: Tokyo Cosmo
   streaming:
-    - youtube: 3SEXokSxZBI
+  - youtube: 3SEXokSxZBI
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 4095
-  date: "2017-01-13"
+  - mal: 4095
+  date: '2017-01-13'
   duration: 19.0
   episodes: 1
-  extra_info: ~
-  name: "Chuumon no Ooi Ryouriten (1991)"
-  streaming: ~
+  extra_info: null
+  name: Chuumon no Ooi Ryouriten (1991)
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 13171
-  date: "2017-01-13"
+  - mal: 13171
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Wasurenagumo
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 29293
+  - mal: 29293
   date: 2018-05-06
   duration: 10.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Isu
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 10187
-  date: "2017-01-13"
+  - mal: 10187
+  date: '2017-01-13'
   duration: 12.0
   episodes: 13
-  extra_info: ~
+  extra_info: null
   name: HenSemi
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: true
   database:
-    - mal: 10720
-  date: "2017-01-13"
+  - mal: 10720
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "Korekuraide Utau"
+  extra_info: null
+  name: Korekuraide Utau
   streaming:
-    - youtube: ygECmAslHCI
+  - youtube: ygECmAslHCI
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 20903
-  date: "2017-01-13"
+  - mal: 20903
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Harmonie
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 3080
-  date: "2017-01-13"
+  - mal: 3080
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Anime Tenchou"
-  streaming: ~
+  extra_info: null
+  name: Anime Tenchou
+  streaming: null
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 19235
+  - mal: 19235
   date: 2018-05-06
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Dance, Dance, Dance"
+  extra_info: null
+  name: Dance, Dance, Dance
   streaming:
-    - youtube: 0AUfrjdBEog
+  - youtube: 0AUfrjdBEog
   tags:
-    - "Music Video"
+  - Music Video
 - cc: true
   database:
-    - mal: 39065
-  date: "2019-01-27"
+  - mal: 39065
+  date: '2019-01-27'
   duration: 5
   episodes: 1
-  extra_info: ~
-  name: "Bokura Mada Underground"
+  extra_info: null
+  name: Bokura Mada Underground
   streaming:
-    - youtube: "nBteO-bU78Y"
+  - youtube: nBteO-bU78Y
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 13639
-  date: "2017-01-13"
+  - mal: 13639
+  date: '2017-01-13'
   duration: 12.0
   episodes: 1
-  extra_info: ~
-  name: "Hi no Youjin"
-  streaming: ~
+  extra_info: null
+  name: Hi no Youjin
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 36086
-  date: "2017-01-13"
+  - mal: 36086
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Toyoichi
   streaming:
-    - youtube: C1DmxDNwbRg
+  - youtube: C1DmxDNwbRg
   tags:
-    - Arthouse
-    - "Music Video"
+  - Arthouse
+  - Music Video
 - cc: false
   database:
-    - mal: 12321
-  date: "2017-01-13"
+  - mal: 12321
+  date: '2017-01-13'
   duration: 12.0
   episodes: 5
-  extra_info: ~
-  name: "Thermae Romae"
-  streaming: ~
+  extra_info: null
+  name: Thermae Romae
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 38445
-  date: "2019-01-20"
+  - mal: 38445
+  date: '2019-01-20'
   duration: 4.1
   episodes: 1
-  extra_info: ~
-  name: "loTus feat. Pt. Ajay Pohankar"
+  extra_info: null
+  name: loTus feat. Pt. Ajay Pohankar
   streaming:
-    - vimeo: 280184713
+  - vimeo: 280184713
   tags:
-    - Arthouse
-    - "Music Video"
+  - Arthouse
+  - Music Video
 - cc: true
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 3.92
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: May
   streaming:
-    - youtube: "-PY17Wrj_sk"
+  - youtube: -PY17Wrj_sk
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 1370
-  date: "2017-01-13"
+  - mal: 1370
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Atama Yama"
+  extra_info: null
+  name: Atama Yama
   streaming:
-    - youtube: 9NMLiFcC91s
+  - youtube: 9NMLiFcC91s
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38674
-  date: "2019-01-20"
+  - mal: 38674
+  date: '2019-01-20'
   duration: 1.216
   episodes: 1
-  extra_info: ~
-  name: "Higashi Asia Bunka Toshi 2019 Toshima"
+  extra_info: null
+  name: Higashi Asia Bunka Toshi 2019 Toshima
   streaming:
-    - youtube: HLcQV_bMfAg
+  - youtube: HLcQV_bMfAg
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 2953
-  date: "2017-01-13"
+  - mal: 2953
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Egao
-  streaming: ~
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: true
   database:
-    - mal: 32139
-  date: "2017-01-13"
+  - mal: 32139
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: DušaN
+  extra_info: null
+  name: "Du\u0161aN"
   streaming:
-    - youtube: DIi7jV1CCxQ
+  - youtube: DIi7jV1CCxQ
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 35015
+  - mal: 35015
   date: 2018-05-06
   duration: 3.0
   episodes: 12
-  extra_info: ~
-  name: "Please Take My Brother Away"
-  streaming: ~
+  extra_info: null
+  name: Please Take My Brother Away
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 30771
-  date: "2017-01-13"
+  - mal: 30771
+  date: '2017-01-13'
   duration: 7.0
   episodes: 1
-  extra_info: ~
-  name: "Mudai (Untitled)"
-  streaming: ~
+  extra_info: null
+  name: Mudai (Untitled)
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 4467
-  date: "2017-01-13"
+  - mal: 4467
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Universe
-  streaming: ~
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 28775
-  date: "2017-01-13"
+  - mal: 28775
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "White Fantasy"
-  streaming: ~
+  extra_info: null
+  name: White Fantasy
+  streaming: null
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 5469
-  date: "2017-01-13"
+  - mal: 5469
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Birthday Boy"
-  streaming: ~
+  extra_info: null
+  name: Birthday Boy
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 38181
-  date: "2018-10-21"
+  - mal: 38181
+  date: '2018-10-21'
   duration: 6.04
   episodes: 1
-  extra_info: ~
-  name: "Chainsaw Bunny"
+  extra_info: null
+  name: Chainsaw Bunny
   streaming:
-    - youtube: "w11l6f28FiM"
+  - youtube: w11l6f28FiM
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 30673
-  date: "2017-01-13"
+  - mal: 30673
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Made in Japan"
-  streaming: ~
+  extra_info: null
+  name: Made in Japan
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 2891
-  date: "2017-01-13"
+  - mal: 2891
+  date: '2017-01-13'
   duration: 30.0
   episodes: 1
-  extra_info: ~
-  name: "Iblard Jikan"
-  streaming: ~
+  extra_info: null
+  name: Iblard Jikan
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 36158
-  date: "2017-01-13"
+  - mal: 36158
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Nowhereland
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
-    - "Music Video"
+  - Arthouse
+  - Music Video
 - cc: false
   database:
-    - mal: 9782
-  date: "2017-01-13"
+  - mal: 9782
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Norageki
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 21591
-  date: "2017-01-13"
+  - mal: 21591
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Wasure-boshi
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 37706
+  - mal: 37706
   date: 2018-05-06
   duration: 0.5
   episodes: 1
-  extra_info: ~
-  name: "Akuma no Kimuraa-hen"
+  extra_info: null
+  name: Akuma no Kimuraa-hen
   streaming:
-    - twitter: "https://twitter.com/nissin_hiyoko/status/982151140253945856"
+  - twitter: https://twitter.com/nissin_hiyoko/status/982151140253945856
   tags:
-    - Commercial
+  - Commercial
 - cc: true
   database:
-    - mal: 25495
-  date: "2017-01-13"
+  - mal: 25495
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: fake!fake!
   streaming:
-    - youtube: c-M7cvJy1IY
+  - youtube: c-M7cvJy1IY
   tags:
-    - "Music Video"
+  - Music Video
 - cc: true
   database:
-    - mal: 38964
-  date: "2019-01-20"
+  - mal: 38964
+  date: '2019-01-20'
   duration: 4.333
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Timeless
   streaming:
-    - youtube: hXTi9xRVbOs
+  - youtube: hXTi9xRVbOs
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal:
-        - 13373
-        - 13375
-        - 13259
-        - 13309
-        - 17811
-        - 17813
-        - 17815
-        - 17791
-        - 17819
-  date: "2017-01-13"
+  - mal:
+    - 13373
+    - 13375
+    - 13259
+    - 13309
+    - 17811
+    - 17813
+    - 17815
+    - 17791
+    - 17819
+  date: '2017-01-13'
   duration: 0.5
   episodes: 9
-  extra_info: "MAL Links are ordered in chronological order, as is the playlist."
-  name: "Kyoto Animation Commercials"
+  extra_info: MAL Links are ordered in chronological order, as is the playlist.
+  name: Kyoto Animation Commercials
   streaming:
-    - youtube: "playlist?list=PLTNhweghpLi1u-LgDe3aD8BhHv6kn2iOr"
+  - youtube: playlist?list=PLTNhweghpLi1u-LgDe3aD8BhHv6kn2iOr
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 2550
-  date: "2017-01-13"
+  - mal: 2550
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Onboro Film"
-  streaming: ~
+  extra_info: null
+  name: Onboro Film
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: true
   database:
-    - mal: 37684
-  date: "2018-06-17"
+  - mal: 37684
+  date: '2018-06-17'
   duration: 3.24
   episodes: 1
-  extra_info: ~
-  name: "Susume, Karolina."
+  extra_info: null
+  name: Susume, Karolina.
   streaming:
-    - youtube: YM58u3IvNc4
+  - youtube: YM58u3IvNc4
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 15439
-  date: "2017-01-13"
+  - mal: 15439
+  date: '2017-01-13'
   duration: 28.0
   episodes: 1
-  extra_info: ~
-  name: "Kono Danshi, Ningyo Hiroimashita."
+  extra_info: null
+  name: Kono Danshi, Ningyo Hiroimashita.
   streaming:
-    - hidive: this-boy-caught-a-merman
+  - hidive: this-boy-caught-a-merman
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 16149
-  date: "2017-01-13"
+  - mal: 16149
+  date: '2017-01-13'
   duration: 12.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Kick-Heart
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 29513
-  date: "2017-01-13"
+  - mal: 29513
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
-  name: "Aki no Kanade"
-  streaming: ~
+  extra_info: null
+  name: Aki no Kanade
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 29772
+  - mal: 29772
   date: 2018-05-06
   duration: 7.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Calm
   streaming:
-    - youtube: tzuNxR5U1ok
+  - youtube: tzuNxR5U1ok
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 34678
-  date: "2017-01-13"
+  - mal: 34678
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
-  name: "Kingsglaive: FFXV Fan Kansha Tokubetsu Movie"
+  extra_info: null
+  name: 'Kingsglaive: FFXV Fan Kansha Tokubetsu Movie'
   streaming:
-    - youtube: AlHR0QztA9Q
+  - youtube: AlHR0QztA9Q
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 34632
-  date: "2017-01-13"
+  - mal: 34632
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Such a Good Place to Die"
+  extra_info: null
+  name: Such a Good Place to Die
   streaming:
-    - vimeo: 123583035
+  - vimeo: 123583035
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 36136
+  - mal: 36136
   date: 2018-05-06
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Crystal Clear"
+  extra_info: null
+  name: Crystal Clear
   streaming:
-    - youtube: sursVprvwl0
+  - youtube: sursVprvwl0
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 2500
-  date: "2017-01-13"
+  - mal: 2500
+  date: '2017-01-13'
   duration: 23.0
   episodes: 3
-  extra_info: ~
-  name: "The Cockpit"
-  streaming: ~
+  extra_info: null
+  name: The Cockpit
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 5875
+  - mal: 5875
   date: 2018-05-06
   duration: 10
   episodes: 1
-  extra_info: ~
-  name: "Kobutori (1929)"
-  streaming: ~
+  extra_info: null
+  name: Kobutori (1929)
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 14355
-  date: "2017-01-13"
+  - mal: 14355
+  date: '2017-01-13'
   duration: 3.0
   episodes: 12
-  extra_info: ~
-  name: "Yama no Susume"
-  streaming: ~
+  extra_info: null
+  name: Yama no Susume
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 1072
-  date: "2017-01-13"
+  - mal: 1072
+  date: '2017-01-13'
   duration: 11.0
   episodes: 5
-  extra_info: ~
-  name: "Sweat Punch"
-  streaming: ~
+  extra_info: null
+  name: Sweat Punch
+  streaming: null
   tags:
-    - Anthology
-    - Arthouse
+  - Anthology
+  - Arthouse
 - cc: true
   database:
-    - mal: 39165
-  date: "2019-02-03"
+  - mal: 39165
+  date: '2019-02-03'
   duration: 4.13
   episodes: 1
-  extra_info: ~
-  name: "Oki ni Mesu mama"
+  extra_info: null
+  name: Oki ni Mesu mama
   streaming:
-    - youtube: nROvY9uiYYk
+  - youtube: nROvY9uiYYk
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 31501
-  date: "2017-01-13"
+  - mal: 31501
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Master Blaster"
-  streaming: ~
+  extra_info: null
+  name: Master Blaster
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: true
   database:
-    - mal: 37145
+  - mal: 37145
   date: 2018-05-06
   duration: 8.5
   episodes: 1
-  extra_info: ~
-  name: "Mogu & Perol"
+  extra_info: null
+  name: Mogu & Perol
   streaming:
-    - youtube: zjqzW1UKENM
+  - youtube: zjqzW1UKENM
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 1978
-  date: "2017-01-13"
+  - mal: 1978
+  date: '2017-01-13'
   duration: 15.0
   episodes: 1
-  extra_info: ~
-  name: "Onkyo Seimeitai Noiseman"
-  streaming: ~
+  extra_info: null
+  name: Onkyo Seimeitai Noiseman
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 29778
-  date: "2017-01-13"
+  - mal: 29778
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Himitsu Spark"
+  extra_info: null
+  name: Himitsu Spark
   streaming:
-    - youtube: h_26_gR7Vs8
+  - youtube: h_26_gR7Vs8
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 38500
-  date: "2019-01-20"
+  - mal: 38500
+  date: '2019-01-20'
   duration: 4.266
   episodes: 1
-  extra_info: ~
-  name: "New Yoku feat. Chan-Mika"
+  extra_info: null
+  name: New Yoku feat. Chan-Mika
   streaming:
-    - vimeo: 271041838
+  - vimeo: 271041838
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 37548
+  - mal: 37548
   date: 2018-05-06
   duration: 0.9
   episodes: 1
-  extra_info: ~
-  name: "METROID Short Animation"
+  extra_info: null
+  name: METROID Short Animation
   streaming:
-    - youtube: z6wzzPE87Pw
+  - youtube: z6wzzPE87Pw
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 49124
-  date: "2017-01-13"
+  - mal: 49124
+  date: '2017-01-13'
   duration: 5.82
   episodes: 1
-  extra_info: ~
-  name: "a reflection of one's mind"
+  extra_info: null
+  name: a reflection of one's mind
   streaming:
-    - youtube: vmXi69bt3ks
+  - youtube: vmXi69bt3ks
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 31815
-  date: "2017-01-13"
+  - mal: 31815
+  date: '2017-01-13'
   duration: 7.0
   episodes: 4
-  extra_info: ~
-  name: "Kono Danshi, Mahou ga Oshigoto Desu."
+  extra_info: null
+  name: Kono Danshi, Mahou ga Oshigoto Desu.
   streaming:
-    - crunchyroll: this-boy-is-a-professional-wizard
+  - crunchyroll: this-boy-is-a-professional-wizard
   tags:
-    - Series
+  - Series
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 5.23
   episodes: 1
-  extra_info: ~
-  name: "little heart"
+  extra_info: null
+  name: little heart
   streaming:
-    - youtube: ETWKlGpd33Q
+  - youtube: ETWKlGpd33Q
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 12137
-  date: "2017-01-13"
+  - mal: 12137
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Robotica * Robotics"
-  streaming: ~
+  extra_info: null
+  name: Robotica * Robotics
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 34907
-  date: "2017-01-13"
+  - mal: 34907
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Through the Windows"
+  extra_info: null
+  name: Through the Windows
   streaming:
-    - youtube: hOGdWCl0rNQ
+  - youtube: hOGdWCl0rNQ
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 31299
+  - mal: 31299
   date: 2018-05-06
   duration: 14.0
   episodes: 1
-  extra_info: ~
-  name: "The Legend of Shangri-La"
-  streaming: ~
+  extra_info: null
+  name: The Legend of Shangri-La
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 31830
+  - mal: 31830
   date: 2018-05-06
   duration: 4.2
   episodes: 1
-  extra_info: ~
-  name: "lilac (bombs Jun Togawa)"
+  extra_info: null
+  name: lilac (bombs Jun Togawa)
   streaming:
-    - youtube: HIs7yRbpCIU
+  - youtube: HIs7yRbpCIU
   tags:
-    - "Music Video"
-    - Arthouse
+  - Music Video
+  - Arthouse
 - cc: false
   database:
-    - mal: 1890
-  date: "2017-01-13"
+  - mal: 1890
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Clover
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 23285
-  date: "2017-01-13"
+  - mal: 23285
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Poulette no Isu"
-  streaming: ~
+  extra_info: null
+  name: Poulette no Isu
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 15751
-  date: "2017-01-13"
+  - mal: 15751
+  date: '2017-01-13'
   duration: 4.0
   episodes: 13
-  extra_info: ~
+  extra_info: null
   name: Senyuu.
   streaming:
-    - crunchyroll: senyu
+  - crunchyroll: senyu
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 9001
-  date: "2017-01-13"
+  - mal: 9001
+  date: '2017-01-13'
   duration: 11.0
   episodes: 1
-  extra_info: ~
-  name: "Je T'aime"
-  streaming: ~
+  extra_info: null
+  name: Je T'aime
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 3474
+  - mal: 3474
   date: 2018-05-06
   duration: 4.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Push
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13369
-  date: "2017-01-13"
+  - mal: 13369
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Cornelis
   streaming:
-    - vimeo: 71340449
+  - vimeo: 71340449
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 6162
-  date: "2017-01-13"
+  - mal: 6162
+  date: '2017-01-13'
   duration: 27.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Tailenders
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 33449
+  - mal: 33449
   date: 2018-05-06
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Moving Colors"
+  extra_info: null
+  name: Moving Colors
   streaming:
-    - vimeo: 197401511
+  - vimeo: 197401511
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 17068
-  date: "2017-01-13"
+  - mal: 17068
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Transfer
   streaming:
-    - youtube: ayL4pzictu8
+  - youtube: ayL4pzictu8
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 33958
+  - mal: 33958
   date: 2018-05-06
   duration: 5.0
   episodes: 6
-  extra_info: ~
-  name: "Robber's Company"
+  extra_info: null
+  name: Robber's Company
   streaming:
-    - vimeo:
-        - 169313537
-        - 184253507
-        - 207984568
-        - 216763948
-        - 222602536
-        - 226833401
+  - vimeo:
+    - 169313537
+    - 184253507
+    - 207984568
+    - 216763948
+    - 222602536
+    - 226833401
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 24127
-  date: "2017-01-13"
+  - mal: 24127
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Hashi no Mukou"
+  extra_info: null
+  name: Hashi no Mukou
   streaming:
-    - vimeo: 68606959
+  - vimeo: 68606959
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13971
+  - mal: 13971
   date: 2018-05-06
   duration: 7.0
   episodes: 1
-  extra_info: ~
-  name: "663114"
-  streaming: ~
+  extra_info: null
+  name: '663114'
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 19841
-  date: "2017-01-13"
+  - mal: 19841
+  date: '2017-01-13'
   duration: 4.0
   episodes: 14
-  extra_info: ~
-  name: "Super Seisyun Brothers"
-  streaming: ~
+  extra_info: null
+  name: Super Seisyun Brothers
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 8743
-  date: "2017-01-13"
+  - mal: 8743
+  date: '2017-01-13'
   duration: 7.0
   episodes: 1
-  extra_info: ~
-  name: "Memory (ONA)"
+  extra_info: null
+  name: Memory (ONA)
   streaming:
-    - youtube: _Si5-Xjf8xE
+  - youtube: _Si5-Xjf8xE
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13169
-  date: "2017-01-13"
+  - mal: 13169
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Buta
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 22839
-  date: "2017-01-13"
+  - mal: 22839
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Cross Road"
-  streaming: ~
+  extra_info: null
+  name: Cross Road
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 8312
+  - mal: 8312
   date: 2018-05-06
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Piece
-  streaming: ~
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 114
-  date: "2017-01-13"
+  - mal: 114
+  date: '2017-01-13'
   duration: 12.0
   episodes: 26
-  extra_info: ~
-  name: "Cromartie High School"
+  extra_info: null
+  name: Cromartie High School
   streaming:
-    - crunchyroll: cromartie-high-school
+  - crunchyroll: cromartie-high-school
   tags:
-    - Series
+  - Series
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 3.6
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: VIEW
   streaming:
-    - youtube: 3dmVnjz0Uzo
+  - youtube: 3dmVnjz0Uzo
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 3215
-  date: "2017-01-13"
+  - mal: 3215
+  date: '2017-01-13'
   duration: 1.08
   episodes: 36
-  extra_info: ~
-  name: "Fuyu no Hi"
-  streaming: ~
+  extra_info: null
+  name: Fuyu no Hi
+  streaming: null
   tags:
-    - Anthology
-    - Arthouse
+  - Anthology
+  - Arthouse
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 3.83
   episodes: 1
-  extra_info: ~
-  name: "Age of Obscure: Boubaku Jidai"
+  extra_info: null
+  name: 'Age of Obscure: Boubaku Jidai'
   streaming:
-    - vimeo: 183963843
+  - vimeo: 183963843
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 17010
-  date: "2017-01-13"
+  - mal: 17010
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Yasashii March"
+  extra_info: null
+  name: Yasashii March
   streaming:
-    - youtube: "-vQ5SwncXrY"
+  - youtube: -vQ5SwncXrY
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 42584
-  date: "2021-05-13"
+  - mal: 42584
+  date: '2021-05-13'
   duration: 4.36
   episodes: 1
-  extra_info: ~
-  name: "Showtime"
+  extra_info: null
+  name: Showtime
   streaming:
-    - youtube: "_vJf38Lp5CI"
+  - youtube: _vJf38Lp5CI
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 17635
-  date: "2017-01-13"
+  - mal: 17635
+  date: '2017-01-13'
   duration: 7.0
   episodes: 6
-  extra_info: ~
-  name: "Koitabi: True Tours Nanto"
-  streaming: ~
+  extra_info: null
+  name: 'Koitabi: True Tours Nanto'
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 36081
+  - mal: 36081
   date: 2018-05-06
   duration: 3.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Tengoku
   streaming:
-    - youtube: Cx8oH0ewg2E
+  - youtube: Cx8oH0ewg2E
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 33941
-  date: "2017-01-13"
+  - mal: 33941
+  date: '2017-01-13'
   duration: 2.0
   episodes: 4
-  extra_info: ~
-  name: "Towel Story"
+  extra_info: null
+  name: Towel Story
   streaming:
-    - youtube:
-        - 7645gFxSnIw
-        - U5jwD4JTh0k
-        - Gf6Ih8YBrBA
-        - sblJQu0iY2M
+  - youtube:
+    - 7645gFxSnIw
+    - U5jwD4JTh0k
+    - Gf6Ih8YBrBA
+    - sblJQu0iY2M
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 37683
+  - mal: 37683
   date: 2018-05-06
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "The Starry Night"
+  extra_info: null
+  name: The Starry Night
   streaming:
-    - youtube: 1gKgBz8uopo
+  - youtube: 1gKgBz8uopo
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 39513
-  date: "2019-05-04"
+  - mal: 39513
+  date: '2019-05-04'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Tenuto"
+  extra_info: null
+  name: Tenuto
   streaming:
-    - youtube: cjSkAYn7dt4
+  - youtube: cjSkAYn7dt4
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 3507
-  date: "2017-01-13"
+  - mal: 3507
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Survival
   streaming:
-    - youtube: ujHgSf68VkY
+  - youtube: ujHgSf68VkY
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 2387
-  date: "2017-01-13"
+  - mal: 2387
+  date: '2017-01-13'
   duration: 10.0
   episodes: 9
-  extra_info: ~
-  name: "Ai Monogatari: 9 Love Stories"
-  streaming: ~
+  extra_info: null
+  name: 'Ai Monogatari: 9 Love Stories'
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: true
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 11.1
   episodes: 1
-  extra_info: ~
-  name: "Konoha Kaseki no Natsu"
+  extra_info: null
+  name: Konoha Kaseki no Natsu
   streaming:
-    - youtube: y2CdzAdOMp4
+  - youtube: y2CdzAdOMp4
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 11447
+  - mal: 11447
   date: 2018-05-06
   duration: 11.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Yuureisen
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 29979
+  - mal: 29979
   date: 2018-05-06
   duration: 0.26
   episodes: 1
-  extra_info: ~
-  name: "Petting a Dog"
+  extra_info: null
+  name: Petting a Dog
   streaming:
-    - vimeo: 70353248
+  - vimeo: 70353248
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 3743
+  - mal: 3743
   date: 2018-05-06
   duration: 10.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Murder
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 1060
-  date: "2017-01-13"
+  - mal: 1060
+  date: '2017-01-13'
   duration: 8.0
   episodes: 24
-  extra_info: ~
-  name: "Oruchuban Ebichu"
-  streaming: ~
+  extra_info: null
+  name: Oruchuban Ebichu
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 17897
-  date: "2017-01-13"
+  - mal: 17897
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Hana wa Saku"
+  extra_info: null
+  name: Hana wa Saku
   streaming:
-    - youtube: NpX1yrG7TbQ
+  - youtube: NpX1yrG7TbQ
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 2.8
   episodes: 1
-  extra_info: ~
-  name: "Don't leave me"
+  extra_info: null
+  name: Don't leave me
   streaming:
-    - youtube: fP4WQ8Mp7O8
+  - youtube: fP4WQ8Mp7O8
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 6861
-  date: "2017-01-13"
+  - mal: 6861
+  date: '2017-01-13'
   duration: 14.0
   episodes: 1
-  extra_info: ~
-  name: "Water Brain"
+  extra_info: null
+  name: Water Brain
   streaming:
-    - vimeo: 5197063
+  - vimeo: 5197063
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 32041
-  date: "2017-01-13"
+  - mal: 32041
+  date: '2017-01-13'
   duration: 11.0
   episodes: 1
-  extra_info: "Listed as a sequel on MAL, but it's only in spirit."
-  name: "Mori no Densetsu: Dai Ni Gakushou"
-  streaming: ~
+  extra_info: Listed as a sequel on MAL, but it's only in spirit.
+  name: 'Mori no Densetsu: Dai Ni Gakushou'
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 10979
+  - mal: 10979
   date: 2018-05-06
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: 48x61
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 7451
-  date: "2017-01-13"
+  - mal: 7451
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Kid's Castle"
+  extra_info: null
+  name: Kid's Castle
   streaming:
-    - youtube: bfoEPilAzYc
+  - youtube: bfoEPilAzYc
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 3475
-  date: "2017-01-13"
+  - mal: 3475
+  date: '2017-01-13'
   duration: 8.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Muramasa
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 2211
-  date: "2017-01-13"
+  - mal: 2211
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Jumping
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 34422
+  - mal: 34422
   date: 2018-05-06
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Two Tea Two"
+  extra_info: null
+  name: Two Tea Two
   streaming:
-    - youtube: umvE8pXSGI4
+  - youtube: umvE8pXSGI4
   tags:
-    - Arthouse
+  - Arthouse
 - cc: true
   database:
-    - mal: 38968
-  date: "2019-01-24"
+  - mal: 38968
+  date: '2019-01-24'
   duration: 3.25
   episodes: 1
-  extra_info: ~
-  name: "Love In Ruins"
+  extra_info: null
+  name: Love In Ruins
   streaming:
-    - youtube: 3iFRox1gTlc
+  - youtube: 3iFRox1gTlc
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 36067
+  - mal: 36067
   date: 2018-05-06
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Halfway
   streaming:
-    - youtube: LMeta5mNTJ0
+  - youtube: LMeta5mNTJ0
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 33255
-  date: "2017-01-13"
+  - mal: 33255
+  date: '2017-01-13'
   duration: 5.0
   episodes: 120
-  extra_info: ~
-  name: "Saiki Kusuo no Ψ-nan"
+  extra_info: null
+  name: "Saiki Kusuo no \u03A8-nan"
   streaming:
-    - funimation: the-disastrous-life-of-saiki-k
-    - netflix: 80117781
+  - funimation: the-disastrous-life-of-saiki-k
+  - netflix: 80117781
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 31252
-  date: "2017-01-13"
+  - mal: 31252
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Korekarasaki, Nando Anata to."
-  streaming: ~
+  extra_info: null
+  name: Korekarasaki, Nando Anata to.
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 6137
-  date: "2017-01-13"
+  - mal: 6137
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Tsuki no Waltz"
-  streaming: ~
+  extra_info: null
+  name: Tsuki no Waltz
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 36991
+  - mal: 36991
   date: 2018-05-06
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Lupin III 3DCG"
-  streaming: ~
+  extra_info: null
+  name: Lupin III 3DCG
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 35709
-  date: "2017-01-13"
+  - mal: 35709
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Arara
   streaming:
-    - youtube: vtYA6rUZcKs
+  - youtube: vtYA6rUZcKs
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 39171
-  date: "2019-02-03"
+  - mal: 39171
+  date: '2019-02-03'
   duration: 4
   episodes: 1
-  extra_info: ~
-  name: "Sect"
+  extra_info: null
+  name: Sect
   streaming:
-    - youtube: Qwo7KPfxr8Q
+  - youtube: Qwo7KPfxr8Q
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 30014
-  date: "2017-01-13"
+  - mal: 30014
+  date: '2017-01-13'
   duration: 12.0
   episodes: 26
-  extra_info: ~
+  extra_info: null
   name: Momokuri
   streaming:
-    - crunchyroll: momokuri
-    - hidive: momokuri
+  - crunchyroll: momokuri
+  - hidive: momokuri
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 32932
-  date: "2017-01-13"
+  - mal: 32932
+  date: '2017-01-13'
   duration: 0.51
   episodes: 3
-  extra_info: ~
-  name: "Choujuu Giga"
-  streaming: ~
+  extra_info: null
+  name: Choujuu Giga
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 3841
-  date: "2017-01-13"
+  - mal: 3841
+  date: '2017-01-13'
   duration: 3.0
   episodes: 104
-  extra_info: ~
-  name: "Chi's Sweet Home"
-  streaming: ~
+  extra_info: null
+  name: Chi's Sweet Home
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 19233
-  date: "2017-01-13"
+  - mal: 19233
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Around
   streaming:
-    - youtube: Ei8akL41Qnk
+  - youtube: Ei8akL41Qnk
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 30324
-  date: "2017-01-13"
+  - mal: 30324
+  date: '2017-01-13'
   duration: 11.0
   episodes: 1
-  extra_info: ~
-  name: "Obake no Dokurou"
+  extra_info: null
+  name: Obake no Dokurou
   streaming:
-    - youtube: tH2BocgaLk0
+  - youtube: tH2BocgaLk0
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 34840
+  - mal: 34840
   date: 2018-05-06
   duration: 7.0
   episodes: 1
-  extra_info: ~
-  name: "Kitsune Tsuki"
+  extra_info: null
+  name: Kitsune Tsuki
   streaming:
-    - vimeo: 155340838
+  - vimeo: 155340838
   tags:
-    - Arthouse
+  - Arthouse
 - cc: true
   database:
-    - mal: 16774
-  date: "2017-01-13"
+  - mal: 16774
+  date: '2017-01-13'
   duration: 3.0
   episodes: 13
-  extra_info: ~
-  name: "Inferno Cop"
+  extra_info: null
+  name: Inferno Cop
   streaming:
-    - youtube: "playlist?list=PLOX9C-CzNV1zX_MoYZmp9wU5MOLoh1Z51"
-    - crunchyroll: inferno-cop
+  - youtube: playlist?list=PLOX9C-CzNV1zX_MoYZmp9wU5MOLoh1Z51
+  - crunchyroll: inferno-cop
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 31505
-  date: "2017-01-13"
+  - mal: 31505
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "Go! Samurai"
+  extra_info: null
+  name: Go! Samurai
   streaming:
-    - youtube: VNCP9167n88
+  - youtube: VNCP9167n88
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 9976
-  date: "2017-01-13"
+  - mal: 9976
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Wakaranai Buta"
+  extra_info: null
+  name: Wakaranai Buta
   streaming:
-    - youtube: nltD577DBpU
+  - youtube: nltD577DBpU
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 30289
-  date: "2017-01-13"
+  - mal: 30289
+  date: '2017-01-13'
   duration: 1.0
   episodes: 5
-  extra_info: ~
+  extra_info: null
   name: Dededen
   streaming:
-    - youtube:
-        - R0p4a4-jrYY
-        - Ce4s048jlik
-        - ClDhU_vJh4k
-        - aJswXxtivok
-        - YjU6N0XOPn8
+  - youtube:
+    - R0p4a4-jrYY
+    - Ce4s048jlik
+    - ClDhU_vJh4k
+    - aJswXxtivok
+    - YjU6N0XOPn8
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 8446
-  date: "2017-01-13"
+  - mal: 8446
+  date: '2017-01-13'
   duration: 15.0
   episodes: 1
-  extra_info: ~
-  name: "SAI: Part 1 / Revolving... to the Core"
-  streaming: ~
+  extra_info: null
+  name: 'SAI: Part 1 / Revolving... to the Core'
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 35770
-  date: "2017-01-13"
+  - mal: 35770
+  date: '2017-01-13'
   duration: 0.5
   episodes: 6
-  extra_info: ~
-  name: "Hungry Days: Aoharu ka yo"
+  extra_info: null
+  name: 'Hungry Days: Aoharu ka yo'
   streaming:
-    - youtube:
-        - pxePZwIeWrM
-        - HY2-rt3ZHQE
-        - z-7ercul0_M
-        - ekyev9leW8o
-        - OfbLFmnL1j4
-        - DX99pooX-RI
+  - youtube:
+    - pxePZwIeWrM
+    - HY2-rt3ZHQE
+    - z-7ercul0_M
+    - ekyev9leW8o
+    - OfbLFmnL1j4
+    - DX99pooX-RI
   tags:
-    - Series
-    - Commercial
+  - Series
+  - Commercial
 - cc: false
   database:
-    - mal: 37923
-  date: "2018-06-04"
+  - mal: 37923
+  date: '2018-06-04'
   duration: 8.25
   episodes: 1
-  extra_info: ~
-  name: "Baa-cha no Kingyo"
+  extra_info: null
+  name: Baa-cha no Kingyo
   streaming:
-    - youtube: AVUO-5X2Qts
+  - youtube: AVUO-5X2Qts
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 37551
-  date: "2017-01-13"
+  - mal: 37551
+  date: '2017-01-13'
   duration: 1.3
   episodes: 1
-  extra_info: ~
-  name: "Onikiri Musume Saisen"
+  extra_info: null
+  name: Onikiri Musume Saisen
   streaming:
-    - youtube: tfr5iaEE9bQ
+  - youtube: tfr5iaEE9bQ
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 5842
-  date: "2017-01-13"
+  - mal: 5842
+  date: '2017-01-13'
   duration: 1.0
   episodes: 2
-  extra_info: ~
-  name: "Kotatsu Neko (ONA)"
+  extra_info: null
+  name: Kotatsu Neko (ONA)
   streaming:
-    - youtube:
-        - lLOj4oQ50vY
-        - "-4noZLWcCF0"
+  - youtube:
+    - lLOj4oQ50vY
+    - -4noZLWcCF0
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 38508
-  date: "2019-01-20"
+  - mal: 38508
+  date: '2019-01-20'
   duration: 4.4333
   episodes: 1
-  extra_info: ~
-  name: "Kanabun no Koushin"
+  extra_info: null
+  name: Kanabun no Koushin
   streaming:
-    - vimeo: 23273214
+  - vimeo: 23273214
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 30862
-  date: "2017-01-13"
+  - mal: 30862
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Woman Who Stole Fingers"
+  extra_info: null
+  name: Woman Who Stole Fingers
   streaming:
-    - vimeo: 137441200
+  - vimeo: 137441200
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 31263
+  - mal: 31263
   date: 2018-05-06
   duration: 7
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Grim
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 5085
-  date: "2017-01-13"
+  - mal: 5085
+  date: '2017-01-13'
   duration: 9.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Nakedyouth
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 15077
-  date: "2017-01-13"
+  - mal: 15077
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: ~
-  name: "Tabisuru Nuigurumi: Traveling Daru"
-  streaming: ~
+  extra_info: null
+  name: 'Tabisuru Nuigurumi: Traveling Daru'
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 2767
-  date: "2017-01-13"
+  - mal: 2767
+  date: '2017-01-13'
   duration: 27.0
   episodes: 1
-  extra_info: ~
-  name: "Taneyamagahara no Yoru"
-  streaming: ~
+  extra_info: null
+  name: Taneyamagahara no Yoru
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 2182
-  date: "2017-01-13"
+  - mal: 2182
+  date: '2017-01-13'
   duration: 10.0
   episodes: 9
-  extra_info: ~
-  name: "Robot Carnival"
-  streaming: ~
+  extra_info: null
+  name: Robot Carnival
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 35965
+  - mal: 35965
   date: 2018-05-06
   duration: 21.0
   episodes: 1
-  extra_info: ~
-  name: "Baja no Studio"
-  streaming: ~
+  extra_info: null
+  name: Baja no Studio
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13053
+  - mal: 13053
   date: 2018-05-06
   duration: 3.2
   episodes: 1
-  extra_info: ~
-  name: "Aimai Elegy"
+  extra_info: null
+  name: Aimai Elegy
   streaming:
-    - youtube: f8ubInQcVAY
+  - youtube: f8ubInQcVAY
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 1303
-  date: "2017-01-13"
+  - mal: 1303
+  date: '2017-01-13'
   duration: 10.0
   episodes: 9
-  extra_info: ~
-  name: "The Animatrix"
-  streaming: ~
+  extra_info: null
+  name: The Animatrix
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 8332
-  date: "2017-01-13"
+  - mal: 8332
+  date: '2017-01-13'
   duration: 9.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Kudan
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 30922
-  date: "2017-01-13"
+  - mal: 30922
+  date: '2017-01-13'
   duration: 22.0
   episodes: 1
-  extra_info: ~
-  name: "Kaze no Matasaburou"
-  streaming: ~
+  extra_info: null
+  name: Kaze no Matasaburou
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 11355
-  date: "2017-01-13"
+  - mal: 11355
+  date: '2017-01-13'
   duration: 28.0
   episodes: 1
-  extra_info: ~
-  name: "Kono Danshi, Uchuujin to Tatakeamasu"
+  extra_info: null
+  name: Kono Danshi, Uchuujin to Tatakeamasu
   streaming:
-    - hidive: this-boy-can-fight-aliens
+  - hidive: this-boy-can-fight-aliens
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 39475
-  date: "2019-04-04"
+  - mal: 39475
+  date: '2019-04-04'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Jack Nicholson"
+  extra_info: null
+  name: Jack Nicholson
   streaming:
-    - vimeo: 40732406
+  - vimeo: 40732406
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 5168
-  date: "2017-01-13"
+  - mal: 5168
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
-  name: "Hairy Tale"
-  streaming: ~
+  extra_info: null
+  name: Hairy Tale
+  streaming: null
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 29946
-  date: "2017-01-13"
+  - mal: 29946
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Orchestra
   streaming:
-    - vimeo: 24163906
+  - vimeo: 24163906
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 29629
-  date: "2017-01-13"
+  - mal: 29629
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Coffee Break"
-  streaming: ~
+  extra_info: null
+  name: Coffee Break
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38703
-  date: "2019-01-20"
+  - mal: 38703
+  date: '2019-01-20'
   duration: 6.1833
   episodes: 1
-  extra_info: ~
-  name: "Koukou"
+  extra_info: null
+  name: Koukou
   streaming:
-    - vimeo: 61608556
+  - vimeo: 61608556
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 582
-  date: "2017-01-13"
+  - mal: 582
+  date: '2017-01-13'
   duration: 8.0
   episodes: 48
-  extra_info: ~
-  name: "Sexy Commando Gaiden: Sugoiyo!! Masaru-san"
-  streaming: ~
+  extra_info: null
+  name: 'Sexy Commando Gaiden: Sugoiyo!! Masaru-san'
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 1.85
   episodes: 1
-  extra_info: ~
-  name: "The Ruined Planet"
+  extra_info: null
+  name: The Ruined Planet
   streaming:
-    - youtube: b3DxW_i6uOI
+  - youtube: b3DxW_i6uOI
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 9333
-  date: "2017-01-13"
+  - mal: 9333
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
-  name: "Koi Sento"
-  streaming: ~
+  extra_info: null
+  name: Koi Sento
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 8187
-  date: "2017-01-13"
+  - mal: 8187
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Fumiko no Kokuhaku"
-  streaming: ~
+  extra_info: null
+  name: Fumiko no Kokuhaku
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 36157
-  date: "2017-01-13"
+  - mal: 36157
+  date: '2017-01-13'
   duration: 0.25
   episodes: 1
-  extra_info: ~
-  name: "Cockroach Calisthenics"
-  streaming: ~
+  extra_info: null
+  name: Cockroach Calisthenics
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 13253
-  date: "2017-01-13"
+  - mal: 13253
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Blossom
   streaming:
-    - youtube: Z8vuXa2hL0Q
+  - youtube: Z8vuXa2hL0Q
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 5005
-  date: "2017-01-13"
+  - mal: 5005
+  date: '2017-01-13'
   duration: 13.0
   episodes: 26
-  extra_info: ~
-  name: "Tentai Senshi Sunred"
-  streaming: ~
+  extra_info: null
+  name: Tentai Senshi Sunred
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 18831
+  - mal: 18831
   date: 2018-05-06
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Rinkaku
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
-    - "Music Video"
+  - Arthouse
+  - Music Video
 - cc: false
   database:
-    - mal: 10016
-  date: "2017-01-13"
+  - mal: 10016
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "Kizuna Ichigeki"
-  streaming: ~
+  extra_info: null
+  name: Kizuna Ichigeki
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 39290
-  date: "2017-01-13"
+  - mal: 39290
+  date: '2017-01-13'
   duration: 4.08
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Children
   streaming:
-    - youtube: BE4oz2u6OHY
+  - youtube: BE4oz2u6OHY
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 37527
+  - mal: 37527
   date: 2018-05-06
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Nameless Flipbook"
+  extra_info: null
+  name: Nameless Flipbook
   streaming:
-    - youtube: uB6W_teTbtU
+  - youtube: uB6W_teTbtU
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 3508
-  date: "2017-01-13"
+  - mal: 3508
+  date: '2017-01-13'
   duration: 14.0
   episodes: 7
-  extra_info: ~
-  name: "Genius Party"
-  streaming: ~
+  extra_info: null
+  name: Genius Party
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 6795
-  date: "2017-01-13"
+  - mal: 6795
+  date: '2017-01-13'
   duration: 15.0
   episodes: 5
-  extra_info: ~
-  name: "Genius Party Beyond"
-  streaming: ~
+  extra_info: null
+  name: Genius Party Beyond
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 32977
-  date: "2017-01-13"
+  - mal: 32977
+  date: '2017-01-13'
   duration: 1.0
   episodes: 100
-  extra_info: ~
-  name: "Aggressive Retsuko"
-  streaming: ~
+  extra_info: null
+  name: Aggressive Retsuko
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 39872
-  date: "2017-01-13"
+  - mal: 39872
+  date: '2017-01-13'
   duration: 8.6
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Chiruri
   streaming:
-    - vimeo: 29793808
+  - vimeo: 29793808
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 6533
-  date: "2017-01-13"
+  - mal: 6533
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Atarashii Sekai"
-  streaming: ~
+  extra_info: null
+  name: Atarashii Sekai
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 35324
-  date: "2019-01-20"
+  - mal: 35324
+  date: '2019-01-20'
   duration: 3.35
   episodes: 1
-  extra_info: ~
-  name: "Tadaima."
+  extra_info: null
+  name: Tadaima.
   streaming:
-    - youtube: a5e224E2JIc
+  - youtube: a5e224E2JIc
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 7295
-  date: "2017-01-13"
+  - mal: 7295
+  date: '2017-01-13'
   duration: 2.0
   episodes: 1
-  extra_info: ~
-  name: "Koi Tsubomi"
-  streaming: ~
+  extra_info: null
+  name: Koi Tsubomi
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 1192
-  date: "2017-01-13"
+  - mal: 1192
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Kakurenbo
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 710
-  date: "2017-01-13"
+  - mal: 710
+  date: '2017-01-13'
   duration: 13.0
   episodes: 9
-  extra_info: ~
+  extra_info: null
   name: Rec
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 34856
-  date: "2017-01-13"
+  - mal: 34856
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Cluster A"
+  extra_info: null
+  name: Cluster A
   streaming:
-    - youtube: ytq5pGcM77w
+  - youtube: ytq5pGcM77w
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 8713
-  date: "2017-01-13"
+  - mal: 8713
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Akai Ito"
+  extra_info: null
+  name: Akai Ito
   streaming:
-    - youtube: ARDBGPVOcWk
+  - youtube: ARDBGPVOcWk
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 872
-  date: "2017-01-13"
+  - mal: 872
+  date: '2017-01-13'
   duration: 9.0
   episodes: 40
-  extra_info: ~
-  name: "Mahou Shoujo-tai Arusu"
-  streaming: ~
+  extra_info: null
+  name: Mahou Shoujo-tai Arusu
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 3.13
   episodes: 1
-  extra_info: ~
-  name: "Hoshi no Shita, Shonen no Hi"
+  extra_info: null
+  name: Hoshi no Shita, Shonen no Hi
   streaming:
-    - youtube: JPObGuEwGzY
+  - youtube: JPObGuEwGzY
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 2210
-  date: "2017-01-13"
+  - mal: 2210
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
-  name: "Tooi Sekai"
-  streaming: ~
+  extra_info: null
+  name: Tooi Sekai
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 28989
-  date: "2017-01-13"
+  - mal: 28989
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Maku
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 2486
-  date: "2017-01-13"
+  - mal: 2486
+  date: '2017-01-13'
   duration: 25.0
   episodes: 13
-  extra_info: ~
-  name: "Rumiko Takahashi Anthology"
-  streaming: ~
+  extra_info: null
+  name: Rumiko Takahashi Anthology
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 17677
-  date: "2017-01-13"
+  - mal: 17677
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
-  name: "Buki yo Saraba"
-  streaming: ~
+  extra_info: null
+  name: Buki yo Saraba
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 19383
-  date: "2017-01-13"
+  - mal: 19383
+  date: '2017-01-13'
   duration: 4.0
   episodes: 13
-  extra_info: "I only recommend the first season of Yami Shibai. The rest of the seasons don't retain the unique horror feeling."
-  name: "Yami Shibai"
+  extra_info: I only recommend the first season of Yami Shibai. The rest of the seasons
+    don't retain the unique horror feeling.
+  name: Yami Shibai
   streaming:
-    - crunchyroll: yamishibai-japanese-ghost-stories
-    - hidive: yamishibai-japanese-ghost-stories
+  - crunchyroll: yamishibai-japanese-ghost-stories
+  - hidive: yamishibai-japanese-ghost-stories
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 39088
-  date: "2019-01-31"
+  - mal: 39088
+  date: '2019-01-31'
   duration: 1.5
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Birthday
   streaming:
-    - vimeo: 124937629
+  - vimeo: 124937629
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 7415
-  date: "2017-01-13"
+  - mal: 7415
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Chisato Was Only Gazing"
+  extra_info: null
+  name: Chisato Was Only Gazing
   streaming:
-    - youtube: JDnMMZDNPMY
+  - youtube: JDnMMZDNPMY
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 4.88
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: KUROKO
   streaming:
-    - youtube: RTkGe69XNgY
+  - youtube: RTkGe69XNgY
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 35778
+  - mal: 35778
   date: 2018-05-06
   duration: 3.0
   episodes: 2
-  extra_info: ~
-  name: "Ookami Heart"
+  extra_info: null
+  name: Ookami Heart
   streaming:
-    - youtube:
-        - PwAgOqNvFGA
-        - ERfGMKVttCs
+  - youtube:
+    - PwAgOqNvFGA
+    - ERfGMKVttCs
   tags:
-    - "Music Video"
-    - Series
+  - Music Video
+  - Series
 - cc: false
   database:
-    - mal: 31848
-  date: "2017-01-13"
+  - mal: 31848
+  date: '2017-01-13'
   duration: 3.0
   episodes: 12
-  extra_info: ~
-  name: "Ojisan to Marshmallow"
+  extra_info: null
+  name: Ojisan to Marshmallow
   streaming:
-    - crunchyroll: ojisan-and-marshmallow
+  - crunchyroll: ojisan-and-marshmallow
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 4761
-  date: "2017-01-13"
+  - mal: 4761
+  date: '2017-01-13'
   duration: 4.6
   episodes: 16
-  extra_info: ~
-  name: "Tokyo Loop"
-  streaming: ~
+  extra_info: null
+  name: Tokyo Loop
+  streaming: null
   tags:
-    - Anthology
-    - Arthouse
+  - Anthology
+  - Arthouse
 - cc: false
   database:
-    - mal: 10132
-  date: "2017-01-13"
+  - mal: 10132
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
-  name: "Jin Sheng Yuan"
-  streaming: ~
+  extra_info: null
+  name: Jin Sheng Yuan
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 32190
-  date: "2017-01-13"
+  - mal: 32190
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "Omoi no Kakera"
-  streaming: ~
+  extra_info: null
+  name: Omoi no Kakera
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 7029
+  - mal: 7029
   date: 2018-05-06
   duration: 9
   episodes: 1
-  extra_info: ~
-  name: "Tonari no Yarou"
-  streaming: ~
+  extra_info: null
+  name: Tonari no Yarou
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 10216
-  date: "2017-01-13"
+  - mal: 10216
+  date: '2017-01-13'
   duration: 12.0
   episodes: 13
-  extra_info: ~
-  name: "Yondemasu yo, Azazel-san."
+  extra_info: null
+  name: Yondemasu yo, Azazel-san.
   streaming:
-    - crunchyroll: youre-being-summoned-azazel
+  - crunchyroll: youre-being-summoned-azazel
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 35858
-  date: "2017-01-13"
+  - mal: 35858
+  date: '2017-01-13'
   duration: 3.0
   episodes: 2
-  extra_info: ~
-  name: "Kura Sushi"
+  extra_info: null
+  name: Kura Sushi
   streaming:
-    - youtube:
-        - XpIBL8hgaYQ
-        - dA8ldmfKwGY
+  - youtube:
+    - XpIBL8hgaYQ
+    - dA8ldmfKwGY
   tags:
-    - Commercial
-    - Series
+  - Commercial
+  - Series
 - cc: false
   database:
-    - mal: 2421
-  date: "2017-01-13"
+  - mal: 2421
+  date: '2017-01-13'
   duration: 20.0
   episodes: 1
-  extra_info: ~
-  name: "Super Kuma-san"
-  streaming: ~
+  extra_info: null
+  name: Super Kuma-san
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 37552
+  - mal: 37552
   date: 2018-05-06
   duration: 2.0
   episodes: 3
-  extra_info: ~
+  extra_info: null
   name: Minion
   streaming:
-    - youtube:
-        - LCtv8aLuITU
-        - e2c7qMBclR4
-        - fe6h89L4Do4
+  - youtube:
+    - LCtv8aLuITU
+    - e2c7qMBclR4
+    - fe6h89L4Do4
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 4362
-  date: "2017-01-13"
+  - mal: 4362
+  date: '2017-01-13'
   duration: 1.0
   episodes: 13
-  extra_info: ~
+  extra_info: null
   name: Fireball
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 32959
-  date: "2017-01-13"
+  - mal: 32959
+  date: '2017-01-13'
   duration: 1.0
   episodes: 0
-  extra_info: ~
-  name: "Mirai no Watashi"
-  streaming: ~
+  extra_info: null
+  name: Mirai no Watashi
+  streaming: null
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 9213
-  date: "2017-01-13"
+  - mal: 9213
+  date: '2017-01-13'
   duration: 28.0
   episodes: 1
-  extra_info: ~
-  name: "Kowarekake no Orgel"
-  streaming: ~
+  extra_info: null
+  name: Kowarekake no Orgel
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 20961
-  date: "2017-01-13"
+  - mal: 20961
+  date: '2017-01-13'
   duration: 26.0
   episodes: 1
-  extra_info: ~
-  name: "Parol no Miraijima"
-  streaming: ~
+  extra_info: null
+  name: Parol no Miraijima
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 750
-  date: "2017-01-13"
+  - mal: 750
+  date: '2017-01-13'
   duration: 12.0
   episodes: 12
-  extra_info: ~
+  extra_info: null
   name: Binchou-tan
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 6890
-  date: "2017-01-13"
+  - mal: 6890
+  date: '2017-01-13'
   duration: 11.0
   episodes: 5
-  extra_info: ~
+  extra_info: null
   name: Ontama!
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 1984
-  date: "2017-01-13"
+  - mal: 1984
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Memory
-  streaming: ~
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 1223
-  date: "2017-01-13"
+  - mal: 1223
+  date: '2017-01-13'
   duration: 6.0
   episodes: 1
-  extra_info: ~
-  name: "Ame to Shoujo to Watashi no Tegami"
-  streaming: ~
+  extra_info: null
+  name: Ame to Shoujo to Watashi no Tegami
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 23061
+  - mal: 23061
   date: 2018-05-06
   duration: 6.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Heya/Keitai
-  streaming: ~
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 38424
-  date: "2019-01-27"
+  - mal: 38424
+  date: '2019-01-27'
   duration: 7.56
   episodes: 1
-  extra_info: ~
-  name: "Controller of Controller"
+  extra_info: null
+  name: Controller of Controller
   streaming:
-    - vimeo: 167089601
+  - vimeo: 167089601
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 3914
-  date: "2017-01-13"
+  - mal: 3914
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "1001 Nights"
-  streaming: ~
+  extra_info: null
+  name: 1001 Nights
+  streaming: null
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 13173
-  date: "2017-01-13"
+  - mal: 13173
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "Pukapuka Juju"
-  streaming: ~
+  extra_info: null
+  name: Pukapuka Juju
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 4890
-  date: "2017-01-13"
+  - mal: 4890
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Pet-etre toi"
-  streaming: ~
+  extra_info: null
+  name: Pet-etre toi
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 38974
-  date: "2019-01-20"
+  - mal: 38974
+  date: '2019-01-20'
   duration: 4.3
   episodes: 1
-  extra_info: ~
-  name: "Bouen no March"
+  extra_info: null
+  name: Bouen no March
   streaming:
-    - youtube: Fk4sgvvHyeI
+  - youtube: Fk4sgvvHyeI
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 5016
-  date: "2017-01-13"
+  - mal: 5016
+  date: '2017-01-13'
   duration: 1.0
   episodes: 14
-  extra_info: ~
+  extra_info: null
   name: Fluximation
-  streaming: ~
+  streaming: null
   tags:
-    - "Music Video"
-    - Anthology
+  - Music Video
+  - Anthology
 - cc: false
   database:
-    - mal: 21325
-  date: "2017-01-13"
+  - mal: 21325
+  date: '2017-01-13'
   duration: 4.0
   episodes: 15
-  extra_info: ~
+  extra_info: null
   name: Pupipo!
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 9595
+  - mal: 9595
   date: 2018-05-06
   duration: 14.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Amanatsu
   streaming:
-    - youtube: 8YCwmwEOYHo
+  - youtube: 8YCwmwEOYHo
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 20929
-  date: "2017-01-13"
+  - mal: 20929
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Galo Sengen"
+  extra_info: null
+  name: Galo Sengen
   streaming:
-    - youtube: 1EKTw50Uf8M
+  - youtube: 1EKTw50Uf8M
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 15125
-  date: "2017-01-13"
+  - mal: 15125
+  date: '2017-01-13'
   duration: 2.0
   episodes: 12
-  extra_info: ~
+  extra_info: null
   name: Teekyuu
-  streaming: ~
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 39290
-  date: "2019-02-15"
+  - mal: 39290
+  date: '2019-02-15'
   duration: 4.08
   episodes: 1
-  extra_info: ~
-  name: "Children"
+  extra_info: null
+  name: Children
   streaming:
-    - youtube: "BE4oz2u6OHY"
+  - youtube: BE4oz2u6OHY
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 256
-  date: "2017-01-13"
+  - mal: 256
+  date: '2017-01-13'
   duration: 25.0
   episodes: 1
-  extra_info: ~
-  name: "Hoshi no Koe"
-  streaming: ~
+  extra_info: null
+  name: Hoshi no Koe
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 4685
-  date: "2017-01-13"
+  - mal: 4685
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "Takane no Jitensha"
-  streaming: ~
+  extra_info: null
+  name: Takane no Jitensha
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 10711
-  date: "2017-01-13"
+  - mal: 10711
+  date: '2017-01-13'
   duration: 2.0
   episodes: 12
-  extra_info: ~
-  name: "Plastic Neesan"
-  streaming: ~
+  extra_info: null
+  name: Plastic Neesan
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 10502
-  date: "2017-01-13"
+  - mal: 10502
+  date: '2017-01-13'
   duration: 23.0
   episodes: 1
-  extra_info: ~
-  name: "Tansu Warashi."
-  streaming: ~
+  extra_info: null
+  name: Tansu Warashi.
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 12437
-  date: "2017-01-13"
+  - mal: 12437
+  date: '2017-01-13'
   duration: 28.0
   episodes: 1
-  extra_info: ~
-  name: "Yuri Seijin Naoko-san (2012)"
-  streaming: ~
+  extra_info: null
+  name: Yuri Seijin Naoko-san (2012)
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
-  database: ~
-  date: "2017-01-13"
+  database: null
+  date: '2017-01-13'
   duration: 3.55
   episodes: 1
-  extra_info: ~
-  name: "the HIATUS"
+  extra_info: null
+  name: the HIATUS
   streaming:
-    - youtube: h9aLBoHFeOQ
+  - youtube: h9aLBoHFeOQ
   tags:
-    - Arthouse
+  - Arthouse
 - cc: false
   database:
-    - mal: 8928
-  date: "2017-01-13"
+  - mal: 8928
+  date: '2017-01-13'
   duration: 5.0
   episodes: 9
-  extra_info: ~
-  name: "Visions of Frank"
-  streaming: ~
+  extra_info: null
+  name: Visions of Frank
+  streaming: null
   tags:
-    - Anthology
-    - Arthouse
+  - Anthology
+  - Arthouse
 - cc: false
   database:
-    - mal: 9846
-  date: "2017-01-13"
+  - mal: 9846
+  date: '2017-01-13'
   duration: 10.0
   episodes: 1
-  extra_info: "Attraction is a interactive commercial. In it, you watch clips of anime, and then have to use either a webcam or just your mouse to advance the 'story'. You must enable Flash on the website; it doesn't ask. If you don't have Flash enabled by default on the website, it'll seem like theres no video there."
+  extra_info: Attraction is a interactive commercial. In it, you watch clips of anime,
+    and then have to use either a webcam or just your mouse to advance the 'story'.
+    You must enable Flash on the website; it doesn't ask. If you don't have Flash
+    enabled by default on the website, it'll seem like theres no video there.
   name: Attraction
   streaming:
-    - website: "http://www.attraction-lemanga.fr/site/index.php"
+  - website: http://www.attraction-lemanga.fr/site/index.php
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 6867
-  date: "2017-01-13"
+  - mal: 6867
+  date: '2017-01-13'
   duration: 16.0
   episodes: 9
-  extra_info: ~
-  name: "Halo Legends"
-  streaming: ~
+  extra_info: null
+  name: Halo Legends
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 32804
-  date: "2017-01-13"
+  - mal: 32804
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Ainone
   streaming:
-    - youtube: yOdoCVkUY0A
+  - youtube: yOdoCVkUY0A
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 1998
-  date: "2017-01-13"
+  - mal: 1998
+  date: '2017-01-13'
   duration: 10.0
   episodes: 4
-  extra_info: ~
-  name: "Amazing Nuts!"
-  streaming: ~
+  extra_info: null
+  name: Amazing Nuts!
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 718
-  date: "2017-01-13"
+  - mal: 718
+  date: '2017-01-13'
   duration: 7.0
   episodes: 16
-  extra_info: ~
-  name: "Yume de Aetara"
-  streaming: ~
+  extra_info: null
+  name: Yume de Aetara
+  streaming: null
   tags:
-    - Series
+  - Series
 - cc: false
   database:
-    - mal: 2832
-  date: "2017-01-13"
+  - mal: 2832
+  date: '2017-01-13'
   duration: 1.0
   episodes: 15
-  extra_info: ~
-  name: "Ani*Kuri15"
-  streaming: ~
+  extra_info: null
+  name: Ani*Kuri15
+  streaming: null
   tags:
-    - Anthology
-    - Arthouse
+  - Anthology
+  - Arthouse
 - cc: true
   database:
-    - mal: 39174
-  date: "2019-02-03"
+  - mal: 39174
+  date: '2019-02-03'
   duration: 4.05
   episodes: 1
-  extra_info: ~
-  name: "Sister"
+  extra_info: null
+  name: Sister
   streaming:
-    - youtube: JhoK7chbpZ0
+  - youtube: JhoK7chbpZ0
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 3003
-  date: "2017-01-13"
+  - mal: 3003
+  date: '2017-01-13'
   duration: 24.0
   episodes: 1
-  extra_info: ~
-  name: "Yumedamaya Kidan"
-  streaming: ~
+  extra_info: null
+  name: Yumedamaya Kidan
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 33326
-  date: "2017-01-13"
+  - mal: 33326
+  date: '2017-01-13'
   duration: 5.0
   episodes: 1
-  extra_info: ~
+  extra_info: null
   name: Aftermath
   streaming:
-    - youtube: YkB9a_DR-7A
+  - youtube: YkB9a_DR-7A
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 11487
-  date: "2017-01-13"
+  - mal: 11487
+  date: '2017-01-13'
   duration: 3.0
   episodes: 1
-  extra_info: ~
-  name: "Sekiranun Graffiti"
+  extra_info: null
+  name: Sekiranun Graffiti
   streaming:
-    - youtube: XKOoIAYSkZQ
+  - youtube: XKOoIAYSkZQ
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 30585
-  date: "2017-01-13"
+  - mal: 30585
+  date: '2017-01-13'
   duration: 26.0
   episodes: 1
-  extra_info: ~
-  name: "Taifuu no Noruda"
-  streaming: ~
+  extra_info: null
+  name: Taifuu no Noruda
+  streaming: null
   tags:
-    - Film
+  - Film
 - cc: false
   database:
-    - mal: 1105
-  date: "2017-01-13"
+  - mal: 1105
+  date: '2017-01-13'
   duration: 3.0
   episodes: 6
-  extra_info: ~
-  name: "Digital Juice"
-  streaming: ~
+  extra_info: null
+  name: Digital Juice
+  streaming: null
   tags:
-    - Anthology
-    - Arthouse
+  - Anthology
+  - Arthouse
 - cc: false
   database:
-    - mal: 10445
-  date: "2017-01-13"
+  - mal: 10445
+  date: '2017-01-13'
   duration: 4.0
   episodes: 1
-  extra_info: ~
-  name: "Perfect Day"
-  streaming: ~
+  extra_info: null
+  name: Perfect Day
+  streaming: null
   tags:
-    - "Music Video"
+  - Music Video
 - cc: false
   database:
-    - mal: 13563
-  date: "2017-01-13"
+  - mal: 13563
+  date: '2017-01-13'
   duration: 8.0
   episodes: 4
-  extra_info: ~
-  name: "The Four Seasons"
-  streaming: ~
+  extra_info: null
+  name: The Four Seasons
+  streaming: null
   tags:
-    - Film
-    - Anthology
+  - Film
+  - Anthology
 - cc: false
   database:
-    - mal: 21663
-  date: "2017-01-13"
+  - mal: 21663
+  date: '2017-01-13'
   duration: 1.0
   episodes: 1
-  extra_info: ~
-  name: "Last Orders"
-  streaming: ~
+  extra_info: null
+  name: Last Orders
+  streaming: null
   tags:
-    - Commercial
+  - Commercial
 - cc: false
   database:
-    - mal: 8533
-  date: "2017-01-13"
+  - mal: 8533
+  date: '2017-01-13'
   duration: 7.75
   episodes: 2
-  extra_info: ~
-  name: "Hana no Kage"
+  extra_info: null
+  name: Hana no Kage
   streaming:
-    - youtube:
-        - B5g1TSgFUKg
-        - N0GLrTqYtCM
+  - youtube:
+    - B5g1TSgFUKg
+    - N0GLrTqYtCM
   tags:
-    - Film
+  - Film

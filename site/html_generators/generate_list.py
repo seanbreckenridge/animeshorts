@@ -4,6 +4,7 @@ import datetime
 import argparse
 from itertools import chain
 from hashlib import sha256
+from enum import Enum
 from os import path
 from urllib.parse import urljoin
 from typing import Iterator, Dict, Sequence, Tuple, Union, List, Optional
@@ -74,6 +75,15 @@ mal_cache = Cache(crawler)
 IdType = Union[int, str]
 
 
+class Tag(Enum):
+    ANTHOLOGY = "Anthology"
+    ARTHOUSE = "Arthouse"
+    COMMERCIAL = "Commercial"
+    FILM = "Film"
+    MV = "Music Video"
+    SERIES = "Series"
+
+
 class Source(BaseModel):
     cc: bool
     database: Optional[List[Dict[str, Union[List[IdType], IdType]]]]
@@ -83,7 +93,7 @@ class Source(BaseModel):
     extra_info: Optional[str]
     name: str
     streaming: Optional[List[Dict[str, Union[List[IdType], IdType]]]]
-    tags: List[str]
+    tags: List[Tag]
 
 
 def format_duration(dur: float) -> str:
@@ -177,38 +187,26 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                 with tag("h6"):
                                     text(str(s.name))
                                     # tags
-                                    for t in sorted(s.tags):
-                                        if t.lower() in [
-                                            "anthology",
-                                            "arthouse",
-                                            "commercial",
-                                            "film",
-                                            "music video",
-                                            "series",
-                                        ]:
-                                            tag_slug = (
-                                                t.lower().strip().replace(" ", "-")
-                                            )
+                                    for t in sorted(s.tags, key=lambda t: t.value):
+                                        tag_slug = (
+                                            t.value.lower().strip().replace(" ", "-")
+                                        )
+                                        with tag("span", klass=f"badge tag {tag_slug}"):
                                             with tag(
-                                                "span", klass=f"badge tag {tag_slug}"
+                                                "a",
+                                                ("href", "javascript:void(0)"),
+                                                ("class", "badge-link"),
+                                                ("data-toggle", "tooltip"),
+                                                (
+                                                    "data-original-title",
+                                                    f"filter page to shorts tagged '{t.value.lower()}'",
+                                                ),
+                                                (
+                                                    "onclick",
+                                                    f"filterBadge('{tag_slug}', this)",
+                                                ),
                                             ):
-                                                with tag(
-                                                    "a",
-                                                    ("href", "javascript:void(0)"),
-                                                    ("class", "badge-link"),
-                                                    ("data-toggle", "tooltip"),
-                                                    (
-                                                        "data-original-title",
-                                                        f"filter page to shorts tagged '{t.strip().lower()}'",
-                                                    ),
-                                                    (
-                                                        "onclick",
-                                                        f"filterBadge('{tag_slug}', this)",
-                                                    ),
-                                                ):
-                                                    text(t.capitalize())
-                                        else:
-                                            print("Warning, Unknown tag:", t)
+                                                text(t.value.capitalize())
                                     if list_order == constants.Order.DATE:
                                         with tag("span", klass="badge badge-info"):
                                             text(str(s.date))
