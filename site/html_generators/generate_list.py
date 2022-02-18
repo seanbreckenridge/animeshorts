@@ -41,7 +41,7 @@ class Cache:
 
     def _mal_crawl_name(self, mal_id: int) -> str:
         """Downloads the name of the MAL id"""
-        print("[Cache][Crawler] Downloading name for MAL ID {}".format(mal_id))
+        print(f"[Cache][Crawler] Downloading name for MAL ID {mal_id}")
         return str(self.crawler.get_anime(mal_id)["title"])
 
     def download_name(self, id: int) -> str:
@@ -91,7 +91,7 @@ def format_duration(dur: float) -> str:
     if float(dur) >= 1.0:
         return "{} min".format(int(dur))
     else:
-        return "{} sec".format(round(dur * 60))
+        return "{} sec".format(int(round(dur * 60)))
 
 
 def join_urls(*parts: Union[Tuple[str, ...], Sequence[str]]) -> str:
@@ -190,8 +190,7 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                 t.lower().strip().replace(" ", "-")
                                             )
                                             with tag(
-                                                "span",
-                                                klass="badge tag {}".format(tag_slug),
+                                                "span", klass=f"badge tag {tag_slug}"
                                             ):
                                                 with tag(
                                                     "a",
@@ -200,15 +199,11 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     ("data-toggle", "tooltip"),
                                                     (
                                                         "data-original-title",
-                                                        "filter page to shorts tagged '{}'".format(
-                                                            t.strip().lower()
-                                                        ),
+                                                        f"filter page to shorts tagged '{t.strip().lower()}'",
                                                     ),
                                                     (
                                                         "onclick",
-                                                        "filterBadge('{}', this)".format(
-                                                            tag_slug
-                                                        ),
+                                                        f"filterBadge('{tag_slug}', this)",
                                                     ),
                                                 ):
                                                     text(t.capitalize())
@@ -226,7 +221,7 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                             (
                                                 "href",
                                                 create_id(
-                                                    name="{}-extra-info".format(s.name),
+                                                    name=f"{s.name}-extra-info",
                                                     octothorpe=True,
                                                 ),
                                             ),
@@ -241,21 +236,14 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                 with tag("div", ("class", "time col-md-1")):
                                     if eps == 1:
                                         with tag("span", klass="badge"):
-                                            text("{}".format(format_duration(dur)))
+                                            text(str(format_duration(dur)))
                                     elif eps == 0:  # unknown ep count
                                         with tag("span", klass="badge"):
-                                            text(
-                                                "{} x ? eps".format(
-                                                    format_duration(dur)
-                                                )
-                                            )
+                                            text(f"{format_duration(dur)} x ? eps")
                                     else:
                                         with tag("span", klass="badge"):
-                                            text(
-                                                "{} x {} eps".format(
-                                                    format_duration(dur), eps
-                                                )
-                                            )  # display as multiple episodes
+                                            # display as multiple episodes
+                                            text(f"{format_duration(dur)} x {eps} eps")
                             else:
                                 print("Undefined duration/episodes:", s)
 
@@ -577,7 +565,7 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                 "div",
                                 klass="collapse border rounded-bottom border-top-0 mb-1",
                                 id=create_id(
-                                    name="{}-extra-info".format(s.name),
+                                    name=f"{s.name}-extra-info",
                                     octothorpe=False,
                                 ),
                             ):
@@ -670,7 +658,7 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                                 str(v),
                                                             ),
                                                         ):
-                                                            text("Episode {}".format(i))
+                                                            text(f"Episode {i}")
                                 # multiple vimeo videos
                                 elif "vimeo" in vid and isinstance(vid["vimeo"], list):
                                     list_hash_id = create_id(
@@ -694,7 +682,7 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                         "https://vimeo.com", str(v)
                                                     ),
                                                 ):
-                                                    text("Episode {}".format(i))
+                                                    text(f"Episode {i}")
             # footer
             doc.asis("<!-- footer -->")
             with tag("footer", ("class", "bg-dark footer")):

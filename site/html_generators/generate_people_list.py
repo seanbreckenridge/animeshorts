@@ -1,3 +1,4 @@
+import sys
 from os import path
 from pathlib import Path
 from typing import TypeVar, List, Iterator, Optional
@@ -89,9 +90,7 @@ def create_people_page(sources: List[Person]) -> str:
                                 (
                                     "style",
                                     (
-                                        "padding-bottom:{};".format(
-                                            get_ratio_image_from_relative_path(c.image)
-                                        )
+                                        f"padding-bottom:{get_ratio_image_from_relative_path(c.image)};"
                                     ),
                                 ),
                             ):
@@ -110,12 +109,15 @@ def create_people_page(sources: List[Person]) -> str:
                                             {
                                                 k: getattr(c, k)
                                                 for k, v in c.dict().items()
-                                                if k not in ["name", "image"] and v is not None
+                                                if k not in ["name", "image"]
+                                                and v is not None
                                             }
                                         )
                                     ):
                                         o_link = getattr(c, other_link)
-                                        assert o_link is not None, str(c) + f"using {other_link}"
+                                        assert o_link is not None, (
+                                            str(c) + f"using {other_link}"
+                                        )
                                         if other_link == "mal":
                                             with tag(
                                                 "a",
@@ -160,7 +162,10 @@ def create_people_page(sources: List[Person]) -> str:
                                                 with tag("span", klass="moveup"):
                                                     text("youtube")
                                         else:
-                                            print("Unknown tag: {}".format(other_link))
+                                            print(
+                                                f"Unknown tag: {other_link}",
+                                                file=sys.stderr,
+                                            )
             doc.asis("<!-- footer -->")
             with tag("footer", ("class", "bg-dark footer")):
                 with tag("div", klass="container center"):
