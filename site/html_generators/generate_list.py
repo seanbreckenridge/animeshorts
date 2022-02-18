@@ -546,10 +546,19 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                         ("class", "rounded-circle"),
                                                     )
                                             else:
-                                                print(
-                                                    "Warning, unfound 'source' in streaming:",
-                                                    vid,
-                                                )
+                                                with tag("a", href=vid["website"]):
+                                                    doc.stag(
+                                                        "img",
+                                                        (
+                                                            "src",
+                                                            "./images/link.png",
+                                                        ),
+                                                        (
+                                                            "alt",
+                                                            "website",
+                                                        ),
+                                                        ("class", "rounded-circle"),
+                                                    )
                                         else:
                                             print(
                                                 "Warning, unfound 'source' in streaming:",

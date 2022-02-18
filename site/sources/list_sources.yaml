@@ -355,6 +355,18 @@
   - youtube: 1s84rIhPuhk
   tags:
   - Music Video
+- cc: true
+  database:
+  - mal: 49049
+  date: '2021-05-25'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: The Naked King
+  streaming:
+  - youtube: _QQHM5qXuBg
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 28761
@@ -471,6 +483,18 @@
   - Film
 - cc: false
   database:
+  - mal: 38824
+  date: '2019-01-15'
+  duration: 3.75
+  episodes: 1
+  extra_info: null
+  name: Baby I Love You Daze
+  streaming:
+  - youtube: ddC12lxq69w
+  tags:
+  - Music Video
+- cc: false
+  database:
   - mal: 14353
   date: '2017-01-13'
   duration: 25.0
@@ -481,6 +505,21 @@
   streaming: null
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 45595
+  date: '2021-09-23'
+  duration: 2.0
+  episodes: 0
+  extra_info: null
+  name: Baten Kaitos
+  streaming:
+  - youtube:
+    - wWO6bdVrmak
+    - LR8WmY7j0oU
+  tags:
+  - Music Video
+  - Series
 - cc: true
   database:
   - mal: 48727
@@ -591,6 +630,42 @@
   - Film
 - cc: false
   database:
+  - mal: 40474
+  date: '2020-06-21'
+  duration: 8.3
+  episodes: 1
+  extra_info: null
+  name: Googuri Googuri
+  streaming:
+  - youtube: P_OiCVGSpAI
+  tags:
+  - Arthouse
+- cc: false
+  database:
+  - mal: 44059
+  date: '2020-11-20'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: Puparia
+  streaming:
+  - vimeo: 410320375
+  tags:
+  - Arthouse
+- cc: true
+  database:
+  - mal: 43444
+  date: '2020-12-16'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: 'Boukentai: Mori no Yuusha'
+  streaming:
+  - youtube: SNIE80rJRiM
+  tags:
+  - Music Video
+- cc: false
+  database:
   - mal: 38811
   date: '2017-01-13'
   duration: 1.17
@@ -672,6 +747,18 @@
   - vimeo: 152551578
   tags:
   - Arthouse
+- cc: true
+  database:
+  - mal: 41939
+  date: '2020-06-20'
+  duration: 3.33
+  episodes: 1
+  extra_info: null
+  name: Halzion
+  streaming:
+  - youtube: kzdJkT4kp-A
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 2724
@@ -815,6 +902,19 @@
   - Commercial
 - cc: false
   database:
+  - mal: 43418
+  date: '2020-11-20'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: Citrus
+  streaming:
+  - youtube: Hw9Cy1IU3R4
+  tags:
+  - Music Video
+  - Arthouse
+- cc: false
+  database:
   - mal: 770
   date: '2017-01-13'
   duration: 23.0
@@ -837,6 +937,18 @@
   - Film
 - cc: false
   database:
+  - mal: 43457
+  date: '2021-09-23'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Magic
+  streaming:
+  - youtube: BcMNnKq3mzI
+  tags:
+  - Music Video
+- cc: false
+  database:
   - mal: 33391
   date: '2017-01-13'
   duration: 23.0
@@ -846,6 +958,19 @@
   streaming: null
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 43352
+  date: '2020-11-20'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: Sparkle
+  streaming:
+  - youtube: XFwB2IWtDkc
+  tags:
+  - Arthouse
+  - Music Video
 - cc: false
   database:
   - mal: 31310
@@ -871,6 +996,42 @@
   tags:
   - Music Video
   - Arthouse
+- cc: false
+  database:
+  - mal: 41039
+  date: '2020-06-20'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: Vanilla
+  streaming:
+  - youtube: 2TDx_XNQ5QU
+  tags:
+  - Music Video
+- cc: true
+  database:
+  - mal: 41164
+  date: '2020-06-20'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Ruru-chan no Jisatsu Haishin
+  streaming:
+  - youtube: hc0ZDaAZQT0
+  tags:
+  - Music Video
+- cc: false
+  database:
+  - mal: 40727
+  date: '2020-06-20'
+  duration: 6.0
+  episodes: 1
+  extra_info: null
+  name: Out of My Mind
+  streaming:
+  - youtube: ByxJaMGt5VE
+  tags:
+  - Arthouse
 - cc: true
   database:
   - mal: 45053
@@ -881,6 +1042,18 @@
   name: Phillip
   streaming:
   - youtube: zSq80izsCZk
+  tags:
+  - Music Video
+- cc: false
+  database:
+  - mal: 39714
+  date: '2020-11-10'
+  duration: 3.8
+  episodes: 1
+  extra_info: null
+  name: Beam!
+  streaming:
+  - youtube: ShHZa49c5SA
   tags:
   - Music Video
 - cc: false
@@ -942,6 +1115,18 @@
   streaming: null
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 48711
+  date: '2021-09-23'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Kansaete Kuyashiiwa
+  streaming:
+  - website: https://www.bilibili.com/video/BV1dV411n7vD
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 38960
@@ -1036,6 +1221,17 @@
   - Arthouse
 - cc: false
   database:
+  - mal: 34332
+  date: '2020-03-30'
+  duration: 5.0
+  episodes: 12
+  extra_info: null
+  name: Hulaing Babies
+  streaming: null
+  tags:
+  - Series
+- cc: false
+  database:
   - mal: 4475
   date: '2017-01-13'
   duration: 13.0
@@ -1046,6 +1242,19 @@
   - youtube: ifhdsOiyPfw
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 42121
+  date: '2020-06-20'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: Kanashimi no Kodomo-tachi
+  streaming:
+  - youtube: Dtrx_eov524
+  tags:
+  - Arthouse
+  - Music Video
 - cc: false
   database:
   - mal: 32013
@@ -1067,6 +1276,18 @@
   extra_info: null
   name: Kujira no Chouyaku
   streaming: null
+  tags:
+  - Arthouse
+- cc: false
+  database:
+  - mal: 40816
+  date: '2020-02-18'
+  duration: 2.0
+  episodes: 1
+  extra_info: null
+  name: Scape Escape
+  streaming:
+  - youtube: 8nwP7TBWlII
   tags:
   - Arthouse
 - cc: false
@@ -1171,6 +1392,18 @@
   streaming: null
   tags:
   - Series
+- cc: false
+  database:
+  - mal: 48963
+  date: '2021-09-23'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: Hitotsu dake Kaeta
+  streaming:
+  - youtube: fnfa6qK4wMg
+  tags:
+  - Music Video
 - cc: true
   database:
   - mal: 10720
@@ -1231,6 +1464,18 @@
   - Music Video
 - cc: true
   database:
+  - mal: 41485
+  date: '2020-03-30'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Sarashimono
+  streaming:
+  - youtube: H6QFLov4WUA
+  tags:
+  - Music Video
+- cc: true
+  database:
   - mal: 39065
   date: '2019-01-27'
   duration: 5
@@ -1252,6 +1497,19 @@
   streaming: null
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 41279
+  date: '2020-06-20'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: I'm Just Me
+  streaming:
+  - vimeo: 348228643
+  tags:
+  - Arthouse
+  - Music Video
 - cc: false
   database:
   - mal: 36086
@@ -1657,12 +1915,48 @@
   - Film
 - cc: false
   database:
+  - mal: 40877
+  date: '2020-06-20'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Suki tte Nandarou... Namida
+  streaming:
+  - website: https://music.163.com/#/mv?id=432185
+  tags:
+  - Arthouse
+  - Music Video
+- cc: false
+  database:
   - mal: 14355
   date: '2017-01-13'
   duration: 3.0
   episodes: 12
   extra_info: null
   name: Yama no Susume
+  streaming: null
+  tags:
+  - Series
+- cc: true
+  database:
+  - mal: 41180
+  date: '2020-03-11'
+  duration: 4.45
+  episodes: 1
+  extra_info: null
+  name: Ame to Cappuccino
+  streaming:
+  - youtube: PWbRleMGagU
+  tags:
+  - Music Video
+- cc: false
+  database:
+  - mal: 37589
+  date: '2020-07-03'
+  duration: 1.0
+  episodes: 8
+  extra_info: null
+  name: Ano Hi no Kanojo-tachi
   streaming: null
   tags:
   - Series
@@ -2088,6 +2382,18 @@
   - youtube: 3dmVnjz0Uzo
   tags:
   - Arthouse
+- cc: true
+  database:
+  - mal: 48508
+  date: '2020-06-25'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: KxDrop!!
+  streaming:
+  - website: https://loadtup.com/OOfJtMSUcnI
+  tags:
+  - Film
 - cc: false
   database:
   - mal: 3215
@@ -2235,12 +2541,13 @@
   - Film
   - Anthology
 - cc: true
-  database: null
+  database:
+  - mal: 40139
   date: '2017-01-13'
   duration: 11.1
   episodes: 1
   extra_info: null
-  name: Konoha Kaseki no Natsu
+  name: Konohakaseki no Natsu
   streaming:
   - youtube: y2CdzAdOMp4
   tags:

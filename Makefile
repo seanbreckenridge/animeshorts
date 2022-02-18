@@ -1,4 +1,4 @@
 all:
-	./generate.sh
+	./generate
 develop:
-	find site | entr -cdp ./generate.sh
+	find site | entr -c ./generate
