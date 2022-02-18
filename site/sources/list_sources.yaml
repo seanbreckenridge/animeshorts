@@ -3993,21 +3993,6 @@
   - Arthouse
 - cc: false
   database:
-  - mal: 9846
-  date: '2017-01-13'
-  duration: 10.0
-  episodes: 1
-  extra_info: Attraction is a interactive commercial. In it, you watch clips of anime,
-    and then have to use either a webcam or just your mouse to advance the 'story'.
-    You must enable Flash on the website; it doesn't ask. If you don't have Flash
-    enabled by default on the website, it'll seem like theres no video there.
-  name: Attraction
-  streaming:
-  - website: http://www.attraction-lemanga.fr/site/index.php
-  tags:
-  - Film
-- cc: false
-  database:
   - mal: 6867
   date: '2017-01-13'
   duration: 16.0
@@ -4145,40 +4130,3 @@
   streaming: null
   tags:
   - Music Video
-- cc: false
-  database:
-  - mal: 13563
-  date: '2017-01-13'
-  duration: 8.0
-  episodes: 4
-  extra_info: null
-  name: The Four Seasons
-  streaming: null
-  tags:
-  - Film
-  - Anthology
-- cc: false
-  database:
-  - mal: 21663
-  date: '2017-01-13'
-  duration: 1.0
-  episodes: 1
-  extra_info: null
-  name: Last Orders
-  streaming: null
-  tags:
-  - Commercial
-- cc: false
-  database:
-  - mal: 8533
-  date: '2017-01-13'
-  duration: 7.75
-  episodes: 2
-  extra_info: null
-  name: Hana no Kage
-  streaming:
-  - youtube:
-    - B5g1TSgFUKg
-    - N0GLrTqYtCM
-  tags:
-  - Film

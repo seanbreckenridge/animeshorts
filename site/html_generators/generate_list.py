@@ -529,36 +529,19 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                 )
                                         elif "website" in vid:
                                             assert isinstance(vid, dict)
-                                            if "attraction-lemanga" in str(
-                                                vid["website"]
-                                            ):
-                                                with tag("a", href=vid["website"]):
-                                                    doc.stag(
-                                                        "img",
-                                                        (
-                                                            "src",
-                                                            "./images/attraction_icon.png",
-                                                        ),
-                                                        (
-                                                            "alt",
-                                                            "attraction-lemanga website",
-                                                        ),
-                                                        ("class", "rounded-circle"),
-                                                    )
-                                            else:
-                                                with tag("a", href=vid["website"]):
-                                                    doc.stag(
-                                                        "img",
-                                                        (
-                                                            "src",
-                                                            "./images/link.png",
-                                                        ),
-                                                        (
-                                                            "alt",
-                                                            "website",
-                                                        ),
-                                                        ("class", "rounded-circle"),
-                                                    )
+                                            with tag("a", href=vid["website"]):
+                                                doc.stag(
+                                                    "img",
+                                                    (
+                                                        "src",
+                                                        "./images/link.png",
+                                                    ),
+                                                    (
+                                                        "alt",
+                                                        "website",
+                                                    ),
+                                                    ("class", "rounded-circle"),
+                                                )
                                         else:
                                             print(
                                                 "Warning, unfound 'source' in streaming:",
