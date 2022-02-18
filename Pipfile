@@ -7,7 +7,6 @@ verify_ssl = true
 types-pyyaml = "*"
 types-requests = "*"
 mypy = "*"
-pydantic = "*"
 ipdb = "*"
 
 [packages]
@@ -15,6 +14,7 @@ PyYaml = ">=5.4"
 yattag = "==1.14.0"
 pillow = ">=9.0.0"
 jikanpy = ">=4.1.0"
+pydantic = "*"
 
 [requires]
 python_version = "3.10"
