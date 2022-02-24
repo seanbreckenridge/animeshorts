@@ -121,6 +121,8 @@ def create_people_page(sources: List[Person]) -> str:
                                         if other_link == "mal":
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 klass="badge badge-pill person-link badge-secondary",
                                                 href=join_urls(
                                                     "https://myanimelist.net",
@@ -133,6 +135,8 @@ def create_people_page(sources: List[Person]) -> str:
                                         elif other_link == "website":
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 klass="badge badge-pill person-link badge-secondary movetext",
                                                 href=o_link,
                                             ):
@@ -141,6 +145,8 @@ def create_people_page(sources: List[Person]) -> str:
                                         elif other_link == "vimeo":
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 klass="badge badge-pill person-link badge-secondary movetext",
                                                 href=join_urls(
                                                     "https://vimeo.com",
@@ -152,6 +158,8 @@ def create_people_page(sources: List[Person]) -> str:
                                         elif other_link == "youtube":
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 klass="badge badge-pill person-link badge-secondary movetext",
                                                 href=join_urls(
                                                     "https://www.youtube.com",
