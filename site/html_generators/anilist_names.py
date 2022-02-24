@@ -15,6 +15,7 @@ class AniListNames(object):
         self.data: Dict[str, Optional[str]] = {}
         if self.jsonpath.exists():
             self.data = json.loads(self.jsonpath.read_text())
+        self.write()
 
     def write(self) -> None:
         self.jsonpath.write_text(json.dumps(self.data, indent=4, sort_keys=True))

@@ -38,10 +38,10 @@ def get_ratio_image_from_relative_path(filename: str) -> str:
 T = TypeVar("T")
 
 
-def chunk_list(l: List[T], chunk_size: int) -> Iterator[List[T]]:
+def chunk_list(lst: List[T], chunk_size: int) -> Iterator[List[T]]:
     """Return chunk_size'd lists from the large list."""
-    for i in range(0, len(l), chunk_size):
-        yield l[i : i + chunk_size]
+    for i in range(0, len(lst), chunk_size):
+        yield lst[i : i + chunk_size]
 
 
 def create_people_page(sources: List[Person]) -> str:

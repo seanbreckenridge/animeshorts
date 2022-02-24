@@ -1,13 +1,11 @@
 import re
-import json
 import datetime
 import argparse
 from itertools import chain
 from hashlib import sha256
 from enum import Enum
-from os import path
 from urllib.parse import urljoin
-from typing import Iterator, Dict, Sequence, Tuple, Union, List, Optional
+from typing import Dict, Sequence, Tuple, Union, List, Optional
 
 import yaml
 from pydantic import BaseModel
@@ -18,61 +16,8 @@ from .anilist_names import AniListNames
 
 from . import constants
 from . import generate_navbar
-from .manual_crawler import Crawl
+from .mal_name import Cache
 
-
-class Cache:
-    """class to manage caching API requests for MAL names"""
-
-    def __init__(self, crawler: Crawl):
-        self.jsonpath = "mal_name_cache.json"
-        self.write_to_cache_const = 5
-        self.write_to_cache_periodically = self.write_to_cache_const
-        self.crawler = crawler
-        self.items: Dict[str, str] = {}
-        if not path.exists(self.jsonpath):
-            open(self.jsonpath, "a").close()
-        with open(self.jsonpath, "r") as js_f:
-            try:
-                self.items = json.load(js_f)
-            except json.JSONDecodeError:  # file is empty or broken
-                pass
-
-    def update_json_file(self) -> None:
-        with open(self.jsonpath, "w") as f:
-            json.dump(self.items, f)
-
-    def _mal_crawl_name(self, mal_id: int) -> str:
-        """Downloads the name of the MAL id"""
-        print(f"[Cache][Crawler] Downloading name for MAL ID {mal_id}")
-        return str(self.crawler.get_anime(mal_id)["title"])
-
-    def download_name(self, id: int) -> str:
-        self.write_to_cache_periodically -= 1
-        if self.write_to_cache_periodically < 0:
-            self.write_to_cache_periodically = self.write_to_cache_const
-            self.update_json_file()
-        return self._mal_crawl_name(id)
-
-    def __contains__(self, id: int) -> bool:
-        """defines the 'in' keyword on cache."""
-        return str(id) in self.items
-
-    def get(self, id: int) -> str:
-        if self.__contains__(id):
-            # print("[Cache] Found name for id {} in cache".format(id))
-            return self.items[str(id)]
-        else:
-            self.items[str(id)] = self.download_name(id)
-            return self.items[str(id)]
-
-    def __iter__(self) -> Iterator[str]:
-        return self.items.__iter__()
-
-
-crawler = Crawl(wait=5, retry_max=3)
-download_names = False
-mal_cache = Cache(crawler)
 
 IdType = Union[int, str]
 
@@ -143,9 +88,13 @@ def sort_list(sources: List[Source], list_order: constants.Order) -> List[Source
         return sources
 
 
-def create_page(sources: List[Source], list_order: constants.Order) -> str:
+def create_page(
+    sources: List[Source],
+    list_order: constants.Order,
+    mal_cache: Cache,
+    download_names: bool,
+) -> str:
     """Creates the table from YAML"""
-    global download_names
     doc, tag, text = Doc().tagtext()
     doc.asis("<!DOCTYPE html>")
     with tag("html", ("lang", "en")):
@@ -830,25 +779,30 @@ def fetch_anilist_sources(sources: List[Source]) -> List[Source]:
                             anilist_id = ani.get(mal_id)
                             if anilist_id is not None:
                                 src.database.append({"anilist": anilist_id})
+    ani.write()
     return sources
 
 
 def main(do_download_names: bool = True) -> None:
-    global download_names
-    download_names = do_download_names
     # Read in YAML Sources
     with open(constants.LIST_SOURCES) as yaml_src:
         sources_raw = yaml.load(yaml_src, Loader=yaml.FullLoader)
     sources: List[Source] = [Source.parse_obj(s) for s in sources_raw]
     sources = fetch_anilist_sources(sources)
+    mal_cache = Cache()  # fetch MAL names
     # write out html file - ordered by reccomendation
     with open(f"{constants.OUTPUT_DIR}/index.html", "w") as write_html_file:
         print("Generated index.html")
-        write_html_file.write(create_page(sources, constants.Order.REC))
+        write_html_file.write(
+            create_page(sources, constants.Order.REC, mal_cache, do_download_names)
+        )
     # write out html file - ordered by date
     with open(f"{constants.OUTPUT_DIR}/newest.html", "w") as write_newest_html:
         print("Generated newest.html")
-        write_newest_html.write(create_page(sources, constants.Order.DATE))
+        write_newest_html.write(
+            create_page(sources, constants.Order.DATE, mal_cache, do_download_names)
+        )
+    mal_cache.update_json_file()
 
 
 if __name__ == "__main__":
@@ -856,4 +810,3 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--download-names", action="store_true", default=False)
     args = parser.parse_args()
     main(args.download_names)
-    mal_cache.update_json_file()
