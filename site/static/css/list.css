@@ -129,3 +129,7 @@ a.badge-link {
 a.badge-link:hover {
   color: #23333b;
 }
+
+.anilist-circle {
+  border: #6a6a6a 0.5px solid;
+}

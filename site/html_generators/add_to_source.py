@@ -56,7 +56,7 @@ class SourceValidator(Validator):
         try:
             Source.parse_obj(data)
         except PydanticValidationError as pe:
-            raise ValidationError(message=str(pe).replace('\n', ' '))
+            raise ValidationError(message=str(pe).replace("\n", " "))
 
 
 def prompt_source() -> Source:

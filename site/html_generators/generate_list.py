@@ -14,6 +14,8 @@ from pydantic import BaseModel
 from yattag import Doc, indent  # type: ignore[import]
 from requests import Request
 
+from .anilist_names import AniListNames
+
 from . import constants
 from . import generate_navbar
 from .manual_crawler import Crawl
@@ -294,7 +296,12 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     "anime",
                                                     str(db["mal"]),
                                                 )
-                                                with tag("a", href=mal_url):
+                                                with tag(
+                                                    "a",
+                                                    ("href", mal_url),
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
+                                                ):
                                                     doc.stag(
                                                         "img",
                                                         (
@@ -309,6 +316,31 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     )
                                         # add elifs for other databases here
                                         # (if expading later)
+                                        elif "anilist" in db:
+                                            anilist_link = db["anilist"]
+                                            assert isinstance(anilist_link, str)
+                                            with tag(
+                                                "a",
+                                                ("href", anilist_link),
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
+                                            ):
+                                                doc.stag(
+                                                    "img",
+                                                    (
+                                                        "src",
+                                                        """./images/anilist.png""",
+                                                    ),
+                                                    (
+                                                        "alt",
+                                                        f"{s.name} (AniList)",
+                                                    ),
+                                                    (
+                                                        "class",
+                                                        "rounded-circle anilist-circle",
+                                                    ),
+                                                )
+
                                         else:
                                             print(
                                                 "Warning, found unknown database:", db
@@ -363,6 +395,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                 # single video
                                                 with tag(
                                                     "a",
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
                                                     href=join_urls(
                                                         "https://youtu.be"
                                                         if "playlist"
@@ -427,6 +461,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                 # single video
                                                 with tag(
                                                     "a",
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
                                                     href=join_urls(
                                                         "https://vimeo.com",
                                                         str(vid["vimeo"]),
@@ -444,6 +480,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                         elif "crunchyroll" in vid:
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 href=join_urls(
                                                     "http://www.crunchyroll.com",
                                                     str(vid["crunchyroll"]),
@@ -461,6 +499,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                         elif "netflix" in vid:
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 href=join_urls(
                                                     "https://www.netflix.com",
                                                     "title",
@@ -493,10 +533,14 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     ),
                                                     ("alt", f"{s.name} (Funimation)"),
                                                     ("class", "rounded-circle"),
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
                                                 )
                                         elif "hidive" in vid:
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 href=join_urls(
                                                     "https://www.hidive.com",
                                                     "tv",
@@ -516,6 +560,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                         elif "twitter" in vid:
                                             with tag(
                                                 "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
                                                 href=join_urls(str(vid["twitter"])),
                                             ):
                                                 doc.stag(
@@ -529,7 +575,12 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                 )
                                         elif "website" in vid:
                                             assert isinstance(vid, dict)
-                                            with tag("a", href=vid["website"]):
+                                            with tag(
+                                                "a",
+                                                ("target", "_blank"),
+                                                ("rel", "norefferer"),
+                                                href=vid["website"],
+                                            ):
                                                 doc.stag(
                                                     "img",
                                                     (
@@ -541,6 +592,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                         "website",
                                                     ),
                                                     ("class", "rounded-circle"),
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
                                                 )
                                         else:
                                             print(
@@ -582,6 +635,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                             for entry in db["mal"]:
                                                 with tag(
                                                     "a",
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
                                                     klass="list-group-item list-group-item-action",
                                                     href=join_urls(
                                                         "https://myanimelist.net",
@@ -625,6 +680,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     ):
                                                         with tag(
                                                             "a",
+                                                            ("target", "_blank"),
+                                                            ("rel", "norefferer"),
                                                             klass="list-group-item list-group-item-action",
                                                             href=join_urls(
                                                                 "https://youtu.be",
@@ -642,6 +699,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                                     ):
                                                         with tag(
                                                             "a",
+                                                            ("target", "_blank"),
+                                                            ("rel", "norefferer"),
                                                             klass="list-group-item list-group-item-action",
                                                             href=join_urls(
                                                                 "https://youtu.be",
@@ -667,6 +726,8 @@ def create_page(sources: List[Source], list_order: constants.Order) -> str:
                                             for i, v in enumerate(vid["vimeo"], 1):
                                                 with tag(
                                                     "a",
+                                                    ("target", "_blank"),
+                                                    ("rel", "norefferer"),
                                                     klass="list-group-item list-group-item-action",
                                                     href=join_urls(
                                                         "https://vimeo.com", str(v)
@@ -752,6 +813,26 @@ document.addEventListener('DOMContentLoaded', function() {
     return str(indent(doc.getvalue(), indent_text=True))
 
 
+def fetch_anilist_sources(sources: List[Source]) -> List[Source]:
+    ani = AniListNames()
+    for src in sources:
+        if src.database:
+            for db in src.database:
+                for dbk in list(db.keys()):
+                    if dbk == "mal":
+                        id_or_list_of_ids = db[dbk]
+                        if isinstance(id_or_list_of_ids, list):
+                            # dont support this for now, complicates stuff
+                            pass
+                        else:
+                            assert isinstance(id_or_list_of_ids, int)
+                            mal_id = id_or_list_of_ids
+                            anilist_id = ani.get(mal_id)
+                            if anilist_id is not None:
+                                src.database.append({"anilist": anilist_id})
+    return sources
+
+
 def main(do_download_names: bool = True) -> None:
     global download_names
     download_names = do_download_names
@@ -759,6 +840,7 @@ def main(do_download_names: bool = True) -> None:
     with open(constants.LIST_SOURCES) as yaml_src:
         sources_raw = yaml.load(yaml_src, Loader=yaml.FullLoader)
     sources: List[Source] = [Source.parse_obj(s) for s in sources_raw]
+    sources = fetch_anilist_sources(sources)
     # write out html file - ordered by reccomendation
     with open(f"{constants.OUTPUT_DIR}/index.html", "w") as write_html_file:
         print("Generated index.html")

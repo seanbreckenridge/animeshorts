@@ -13,7 +13,7 @@ class Crawl:
         retry_max: number of times to retry
     """
 
-    def __init__(self, wait: int , retry_max: int):
+    def __init__(self, wait: int, retry_max: int):
         self.wait = wait
         self.jikan = jikanpy.Jikan()
         self.retry_max = retry_max
