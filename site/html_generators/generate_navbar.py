@@ -136,6 +136,8 @@ def navbar(active: str, **kwargs: Any) -> str:
                             "href",
                             "https://github.com/seanbreckenridge/animeshorts",
                         ),
+                        ("target", "_blank"),
+                        ("rel", "norefferer"),
                     ):
                         doc.stag(
                             "img",

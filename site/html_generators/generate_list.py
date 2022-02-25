@@ -686,12 +686,11 @@ def create_page(
             # footer
             doc.asis("<!-- footer -->")
             with tag("footer", ("class", "bg-dark footer")):
-                with tag("div", klass="container center"):
-                    with tag("div", klass="row justify-content-center py-2"):
-                        with tag("p", klass="mb-0"):
-                            text("© PurplePinapples")
-                with tag("a", klass="d-none", href=constants.user_link):
-                    pass
+                with tag("a", href=constants.user_link):
+                    with tag("div", klass="container center"):
+                        with tag("div", klass="row justify-content-center py-2"):
+                            with tag("p", klass="mb-0"):
+                                text("© PurplePinapples")
             doc.asis("<!-- javascript/popper.js -->")
             doc.asis(
                 """<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -739,17 +738,6 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#sort').val($(this).text().trim());
     $('#choiceform').submit();
   });
-
-  // footer onclick
-  let footer = document.querySelector("footer.footer");
-  footer.onmouseup = function(a) { // when mouse is released
-    if (a.ctrlKey || a.metaKey || a.which == 2) {
-      a.preventDefault(); // prevent middle click from opening tab, so it doesnt open twice.
-      window.open($(footer).find('a').attr("href"));
-    } else {
-      window.location = $(footer).find('a').attr("href");
-    }
-  }
 
   // check url to filter by tag onload
   if (window.location.hash.slice(1)) {

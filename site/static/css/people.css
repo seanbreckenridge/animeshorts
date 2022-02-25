@@ -78,6 +78,10 @@ footer:hover {
   background-color: #1f2225 !important;
 }
 
+footer a, footer a:hover footer a:active, footer a:visited {
+  color: white;
+}
+
 main.container {
   padding-bottom: 4rem;
 }

@@ -20,8 +20,9 @@ CHECK_URLS="$(find ./output/ -name "*.html" -exec grep -Po '(?<=href=")[^"]*(?="
 
 # grep for mal anime urls
 MAL_IDS=$(grep "myanimelist.net/anime/" <<<"$CHECK_URLS")
-# remove mal anime urls from leftover URLs
-CHECK_URLS=$(grep -v "myanimelist.net/anime/" <<<"$CHECK_URLS")
+
+# remove entry (mal|anilist) urls from leftover URLs
+CHECK_URLS=$(grep -vE "myanimelist.net/anime/|anilist.co" <<<"$CHECK_URLS")
 
 # make sure all the anime IDs were valid
 VALID_IDS="$(curl --silent "$ANIME_IDS" | jq -r '.sfw | .[]')"
