@@ -2989,6 +2989,18 @@
   - Series
 - cc: false
   database:
+  - mal: 51267
+  date: '2022-03-17'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: Musabi Daibakuhatsu
+  streaming:
+  - youtube: cA3qwqJvZIQ
+  tags:
+  - Film
+- cc: false
+  database:
   - mal: 38508
   date: '2019-01-20'
   duration: 4.4333
