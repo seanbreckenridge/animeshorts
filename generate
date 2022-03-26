@@ -7,6 +7,10 @@ if [ -d "$OUTPUT_DIR" ]; then
 	rm -rf "$OUTPUT_DIR"
 fi
 
+if [[ "$1" == '-r' ]]; then
+	"${CUR_DIR}/remove_null_anilist_sources"
+fi
+
 pipenv install
 
 mkdir "$OUTPUT_DIR"

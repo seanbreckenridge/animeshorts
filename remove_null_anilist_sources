@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+THIS_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+cd "${THIS_DIR}" || exit $?
+
+set -e
+set -o pipefail
+
+jq <./site/anilist_cache.json '[to_entries[] | select(.value != null)] | from_entries' | sponge ./site/anilist_cache.json
