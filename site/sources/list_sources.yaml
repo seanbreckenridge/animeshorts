@@ -1755,17 +1755,6 @@
   - Film
 - cc: false
   database:
-  - mal: 21591
-  date: '2017-01-13'
-  duration: 5.0
-  episodes: 1
-  extra_info: null
-  name: Wasure-boshi
-  streaming: null
-  tags:
-  - Arthouse
-- cc: false
-  database:
   - mal: 37706
   date: 2018-05-06
   duration: 0.5
@@ -2449,7 +2438,7 @@
   duration: 5
   episodes: 1
   extra_info: null
-  name: 'Wasureboshi'
+  name: 'Wasure-boshi'
   streaming: null
   tags:
   - Arthouse
