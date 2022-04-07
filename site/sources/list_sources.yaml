@@ -551,6 +551,18 @@
   - Arthouse
 - cc: false
   database:
+  - mal: 51051
+  date: '2022-04-03'
+  duration: 5.0
+  episodes: 1
+  extra_info: null
+  name: Dreamland
+  streaming:
+  - vimeo: 273493052
+  tags:
+  - Arthouse
+- cc: false
+  database:
   - mal: 49861
   date: '2022-03-29'
   duration: 4.0
@@ -959,6 +971,19 @@
   - youtube: BcMNnKq3mzI
   tags:
   - Music Video
+- cc: false
+  database:
+  - mal: 51268
+  date: '2022-04-07'
+  duration: 6.0
+  episodes: 1
+  extra_info: null
+  name: (OO)
+  streaming:
+  - youtube: cHJprFGzH0k
+  tags:
+  - Film
+  - Arthouse
 - cc: false
   database:
   - mal: 33391
@@ -2385,6 +2410,17 @@
   streaming: null
   tags:
   - Film
+- cc: false
+  database:
+  - mal: 50876
+  date: '2022-04-02'
+  duration: 3.3
+  episodes: 1
+  extra_info: null
+  name: Sugar Loss
+  streaming: null
+  tags:
+  - Music Video
 - cc: false
   database:
   - mal: 8312
@@ -4170,14 +4206,3 @@
   tags:
   - Anthology
   - Arthouse
-- cc: false
-  database:
-  - mal: 10445
-  date: '2017-01-13'
-  duration: 4.0
-  episodes: 1
-  extra_info: null
-  name: Perfect Day
-  streaming: null
-  tags:
-  - Music Video

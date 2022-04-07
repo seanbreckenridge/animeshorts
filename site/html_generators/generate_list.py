@@ -123,7 +123,11 @@ def create_page(
             doc.asis("<!-- note -->")
             with tag("div", ("class", "container py-3 mb-0"), ("id", "note")):
                 with tag("p", ("class", "text-center mb-0")):
-                    text("This is not an exhaustive list, just my recommendations.")
+                    text("This is not an exhaustive list, just my recommendations. ")
+                    text("For my personal favorite visual aesthetics, see ")
+                    with tag("a", href="https://myanimelist.net/stacks/610"):
+                        text("here")
+
             doc.asis("<!-- list -->")
             with tag("main", klass="container", id="main-container"):
                 sources = sort_list(sources, list_order)
