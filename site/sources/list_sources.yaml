@@ -1790,6 +1790,18 @@
   - twitter: https://twitter.com/nissin_hiyoko/status/982151140253945856
   tags:
   - Commercial
+- cc: false
+  database:
+  - mal: 50019
+  date: '2022-04-11'
+  duration: 3.0
+  episodes: 1
+  extra_info: null
+  name: Matenrou to Rinkai-ten
+  streaming:
+  - vimeo: 269984493
+  tags:
+  - Music Video
 - cc: true
   database:
   - mal: 25495
