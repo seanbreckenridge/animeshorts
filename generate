@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
-CUR_DIR="$(dirname "${BASH_SOURCE[0]}")"
+CUR_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+cd "${CUR_DIR}" || exit $?
+
+if [[ ! -e "${CUR_DIR}" ]]; then
+	echo "ERROR: ${CUR_DIR} is does not exist"
+	exit 1
+fi
 
 OUTPUT_DIR="${CUR_DIR}/output"
 if [ -d "$OUTPUT_DIR" ]; then
-	rm -rf "$OUTPUT_DIR"
+	rm -rvf "$OUTPUT_DIR"
 fi
 
 if [[ "$1" == '-r' ]]; then
