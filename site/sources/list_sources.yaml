@@ -1792,6 +1792,18 @@
   - Commercial
 - cc: false
   database:
+  - mal: 51749
+  date: '2022-07-11'
+  duration: 9.0
+  episodes: 1
+  extra_info: null
+  name: Meogda
+  streaming: null
+  tags:
+  - Arthouse
+  - Film
+- cc: false
+  database:
   - mal: 49581
   date: '2022-04-16'
   duration: 2.0
