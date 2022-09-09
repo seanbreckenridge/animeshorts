@@ -1213,6 +1213,18 @@
   - Arthouse
 - cc: false
   database:
+  - mal: 52438
+  date: '2022-09-09'
+  duration: 4.0
+  episodes: 1
+  extra_info: null
+  name: Sono Saki no Taniji
+  streaming:
+  - youtube: YmIMykG_KfE
+  tags:
+  - Film
+- cc: false
+  database:
   - mal: 10688
   date: '2017-01-13'
   duration: 13.0
