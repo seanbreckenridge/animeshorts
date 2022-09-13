@@ -1092,6 +1092,18 @@
   - youtube: ByxJaMGt5VE
   tags:
   - Arthouse
+- cc: false
+  database:
+  - mal: 53009
+  date: '2022-09-13'
+  duration: 2.0
+  episodes: 1
+  extra_info: null
+  name: 'Onomatopoeia Rap: Natsu Asobi-hen'
+  streaming:
+  - youtube: tDPiLgmhUgE
+  tags:
+  - Music Video
 - cc: true
   database:
   - mal: 45053
@@ -1558,6 +1570,18 @@
   - youtube: 0AUfrjdBEog
   tags:
   - Music Video
+- cc: false
+  database:
+  - mal: 52022
+  date: '2022-09-13'
+  duration: 6.0
+  episodes: 1
+  extra_info: null
+  name: In the Film
+  streaming:
+  - youtube: HpVQ3Z3AMVw
+  tags:
+  - Film
 - cc: true
   database:
   - mal: 41485
