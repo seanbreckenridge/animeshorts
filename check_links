@@ -7,7 +7,7 @@
 
 # cd to current dir
 THIS_DIR="$(dirname "${BASH_SOURCE[0]}")"
-cd "$THIS_DIR"
+cd "$THIS_DIR" || exit $?
 
 BROKEN_LOG="${THIS_DIR}/broken.log"
 echo >"$BROKEN_LOG" # delete file
@@ -28,8 +28,9 @@ CHECK_URLS=$(grep -vE "myanimelist.net/anime/|anilist.co" <<<"$CHECK_URLS")
 VALID_IDS="$(curl --silent "$ANIME_IDS" | jq -r '.sfw | .[]')"
 
 # loop through and make sure each ID is in the list of valid IDs
+# shellcheck disable=SC2066
 for unknown in "$MAL_IDS"; do
-	unknown_id=$(echo "$unknown" | sed -e "s|^.*anime/||g")
+	unknown_id=$(sed -e "s|^.*anime/||g" <<<"$unknown")
 	if ! grep -xq "$unknown_id" <<<"$VALID_IDS"; then
 		echo "$unknown not in MAL ID CACHE" >>"$BROKEN_LOG"
 	fi

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request  # type: ignore[import]
+from flask import Flask, redirect  # type: ignore[import]
 
 app = Flask(__name__)
 
