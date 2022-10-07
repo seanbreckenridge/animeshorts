@@ -3689,18 +3689,6 @@
   - Film
 - cc: false
   database:
-  - mal: 8713
-  date: '2017-01-13'
-  duration: 4.0
-  episodes: 1
-  extra_info: null
-  name: Akai Ito
-  streaming:
-  - youtube: ARDBGPVOcWk
-  tags:
-  - Film
-- cc: false
-  database:
   - mal: 872
   date: '2017-01-13'
   duration: 9.0
