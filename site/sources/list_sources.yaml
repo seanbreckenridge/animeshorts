@@ -1792,6 +1792,18 @@
   streaming: null
   tags:
   - Film
+- cc: true
+  database:
+  - mal: 50452
+  date: '2022-12-03'
+  duration: 12.0
+  episodes: 1
+  extra_info: null
+  name: Undetectable Box
+  streaming:
+  - youtube: IwSwsQGSpPQ
+  tags:
+  - Film
 - cc: false
   database:
   - mal: 38181
