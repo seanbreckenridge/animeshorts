@@ -43,7 +43,7 @@ VIMEO_LINKS=$(grep "vimeo" <<<"$CHECK_URLS")
 # remove those URLs from urls left to check
 CHECK_URLS=$(echo "$CHECK_URLS" | grep -v "youtu" | grep -v "vimeo")
 
-# check anything that doesnt match myanimelist.net/anime/ or youtube.com/vimeo by requesting directly and checking the HTTP status
+# check anything that doesn't match myanimelist.net/anime/ or youtube.com/vimeo by requesting directly and checking the HTTP status
 while read -r url; do
 	http_code=$(curl --write-out %{http_code} --silent --output /dev/null "$url")
 	printf "checking %s\n" "$url" 2>&1

@@ -61,7 +61,7 @@ class SourceValidator(Validator):
 
 def prompt_source() -> Source:
     text = prompt(
-        "New Source (Esc+Enter when youre done)\n",
+        "New Source (Esc+Enter when you're done)\n",
         default=list_template,
         validator=SourceValidator(),
         multiline=True,

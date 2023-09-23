@@ -29,7 +29,7 @@ def navbar(active: str, **kwargs: Any) -> str:
         # navbar title
         with tag("a", klass="navbar-brand text-nowrap mr-3 my-2", href="./"):
             text(constants.FULL_NAME)
-        # collapsable page links
+        # collapsible page links
         with tag("div", klass="collapse navbar-collapse", id="collapse_navbar_target"):
             with tag("ul", klass="navbar-nav nav-pills dark-blue"):
                 with tag(

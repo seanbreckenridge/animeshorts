@@ -44,7 +44,7 @@ class Crawl:
             except requests.exceptions.RequestException:
                 pass
             count += 1
-        raise NotImplementedError(f"Couldnt cache {mal_id}")
+        raise NotImplementedError(f"Couldn't cache {mal_id}")
 
 
 class Cache:

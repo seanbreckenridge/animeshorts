@@ -268,7 +268,7 @@ def create_page(
                                                         ("class", "rounded-circle"),
                                                     )
                                         # add elifs for other databases here
-                                        # (if expading later)
+                                        # (if expanding later)
                                         elif "anilist" in db:
                                             anilist_link = db["anilist"]
                                             assert isinstance(anilist_link, str)
@@ -782,7 +782,7 @@ def main(do_download_names: bool = True) -> None:
     sources: List[Source] = [Source.parse_obj(s) for s in sources_raw]
     sources = fetch_anilist_sources(sources)
     mal_cache = Cache()  # fetch MAL names
-    # write out html file - ordered by reccomendation
+    # write out html file - ordered by recommendation
     with open(f"{constants.OUTPUT_DIR}/index.html", "w") as write_html_file:
         print("Generated index.html")
         write_html_file.write(
