@@ -64,6 +64,7 @@ def prompt_source() -> Source:
         "New Source (Esc+Enter when you're done)\n",
         default=list_template,
         validator=SourceValidator(),
+        vi_mode=True,
         multiline=True,
     )
     source_obj = Source.parse_obj(json.loads(text))
