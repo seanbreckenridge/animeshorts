@@ -1530,17 +1530,6 @@
     - Film
 - cc: false
   database:
-    - mal: 29293
-  date: 2018-05-06
-  duration: 10.0
-  episodes: 1
-  extra_info: null
-  name: Isu
-  streaming: null
-  tags:
-    - Arthouse
-- cc: false
-  database:
     - mal: 10187
   date: "2017-01-13"
   duration: 12.0
